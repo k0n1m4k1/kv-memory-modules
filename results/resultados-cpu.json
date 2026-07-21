@@ -1,0 +1,19 @@
+{
+  "cpu_restore": {
+    "n_restored": 1380,
+    "restore_ms": 357.9,
+    "wall_ms": 396
+  },
+  "cpu_query_restored": {
+    "prompt_n": 46,
+    "prompt_ms": 670.6,
+    "wall_ms": 5555,
+    "answer": "1. La URL de staging es `https://staging.acmetax.internal:8443`.  \n2. Se refresca cada lunes a las 03:00 CET desde un snapshot anonimizado de producción, y hay un bug intermitente (MTX"
+  },
+  "cpu_query_baseline": {
+    "prompt_n": 1425,
+    "prompt_ms": 8667.8,
+    "wall_ms": 13664,
+    "answer": "1. La URL de staging es `https://staging.acmetax.internal:8443`.  \n2. Se refresca cada lunes a las 03:00 CET desde un snapshot anonimizado de producción, y hay un bug intermitente (MTX"
+  }
+}

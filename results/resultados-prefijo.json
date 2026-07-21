@@ -1,0 +1,11 @@
+{
+  "restore": {
+    "n_restored": 1380,
+    "restore_ms": 328.6
+  },
+  "query_con_prefijo": {
+    "prompt_n": 1464,
+    "prompt_ms": 2166.6,
+    "answer": "5 días faltan para el próximo refresco de datos de staging, que ocurre a las 03:00 CET el lunes 24 de julio de 2026. TL;DR: 5 días, 03:00 CET, l"
+  }
+}

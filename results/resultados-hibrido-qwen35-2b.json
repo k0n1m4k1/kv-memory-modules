@@ -1,0 +1,911 @@
+{
+  "model": "Qwen3.5-2B-Q4_K_M.gguf",
+  "rebase_err_max": 0.0771484375,
+  "state_shape": [
+    16,
+    128,
+    128
+  ],
+  "esc1_mod_largo": {
+    "P": 48,
+    "M": 1282,
+    "val_extraccion": {
+      "9": 0.006583965849131346,
+      "17": 0.006344694644212723
+    },
+    "t_prefill_joint_s": 0.58,
+    "joint": {
+      "mem": {
+        "score": 20,
+        "total": 20,
+        "detail": [
+          {
+            "q": "¿Cuál es la URL exacta del entorno de staging?",
+            "answer": "https://staging.acmetax.internal:8443",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+            "answer": "Los datos de staging se refrescan cada lunes a las 03:00 CET.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+            "answer": "Actualmente la base de datos principal usa **PostgreSQL 16**.\n\nLa migración a la versión 17 está programada para noviembre de 2026.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+            "answer": "La migración a PostgreSQL 17 está planificada para **noviembre de 2026**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+            "answer": "Se utiliza **Flyway** para las migraciones de esquema.\n\n**Referencia:** `db/migrations/`",
+            "ok": true
+          },
+          {
+            "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+            "answer": "La variable de entorno que activa el fallback local de OCR es `OCR_FALLBACK`.\n\nPara activarla, debes establecer el valor en tu archivo `.env.local` (generado con `make bootstrap-env`):\n\n```bash\nOCR_FALLBACK=local\n```\n\n*Nota: El equipo",
+            "ok": true
+          },
+          {
+            "q": "¿Qué motor de OCR se usa como fallback local?",
+            "answer": "El motor de OCR fallback local es **Tesseract 5**.\n\nSe activa mediante la variable de entorno `OCR_FALLBACK=local`.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué lenguaje está escrito el servicio notifier?",
+            "answer": "El servicio `notifier` está escrito en **Go 1.23**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué framework usa el servicio bff-web?",
+            "answer": "El servicio `bff-web` utiliza **NestJS** como framework principal, construido sobre **TypeScript**.\n\n**Referencia:** `bff-web` (TypeScript, NestJS 10).",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el identificador de la épica activa?",
+            "answer": "La épica activa es **MTX-4812**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el identificador del ticket del bug intermitente de doc-ingest?",
+            "answer": "El bug intermitente en `doc-ingest` identificado como MTX-4907.",
+            "ok": true
+          },
+          {
+            "q": "¿Cómo se llama la rama de trabajo de la épica activa?",
+            "answer": "La rama de trabajo de la épica activa (MTX-4812: soporte del régimen de estimación objetiva para 2027) es:\n\n`feature/MTX-4812-rule-loader`",
+            "ok": true
+          },
+          {
+            "q": "¿Qué días de la semana son las ventanas de despliegue a producción?",
+            "answer": "Las ventanas de despliegue a producción son los **martes y jueves** de 10:00 a 12:00 CET.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué herramienta de GitOps se usa para desplegar a producción?",
+            "answer": "ArgoCD.",
+            "ok": true
+          },
+          {
+            "q": "¿Dónde se gestionan los secretos?",
+            "answer": "Según el patrón de arquitectura definido en el documento, los secretos se gestionan exclusivamente mediante **Azure Key Vault**.\n\nEl equipo ha establecido estrictamente que los secretos **nunca** se montan como archivos en el sistema de archivos, sino que se inyectan como variables de entorno",
+            "ok": true
+          },
+          {
+            "q": "¿Qué linter se usa para Python?",
+            "answer": "El linter para Python en el monorepo raíz es **Ruff**.\n\nSe utiliza con la configuración del archivo `pyproject.toml` de la raíz, no configuraciones locales por servicio.",
+            "ok": true
+          },
+          {
+            "q": "¿Con qué herramienta se gestionan las feature flags?",
+            "answer": "Las feature flags se gestionan con **Unleash**.",
+            "ok": true
+          },
+          {
+            "q": "¿Tras cuántos días al 100% debe eliminarse una feature flag?",
+            "answer": "Según la convención del equipo, una feature flag debe eliminarse del código cuando su duración supera los **90 días** al 100%.\n\n**TL;DR:** Eliminar si dura >90 días al 100%.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el canal de Slack para incidencias?",
+            "answer": "El canal de incidencias para incidencias es **#mtx-incidentes** en Slack.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué región de Azure corre el clúster AKS?",
+            "answer": "El clúster AKS corre en la región **westeurope** de Azure.",
+            "ok": true
+          }
+        ]
+      },
+      "pre": {
+        "score": 2,
+        "total": 2,
+        "detail": [
+          {
+            "q": "¿Qué día del mes es hoy?",
+            "answer": "Hoy es el **sábado 19 de julio de 2026**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué hora es ahora mismo?",
+            "answer": "Actual hora: **14:30 CET** (sábado 19 de julio de 2026).",
+            "ok": true
+          }
+        ]
+      }
+    },
+    "nomem": {
+      "mem": {
+        "score": 4,
+        "total": 20,
+        "detail": [
+          {
+            "q": "¿Cuál es la URL exacta del entorno de staging?",
+            "answer": "No tengo acceso a la información específica de tu proyecto o entorno de desarrollo actual. Por favor, proporciona el nombre del proyecto o la ruta del repositorio para que pueda buscar la URL de staging correspondiente.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+            "answer": "No se especifica un horario de refresco de datos de staging en la información proporcionada.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+            "answer": "PostgreSQL 16.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+            "answer": "No hay una fecha de migración planificada para PostgreSQL 17 en el momento actual, ya que esta versión aún no ha sido lanzada oficialmente. La migración dependerá de la fecha de lanzamiento de la versión 17 y de los planes de actualización de la organización.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+            "answer": "Las herramientas más comunes para migraciones de esquema son:\n\n*   **DBeaver**: Para bases de datos relacionales (MySQL, PostgreSQL, SQL Server).\n*   **DataGrip**: Para bases de datos relacionales y NoSQL.\n*   **Navicat**: Para bases",
+            "ok": false
+          },
+          {
+            "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+            "answer": "La variable de entorno activa el fallback local de OCR es `OCR_FALLBACK`.\n\n*Nota: Esta variable suele estar definida en el archivo de configuración del proyecto (ej. `config.json` o `settings.yaml`) y debe apuntar a la ruta del modelo de OCR local (por ejemplo,",
+            "ok": true
+          },
+          {
+            "q": "¿Qué motor de OCR se usa como fallback local?",
+            "answer": "No hay un motor de OCR específico definido como \"fallback local\" en el estándar de la industria.\n\nLa respuesta depende de tu arquitectura:\n1.  **En el estándar de la industria (OCR4J):** No existe un motor de fallback local. Si un motor falla, el sistema se",
+            "ok": false
+          },
+          {
+            "q": "¿En qué lenguaje está escrito el servicio notifier?",
+            "answer": "El servicio `notifier` está escrito en **Python**.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué framework usa el servicio bff-web?",
+            "answer": "El servicio **BFF-Web** (Backend for Frontend) no está vinculado a un único framework específico, ya que es un patrón de arquitectura que puede implementarse con cualquier lenguaje de backend (como **Node.js**, **Java**, **Go**, **Python** o **C#",
+            "ok": false
+          },
+          {
+            "q": "¿Cuál es el identificador de la épica activa?",
+            "answer": "No existe una \"épica activa\" en el contexto de la ingeniería o la ciencia. Es probable que te refieras a:\n\n1.  **La Épica Activa** (en filosofía o historia): Un concepto de la filosofía griega que describe la acción de un héroe que",
+            "ok": false
+          },
+          {
+            "q": "¿Cuál es el identificador del ticket del bug intermitente de doc-ingest?",
+            "answer": "El identificador del ticket del bug intermitente de `doc-ingest` es **DOC-12345** (ejemplo ficticio).\n\nSi necesitas buscarlo en tu sistema de gestión de tickets (Jira, ServiceNow, etc.), consulta la base de datos de tickets",
+            "ok": false
+          },
+          {
+            "q": "¿Cómo se llama la rama de trabajo de la épica activa?",
+            "answer": "La rama de trabajo de la **épica activa** se denomina **epigrafía**.\n\nEsta disciplina se centra en la creación de epígrafes (escrituras incrustadas en objetos) que sirven como registros históricos, monumentales o conmemorativos, utilizando técnicas de grab",
+            "ok": false
+          },
+          {
+            "q": "¿Qué días de la semana son las ventanas de despliegue a producción?",
+            "answer": "Las ventanas de despliegue a producción suelen seguir un ciclo de **24/7** continuo, con ventanas de mantenimiento programadas para:\n\n*   **Lunes a Viernes:** 00:00 - 06:00 CET (o 06:00",
+            "ok": false
+          },
+          {
+            "q": "¿Qué herramienta de GitOps se usa para desplegar a producción?",
+            "answer": "Para desplegar a producción en un entorno GitOps, la herramienta estándar es **ArgoCD**.\n\nSe integra directamente con Git (usando GitOps como fuente de verdad) y despliega aplicaciones Kubernetes mediante un *GitOps workflow* (usualmente con Flux o ArgoCD CLI), actual",
+            "ok": true
+          },
+          {
+            "q": "¿Dónde se gestionan los secretos?",
+            "answer": "Los secretos se gestionan en los **Secretos de la CIA** (Secret Service), que son un servicio de inteligencia de la Agencia de Seguridad Nacional de EE. UU.\n\n*Nota: En el contexto de la inteligencia moderna, \"secretos\" suelen referirse a información clasificada (como",
+            "ok": false
+          },
+          {
+            "q": "¿Qué linter se usa para Python?",
+            "answer": "El linter estándar para Python es **flake8**.\n\nOtras opciones populares incluyen:\n*   **pylint**: Para análisis de código y detección de errores.\n*   **ruff**: Un linter más rápido y ligero que reemplaza a flake8 y pyfl",
+            "ok": true
+          },
+          {
+            "q": "¿Con qué herramienta se gestionan las feature flags?",
+            "answer": "Las feature flags se gestionan principalmente con herramientas de **governance de software** como **GitOps** (ej. ArgoCD, Flux) o **CI/CD pipelines** (ej. Jenkins, GitLab CI, GitHub Actions).\n\nEstas herramientas permiten:\n1.",
+            "ok": false
+          },
+          {
+            "q": "¿Tras cuántos días al 100% debe eliminarse una feature flag?",
+            "answer": "No existe un estándar universal de \"100%\". La duración depende de:\n\n1.  **Objetivo**: ¿Es para un bug crítico (se elimina en días) o para un cambio de comportamiento (se mantiene meses)?\n2.  **Impacto**: ¿Afecta",
+            "ok": false
+          },
+          {
+            "q": "¿Cuál es el canal de Slack para incidencias?",
+            "answer": "El canal de incidencias en Slack es **#incidents**.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué región de Azure corre el clúster AKS?",
+            "answer": "No se puede determinar la región específica del clúster AKS sin conocer su nombre o la configuración de su subred.\n\nPara obtener esta información, consulta el registro de la subred del clúster o ejecuta el comando `az aks get-credentials` y luego `az aks show",
+            "ok": false
+          }
+        ]
+      },
+      "pre": {
+        "score": 1,
+        "total": 2,
+        "detail": [
+          {
+            "q": "¿Qué día del mes es hoy?",
+            "answer": "Sábado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué hora es ahora mismo?",
+            "answer": "Sábado 19 de julio de 2026, 14:30 CET.",
+            "ok": true
+          }
+        ]
+      }
+    },
+    "diag": {
+      "rel_naive_vs_joint": 0.1968189646944628,
+      "rel_affine_vs_joint": 0.18336968340344953
+    },
+    "naive": {
+      "mem": {
+        "score": 20,
+        "total": 20,
+        "detail": [
+          {
+            "q": "¿Cuál es la URL exacta del entorno de staging?",
+            "answer": "La URL exacta del entorno de staging es:\n\n`https://staging.acmetax.internal:8443`\n\nEste entorno se despliega automáticamente al fusionar la rama `develop` en `main` y se refresca los datos cada lunes a las 03:",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+            "answer": "El día de la semana es **lunes** y la hora de refresco de los datos de staging es las **03:00 CET**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+            "answer": "Actualmente la base de datos principal es **PostgreSQL 16**.\n\nLa migración a la versión 17 está programada para noviembre de 2026, según el plan de arquitectura del equipo.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+            "answer": "La migración a PostgreSQL 17 está planificada para **noviembre de 2026**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+            "answer": "Se utiliza **Flyway** para las migraciones de esquema.\n\nSegún las convenciones del equipo, todas las migraciones de esquema deben ser reversibles y deben incluir un script `undo` correspondiente, gestionadas desde la carpeta `db/migrations/`.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+            "answer": "La variable de entorno que activa el fallback local de OCR es `OCR_FALLBACK`.\n\nPara activarla, debes establecer el valor en tu archivo `.env.local` (generado con `make bootstrap-env`):\n\n```bash\nexport OCR_FALLBACK=local\n```\n\n*Nota: El",
+            "ok": true
+          },
+          {
+            "q": "¿Qué motor de OCR se usa como fallback local?",
+            "answer": "El motor de OCR fallback local es **Tesseract 5**.\n\nSe activa mediante la variable de entorno `OCR_FALLBACK=local` y se utiliza cuando la conexión a Azure Document Intelligence falla o se requiere procesamiento local.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué lenguaje está escrito el servicio notifier?",
+            "answer": "El servicio `notifier` está escrito en **Go 1.23**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué framework usa el servicio bff-web?",
+            "answer": "El servicio `bff-web` utiliza **NestJS** como framework principal, construido sobre **TypeScript**.\n\nSegún el registro del equipo, se trata de una versión de **NestJS 10**. El backend se despliega en Kubernetes (AKS, región westeurope",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el identificador de la épica activa?",
+            "answer": "El identificador de la épica activa es **MTX-4812**.\n\nEsta epica se centra en el soporte del régimen de estimación objetiva (módulos) para el año fiscal 2027. El trabajo actual implica refacturar el módulo `RuleLoader",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el identificador del ticket del bug intermitente de doc-ingest?",
+            "answer": "El bug intermitente en `doc-ingest` identificado como MTX-4907.",
+            "ok": true
+          },
+          {
+            "q": "¿Cómo se llama la rama de trabajo de la épica activa?",
+            "answer": "La rama de trabajo de la épica activa (MTX-4812: soporte del régimen de estimación objetiva para 2027) es:\n\n`feature/MTX-4812-rule-loader`\n\nEsta rama se enfoca en la refactorización",
+            "ok": true
+          },
+          {
+            "q": "¿Qué días de la semana son las ventanas de despliegue a producción?",
+            "answer": "Las ventanas de despliegue a producción son los **martes y jueves** de 10:00 a 12:00 CET.\n\nNo se realizan despliegues en los días de cierre de trimestre fiscal (última semana de marzo, junio, septiembre y diciembre).",
+            "ok": true
+          },
+          {
+            "q": "¿Qué herramienta de GitOps se usa para desplegar a producción?",
+            "answer": "ArgoCD.",
+            "ok": true
+          },
+          {
+            "q": "¿Dónde se gestionan los secretos?",
+            "answer": "Según el patrón de arquitectura definido en el documento, los secretos se gestionan exclusivamente mediante **Azure Key Vault**.\n\nEl equipo ha establecido estrictamente el siguiente patrón de implementación:\n1.  **Gestión centralizada**: Los secretos no se almacenan en el código fuente.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué linter se usa para Python?",
+            "answer": "El linter de Python utilizado en este proyecto es **Ruff**.\n\nSe configura en el archivo `pyproject.toml` de la raíz del monorepo y no se crean configuraciones locales por servicio, siguiendo la convención de mantener la configuración centralizada.",
+            "ok": true
+          },
+          {
+            "q": "¿Con qué herramienta se gestionan las feature flags?",
+            "answer": "Las feature flags se gestionan con **Unleash**.\n\nSegún las convenciones del equipo, se utilizan para controlar el comportamiento de los servicios. Una flag que lleve más de 90 días al 100% debe eliminarse del código en el siguiente sprint.",
+            "ok": true
+          },
+          {
+            "q": "¿Tras cuántos días al 100% debe eliminarse una feature flag?",
+            "answer": "De acuerdo con la convención del equipo, una feature flag debe eliminarse del código cuando su vida útil excede los **90 días** al 100%.\n\nSi una flag supera este umbral, debe ser eliminada en el siguiente sprint.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el canal de Slack para incidencias?",
+            "answer": "El canal de incidencias para el equipo es **#mtx-incidentes** en Slack.\n\nSolo se escalan incidentes por teléfono en caso de impacto en la presentación de impuestos con un plazo menor a 48 horas.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué región de Azure corre el clúster AKS?",
+            "answer": "El clúster AKS corre en la región **westeurope**.",
+            "ok": true
+          }
+        ]
+      },
+      "pre": {
+        "score": 2,
+        "total": 2,
+        "detail": [
+          {
+            "q": "¿Qué día del mes es hoy?",
+            "answer": "Sábado 19 de julio de 2026.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué hora es ahora mismo?",
+            "answer": "La hora actual es **14:30 CET** (CET, hora de verano).\n\nDado que hoy es sábado 19 de julio de 2026, el horario laboral de Lucía (10:00 a 12:00 CET) termina",
+            "ok": true
+          }
+        ]
+      },
+      "t_link_s": 0.11
+    },
+    "affine": {
+      "mem": {
+        "score": 20,
+        "total": 20,
+        "detail": [
+          {
+            "q": "¿Cuál es la URL exacta del entorno de staging?",
+            "answer": "La URL exacta del entorno de staging es:\n\n`https://staging.acmetax.internal:8443`\n\n**Nota:** Este entorno se despliega automáticamente al fusionar en la rama `develop` y los datos se refrescan cada lunes a las 03:",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+            "answer": "El día de la semana es **lunes** y la hora de refresco de los datos de staging es las **03:00 CET**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+            "answer": "Actualmente la base de datos principal es **PostgreSQL 16**.\n\nLa migración a la versión 17 está programada para noviembre de 2026.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+            "answer": "La migración a PostgreSQL 17 está planificada para **noviembre de 2026**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+            "answer": "Se utiliza **Flyway** para las migraciones de esquema.\n\nSegún las convenciones del equipo, todas las migraciones deben ser reversibles y deben incluir un script `undo` correspondiente. La regla de negocio es que la migración a PostgreSQL 17 está programada para noviembre",
+            "ok": true
+          },
+          {
+            "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+            "answer": "La variable de entorno que activa el fallback local de OCR es `OCR_FALLBACK`.\n\nPara activarla, debes establecer el valor en tu archivo `.env.local` (generado con `make bootstrap-env`):\n\n```bash\nOCR_FALLBACK=local\n```\n\n*Nota: El valor",
+            "ok": true
+          },
+          {
+            "q": "¿Qué motor de OCR se usa como fallback local?",
+            "answer": "El motor de OCR fallback local es **Tesseract 5**.\n\nSe activa mediante la variable de entorno `OCR_FALLBACK=local` y se utiliza cuando la conexión a Azure Document Intelligence falla o se requiere procesamiento local.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué lenguaje está escrito el servicio notifier?",
+            "answer": "El servicio `notifier` está escrito en **Go 1.23**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué framework usa el servicio bff-web?",
+            "answer": "El servicio `bff-web` utiliza **NestJS** como framework principal, construido sobre **TypeScript**.\n\n**Detalles técnicos:**\n- **Framework:** NestJS (versión 10).\n- **Lenguaje:** TypeScript.\n- **Generación de contratos:** El",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el identificador de la épica activa?",
+            "answer": "El identificador de la épica activa es **MTX-4812**.\n\nEsta epica se centra en el soporte del régimen de estimación objetiva (módulos) para el año fiscal 2027. El trabajo actual implica refacturar el módulo `RuleLoader",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el identificador del ticket del bug intermitente de doc-ingest?",
+            "answer": "El bug intermitente en `doc-ingest` identificado como MTX-4907.",
+            "ok": true
+          },
+          {
+            "q": "¿Cómo se llama la rama de trabajo de la épica activa?",
+            "answer": "La rama de trabajo de la épica activa (MTX-4812: soporte del régimen de estimación objetiva para 2027) es:\n\n`feature/MTX-4812-rule-loader`\n\nEsta rama se enfoca en la refactorización",
+            "ok": true
+          },
+          {
+            "q": "¿Qué días de la semana son las ventanas de despliegue a producción?",
+            "answer": "Las ventanas de despliegue a producción son los **martes y jueves** de 10:00 a 12:00 CET.\n\nNo se realizan despliegues en los días de cierre de trimestre fiscal (última semana de marzo, junio, septiembre y diciembre).",
+            "ok": true
+          },
+          {
+            "q": "¿Qué herramienta de GitOps se usa para desplegar a producción?",
+            "answer": "ArgoCD.",
+            "ok": true
+          },
+          {
+            "q": "¿Dónde se gestionan los secretos?",
+            "answer": "Según el patrón de arquitectura definido en el documento, los secretos se gestionan exclusivamente mediante **Azure Key Vault**.\n\nEl equipo ha establecido estrictamente el siguiente patrón de implementación:\n1.  **Inyección dinámica**: Los secretos se inyectan como variables de entorno.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué linter se usa para Python?",
+            "answer": "El linter de Python utilizado en el monorepo es **Ruff**.\n\nSe configura en el archivo `pyproject.toml` de la raíz del proyecto y no se crean configuraciones locales por servicio.",
+            "ok": true
+          },
+          {
+            "q": "¿Con qué herramienta se gestionan las feature flags?",
+            "answer": "Las feature flags se gestionan con **Unleash**.\n\nSegún las convenciones del equipo, se utilizan para controlar el despliegue de nuevas funcionalidades. Una regla crítica es que cualquier flag que permanezca activado más de 90 días al 100% debe ser",
+            "ok": true
+          },
+          {
+            "q": "¿Tras cuántos días al 100% debe eliminarse una feature flag?",
+            "answer": "De acuerdo con la convención del equipo, una feature flag debe eliminarse del código cuando su vida útil excede los **90 días** al 100%.\n\nSi una flag supera este umbral, debe ser eliminada en el siguiente sprint.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el canal de Slack para incidencias?",
+            "answer": "El canal de incidencias para el equipo es **#mtx-incidentes** en Slack.\n\nSolo se escalan incidentes por teléfono en caso de impacto en la presentación de impuestos con un plazo inferior a 48 horas.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué región de Azure corre el clúster AKS?",
+            "answer": "El clúster AKS corre en la región **westeurope**.",
+            "ok": true
+          }
+        ]
+      },
+      "pre": {
+        "score": 2,
+        "total": 2,
+        "detail": [
+          {
+            "q": "¿Qué día del mes es hoy?",
+            "answer": "Hoy es el **sábado 19 de julio de 2026**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué hora es ahora mismo?",
+            "answer": "La hora actual es **14:30 CET** (CET, hora de verano).\n\nDado que hoy es sábado 19 de julio de 2026, el horario laboral de Lucía (10:00 a 12:00 CET) termina",
+            "ok": true
+          }
+        ]
+      },
+      "t_link_s": 0.602
+    }
+  },
+  "esc2_pre_largo": {
+    "P": 953,
+    "M": 290,
+    "val_extraccion": {
+      "9": 0.004439431708306074,
+      "17": 0.004480914678424597
+    },
+    "t_prefill_joint_s": 0.57,
+    "joint": {
+      "mem": {
+        "score": 10,
+        "total": 10,
+        "detail": [
+          {
+            "q": "¿En qué puerto escucha el servicio Ancla?",
+            "answer": "El servicio **Ancla** escucha en el puerto **7070** (protocolo HTTP interno, sin TLS).",
+            "ok": true
+          },
+          {
+            "q": "¿En qué lenguaje está escrito Ancla?",
+            "answer": "Ancla está escrito en **Rust 1.79** utilizando el framework **Axum**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué base de datos usa Ancla?",
+            "answer": "Ancla utiliza **SQLite** en modo WAL (Write-Ahead Logging), con el archivo de base de datos `ancla.db`. No usa la PostgreSQL corporativa.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué bucket se publican los artefactos de release de Ancla?",
+            "answer": "Los artefactos de release de Ancla se publican en el bucket **`s3://ancla-artifacts`**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué versión de Ancla está en producción?",
+            "answer": "La versión actual en producción de Ancla es la **0.9.3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué equipo es responsable de Ancla?",
+            "answer": "El equipo responsable de **Ancla** es el **equipo Delta**, con **Nuria** como tech lead.",
+            "ok": true
+          },
+          {
+            "q": "¿Quién es la tech lead de Ancla?",
+            "answer": "La tech lead de Ancla es **Nuria**, miembro del equipo Delta.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día de la semana se despliega Ancla?",
+            "answer": "Se despliega el proyecto **Ancla** los **viernes** por la mañana, tras el corte de las **10:00 CET**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué prefijo usan los tickets de Ancla en JIRA?",
+            "answer": "Los tickets del proyecto **Ancla** en JIRA usan el prefijo **ANC**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué mes se rota la clave de firma de Ancla?",
+            "answer": "La clave de firma de Ancla se rota cada **enero**.",
+            "ok": true
+          }
+        ]
+      },
+      "pre": {
+        "score": 5,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿Quién lleva la guardia principal esta semana?",
+            "answer": "Marcos, del equipo de infraestructura.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la región de contingencia para el simulacro de desastres?",
+            "answer": "La región de contingencia para el simulacro de recuperación ante desastres es **francecentral**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto se aprobó para la formación del equipo este semestre?",
+            "answer": "El presupuesto aprobado para la formación del equipo este semestre es de **6.000 euros**, priorizando observabilidad y seguridad.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué proveedor de correo transaccional se mantiene como principal?",
+            "answer": "El proveedor de correo transaccional principal se mantiene como **SendGrid**.",
+            "ok": true
+          },
+          {
+            "q": "¿A qué versión se actualizará el clúster de desarrollo de Kubernetes?",
+            "answer": "La actualización del clúster de desarrollo de Kubernetes se pospusó al **8 de octubre de 2026** por incompatibilidad con el operador de la cola de mensajes.",
+            "ok": false
+          },
+          {
+            "q": "¿Cuándo caduca el certificado TLS del entorno de demos?",
+            "answer": "El certificado TLS del entorno de demos caduca el **3 de octubre de 2026**.",
+            "ok": true
+          }
+        ]
+      }
+    },
+    "nomem": {
+      "mem": {
+        "score": 1,
+        "total": 10,
+        "detail": [
+          {
+            "q": "¿En qué puerto escucha el servicio Ancla?",
+            "answer": "El servicio **Ancla** escucha en el puerto **8080**.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué lenguaje está escrito Ancla?",
+            "answer": "Ancla está escrito en **Python**.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué base de datos usa Ancla?",
+            "answer": "Ancla no utiliza una base de datos específica para su propio motor de ejecución, ya que es un lenguaje de programación de alto nivel diseñado para generar código de ejecución en tiempo real. Sin embargo, si te refieres a la base de datos que Ancla utiliza para almacenar los datos de sus usuarios",
+            "ok": false
+          },
+          {
+            "q": "¿En qué bucket se publican los artefactos de release de Ancla?",
+            "answer": "No hay información en el historial de conversación sobre el bucket de publicación de artefactos de release de Ancla.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué versión de Ancla está en producción?",
+            "answer": "No se ha proporcionado información sobre la versión de Ancla en producción en la conversación anterior.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué equipo es responsable de Ancla?",
+            "answer": "No hay información en la transcripción sobre el equipo responsable de **Ancla**. El texto solo menciona que el clúster de pruebas de rendimiento quedó configurado para reiniciarse automáticamente los miércoles a las 05:00 CET.",
+            "ok": false
+          },
+          {
+            "q": "¿Quién es la tech lead de Ancla?",
+            "answer": "No tengo información sobre la estructura organizativa interna de Ancla, específicamente sobre quién es su tech lead.\n\nBasado en la conversación de hoy, solo se mencionó que el equipo de plataforma tiene un ticket (**PERF-2214**) para el clúster de pruebas de",
+            "ok": false
+          },
+          {
+            "q": "¿Qué día de la semana se despliega Ancla?",
+            "answer": "No hay información en el historial de conversaciones sobre el despliegue de \"Ancla\".",
+            "ok": false
+          },
+          {
+            "q": "¿Qué prefijo usan los tickets de Ancla en JIRA?",
+            "answer": "Los tickets de Ancla en JIRA suelen seguir el formato: **PROY-XXX** (ej. `PROY-2214`), donde:\n*   **PROY** es el prefijo del proyecto.\n*   **XXX** es el número único del ticket",
+            "ok": true
+          },
+          {
+            "q": "¿En qué mes se rota la clave de firma de Ancla?",
+            "answer": "No se ha informado en la conversación anterior sobre la rotación de la clave de firma de Ancla.",
+            "ok": false
+          }
+        ]
+      },
+      "pre": {
+        "score": 6,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿Quién lleva la guardia principal esta semana?",
+            "answer": "Marcos, del equipo de infraestructura.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la región de contingencia para el simulacro de desastres?",
+            "answer": "La región de contingencia para el simulacro de recuperación ante desastres es **francecentral**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto se aprobó para la formación del equipo este semestre?",
+            "answer": "El presupuesto aprobado para la formación del equipo este semestre es de **6.000 euros**, priorizando observabilidad y seguridad.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué proveedor de correo transaccional se mantiene como principal?",
+            "answer": "El proveedor de correo transaccional principal se mantiene como **SendGrid**.",
+            "ok": true
+          },
+          {
+            "q": "¿A qué versión se actualizará el clúster de desarrollo de Kubernetes?",
+            "answer": "El clúster de desarrollo se actualizará a la versión **1.33**, con una fecha de despliegue programada para el **8 de octubre de 2026**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuándo caduca el certificado TLS del entorno de demos?",
+            "answer": "El certificado TLS del entorno de demos caduca el **3 de octubre de 2026**.",
+            "ok": true
+          }
+        ]
+      }
+    },
+    "diag": {
+      "rel_naive_vs_joint": 0.37933396141516923,
+      "rel_affine_vs_joint": 0.26614755283759917
+    },
+    "naive": {
+      "mem": {
+        "score": 10,
+        "total": 10,
+        "detail": [
+          {
+            "q": "¿En qué puerto escucha el servicio Ancla?",
+            "answer": "El servicio Ancla escucha en el puerto **7070**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué lenguaje está escrito Ancla?",
+            "answer": "Ancla está escrito en **Rust**, utilizando el framework **Axum** para el desarrollo del servicio.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué base de datos usa Ancla?",
+            "answer": "Ancla utiliza **SQLite** como base de datos propia.\n\nSe configura en modo WAL (Write-Ahead Logging) y el archivo de base de datos se almacena en `ancla.db`. No utiliza la base de datos corporativa PostgreSQL.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué bucket se publican los artefactos de release de Ancla?",
+            "answer": "Los artefactos de release de Ancla se publican en el bucket **`s3://ancla-artifacts`**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué versión de Ancla está en producción?",
+            "answer": "La versión de Ancla en producción es la **0.9.3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué equipo es responsable de Ancla?",
+            "answer": "El equipo responsable de **Ancla** es el **equipo Delta**.",
+            "ok": true
+          },
+          {
+            "q": "¿Quién es la tech lead de Ancla?",
+            "answer": "La tech lead de Ancla es **Nuria**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día de la semana se despliega Ancla?",
+            "answer": "El despliegue de Ancla se realiza **solo los viernes por la mañana**, tras el corte de las 10:00 CET.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué prefijo usan los tickets de Ancla en JIRA?",
+            "answer": "Los tickets de Ancla en JIRA usan el prefijo **ANC**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué mes se rota la clave de firma de Ancla?",
+            "answer": "La clave de firma de Ancla se rota cada **enero** (una vez al año).",
+            "ok": true
+          }
+        ]
+      },
+      "pre": {
+        "score": 6,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿Quién lleva la guardia principal esta semana?",
+            "answer": "La guardia principal de esta semana la lleva **Marcos**, del equipo de infraestructura.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la región de contingencia para el simulacro de desastres?",
+            "answer": "La región de contingencia para el simulacro de recuperación ante desastres es **francecentral**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto se aprobó para la formación del equipo este semestre?",
+            "answer": "El presupuesto aprobado para la formación del equipo este semestre fue de **6.000 euros**, priorizando observabilidad y seguridad.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué proveedor de correo transaccional se mantiene como principal?",
+            "answer": "El proveedor de correo transaccional principal es **SendGrid**.",
+            "ok": true
+          },
+          {
+            "q": "¿A qué versión se actualizará el clúster de desarrollo de Kubernetes?",
+            "answer": "La actualización del clúster de desarrollo a la versión 1.33 se pospusó al **8 de octubre de 2026** debido a incompatibilidades con el operador de la cola de mensajes.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuándo caduca el certificado TLS del entorno de demos?",
+            "answer": "El certificado TLS del entorno de demos caduca el **3 de octubre de 2026**.",
+            "ok": true
+          }
+        ]
+      },
+      "t_link_s": 0.258
+    },
+    "affine": {
+      "mem": {
+        "score": 10,
+        "total": 10,
+        "detail": [
+          {
+            "q": "¿En qué puerto escucha el servicio Ancla?",
+            "answer": "El servicio Ancla escucha en el puerto **7070**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué lenguaje está escrito Ancla?",
+            "answer": "Ancla está escrito en **Rust**, utilizando el framework **Axum**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué base de datos usa Ancla?",
+            "answer": "Ancla utiliza **SQLite** como base de datos propia, almacenada en un archivo `ancla.db` en modo WAL (Write-Ahead Logging). No utiliza la base de datos corporativa PostgreSQL.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué bucket se publican los artefactos de release de Ancla?",
+            "answer": "Los artefactos de release de Ancla se publican en el bucket **s3://ancla-artifacts**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué versión de Ancla está en producción?",
+            "answer": "La versión actual en producción es la **0.9.3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué equipo es responsable de Ancla?",
+            "answer": "El equipo responsable de **Ancla** es el **equipo Delta**.",
+            "ok": true
+          },
+          {
+            "q": "¿Quién es la tech lead de Ancla?",
+            "answer": "La tech lead de Ancla es **Nuria**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día de la semana se despliega Ancla?",
+            "answer": "El despliegue de Ancla se realiza **solo los viernes por la mañana**, tras el corte de las 10:00 CET.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué prefijo usan los tickets de Ancla en JIRA?",
+            "answer": "Los tickets de Ancla en JIRA tienen el prefijo **ANC**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué mes se rota la clave de firma de Ancla?",
+            "answer": "La clave de firma de Ancla se rota cada **enero** (una vez al año).",
+            "ok": true
+          }
+        ]
+      },
+      "pre": {
+        "score": 6,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿Quién lleva la guardia principal esta semana?",
+            "answer": "La guardia principal de esta semana la lleva **Marcos**, del equipo de infraestructura.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la región de contingencia para el simulacro de desastres?",
+            "answer": "La región de contingencia para el simulacro de recuperación ante desastres es **francecentral**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto se aprobó para la formación del equipo este semestre?",
+            "answer": "El presupuesto aprobado para la formación del equipo este semestre es de **6.000 euros**, priorizando observabilidad y seguridad.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué proveedor de correo transaccional se mantiene como principal?",
+            "answer": "El proveedor de correo transaccional principal es **SendGrid**.",
+            "ok": true
+          },
+          {
+            "q": "¿A qué versión se actualizará el clúster de desarrollo de Kubernetes?",
+            "answer": "La actualización del clúster de desarrollo a la versión **1.33** se pospusó al **8 de octubre de 2026** debido a incompatibilidad con el operador de la cola de mensajes.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuándo caduca el certificado TLS del entorno de demos?",
+            "answer": "El certificado TLS del entorno de demos caduca el **3 de octubre de 2026**.",
+            "ok": true
+          }
+        ]
+      },
+      "t_link_s": 0.648
+    }
+  }
+}

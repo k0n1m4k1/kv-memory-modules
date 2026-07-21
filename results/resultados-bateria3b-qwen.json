@@ -1,0 +1,60 @@
+{
+  "tag": "qwen",
+  "E4b_requestion": {
+    "score": 8,
+    "total": 10,
+    "relink_ms_mean": 592.1,
+    "detail": [
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "7070.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "Ancla está escrito en Rust, con servicios en Java, Python y Go.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "Ancla usa PostgreSQL 16 gestionado en Azure Flexible Server como base de datos principal. La migración a PostgreSQL 17 está planificada para",
+        "ok": false
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "`s3://ancla-artifacts`",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "0.9.3.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "El equipo Delta.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "**Nuria**.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "14:30 CET, 19 de julio de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "**Grafana**.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "1 de enero.",
+        "ok": true
+      }
+    ]
+  }
+}

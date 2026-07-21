@@ -1,0 +1,627 @@
+{
+  "model": "Qwen3-14B-Q4_K_M.gguf",
+  "P": 1046,
+  "M": 5114,
+  "n_q": 40,
+  "hops": 2,
+  "t_compile_s": 2.11,
+  "module_MB": 837.9,
+  "joint": {
+    "score": 29,
+    "total": 40,
+    "detail": [
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2512?",
+        "answer": "La guardia principal del servicio svc-helice la lleva Ramiro.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7149?",
+        "answer": "Pau",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7490?",
+        "answer": "7490: MySQL",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7901?",
+        "answer": "viernes",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7330?",
+        "answer": "Ines",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7467?",
+        "answer": "MongoDB",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7297?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7297?",
+        "answer": "La guardia principal del servicio que escucha en el puerto 7297 es Carla.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7044?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7086?",
+        "answer": "7086: miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7953?",
+        "answer": "La base de datos es SQLite.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7305?",
+        "answer": "martes",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7625?",
+        "answer": "Fermin",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2435?",
+        "answer": "Inés",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2428?",
+        "answer": "7149",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2470?",
+        "answer": "Inés",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2484?",
+        "answer": "7512",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7086?",
+        "answer": "Cassandra",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7207?",
+        "answer": "martes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7045?",
+        "answer": "MongoDB",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2491?",
+        "answer": "7975",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7997?",
+        "answer": "1.3.8",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7365?",
+        "answer": "jueves\n---",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2463?",
+        "answer": "1",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7997?",
+        "answer": "martes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7173?",
+        "answer": "7173: svc-granito, ventana de despliegue: lunes.",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7152?",
+        "answer": "Gadea",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7297?",
+        "answer": "Cassandra",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2442?",
+        "answer": "7682",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7717?",
+        "answer": "MongoDB",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2414?",
+        "answer": "7979",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7273?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7997?",
+        "answer": "Carla",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7580?",
+        "answer": "jueves",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2477?",
+        "answer": "7467",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7045?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7393?",
+        "answer": "lunes",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2526?",
+        "answer": "1",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2414?",
+        "answer": "1. Identificar el servicio afectado en la incidencia INC-2414.\n2",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7273?",
+        "answer": "1.0.19 con 6 réplicas, persiste en SQLite.",
+        "ok": true
+      }
+    ]
+  },
+  "naive": {
+    "score": 35,
+    "total": 40,
+    "detail": [
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2512?",
+        "answer": "La guardia principal del servicio afectado en la incidencia INC-2512 es Ramiro.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7149?",
+        "answer": "Pau",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7490?",
+        "answer": "MySQL",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7901?",
+        "answer": "viernes",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7330?",
+        "answer": "Telmo",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7467?",
+        "answer": "MongoDB",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7297?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7297?",
+        "answer": "La guardia principal del servicio que escucha en el puerto 7297 es Pau.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7044?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7086?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7953?",
+        "answer": "La base de datos es SQLite.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7305?",
+        "answer": "martes",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7625?",
+        "answer": "Fermin",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2435?",
+        "answer": "Ines",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2428?",
+        "answer": "7149",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2470?",
+        "answer": "La guardia principal del servicio svc-junco la lleva Quima.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2484?",
+        "answer": "7512",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7086?",
+        "answer": "Cassandra",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7207?",
+        "answer": "martes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7045?",
+        "answer": "MongoDB",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2491?",
+        "answer": "7975",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7997?",
+        "answer": "El servicio que escucha en el puerto 7997 es svc-ocaso, que persiste en DynamoDB.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7365?",
+        "answer": "jueves",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2463?",
+        "answer": "1",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7997?",
+        "answer": "martes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7173?",
+        "answer": "El servicio que escucha en el puerto 7173 es svc-granito, cuya ventana de despliegue es el jueves.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7152?",
+        "answer": "Gadea",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7297?",
+        "answer": "La base de datos que usa el servicio que escucha en el puerto 7297 es Cassandra.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2442?",
+        "answer": "7682",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7717?",
+        "answer": "MongoDB",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2414?",
+        "answer": "7979",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7273?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7997?",
+        "answer": "Carla",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7580?",
+        "answer": "jueves",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2477?",
+        "answer": "7044",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7045?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7393?",
+        "answer": "lunes",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2526?",
+        "answer": "1. Identificar el servicio de la incidencia INC-2526.\n2",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2414?",
+        "answer": "1. Identificar el servicio de la incidencia INC-2414: svc-albatros. 2. Consultar la sección de micro",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7273?",
+        "answer": "La base de datos que usa el servicio que escucha en el puerto 7273 es SQLite.",
+        "ok": true
+      }
+    ]
+  },
+  "nomem": {
+    "score": 0,
+    "total": 40,
+    "detail": [
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2512?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7149?",
+        "answer": "﻿\nOkay",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7490?",
+        "answer": "---\nP",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7901?",
+        "answer": "7901",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7330?",
+        "answer": "﻿\nOkay",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7467?",
+        "answer": "PostgreSQL 15 en un clúster de alta disponibilidad en la región westeurope.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7297?",
+        "answer": "7297 no está en la transcripción. No se menciona en la conversación.",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7297?",
+        "answer": "﻿\nOkay",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7044?",
+        "answer": "7044 no está en la lista de puertos mencionados en la conversación. No hay información disponible sobre su ventana de despliegue",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7086?",
+        "answer": "7086 no está en la lista de puertos mencionados en la conversación. No hay información disponible sobre su ventana de despliegue",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7953?",
+        "answer": "---\nP",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7305?",
+        "answer": "7305",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7625?",
+        "answer": "﻿\nOkay",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2435?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2428?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2470?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2484?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7086?",
+        "answer": "Okay, let's see. The user is asking which database is used by the service listening on port 7086. First, I need to",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7207?",
+        "answer": "7207",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7045?",
+        "answer": "---\nP",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2491?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7997?",
+        "answer": "PostgreSQL 15",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7365?",
+        "answer": "7365",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2463?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7997?",
+        "answer": "7997",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7173?",
+        "answer": "7173",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7152?",
+        "answer": "﻿\nOkay",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7297?",
+        "answer": "---\nP",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2442?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7717?",
+        "answer": "---\nP",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2414?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7273?",
+        "answer": "7273 no está en la lista de puertos mencionados en la conversación. No hay información disponible sobre su ventana de despliegue",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que escucha en el puerto 7997?",
+        "answer": "﻿\nOkay",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7580?",
+        "answer": "7580",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio que cayó en la incidencia INC-2477?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7045?",
+        "answer": "7045 no está en la lista de puertos mencionados en la conversación. No hay información disponible sobre su ventana de despliegue",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue del servicio que escucha en el puerto 7393?",
+        "answer": "7393 no está en la lista de puertos mencionados en la conversación. No hay información disponible sobre su ventana de despliegue",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2526?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia del servicio que cayó en la incidencia INC-2414?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa el servicio que escucha en el puerto 7273?",
+        "answer": "---\nP",
+        "ok": false
+      }
+    ]
+  }
+}

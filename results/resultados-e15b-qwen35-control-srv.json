@@ -1,0 +1,318 @@
+{
+  "model": "Qwen3.5-4B-Q4_K_M.gguf",
+  "control": true,
+  "n_ctx": 40960,
+  "turnos": [
+    {
+      "doc": "memoria-ops",
+      "q": "¿A quién está asignado el expediente EXP--OPS-4797?",
+      "t_link_s": 0.486,
+      "battery": {
+        "score": 6,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4704?",
+            "answer": "El expediente EXP--OPS-4704 está en estado **\"en revisión\"**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2273?",
+            "answer": "El expediente **EXP--OPS-2273** está asignado a **Héctor**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2273?",
+            "answer": "1600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2273?",
+            "answer": "El expediente **EXP--OPS-2273** está en estado **\"en revisión\"**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-5042?",
+            "answer": "El expediente **EXP--OPS-5042** está asignado a **Katia**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-5042?",
+            "answer": "48800 euros",
+            "ok": true
+          }
+        ]
+      },
+      "answer": "El expediente **EXP--OPS-4797** está asignado a **Quima**.",
+      "ok": true
+    },
+    {
+      "doc": "memoria-tec",
+      "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-3850?",
+      "t_link_s": 0.578,
+      "battery": {
+        "score": 6,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-8417?",
+            "answer": "El expediente **EXP--TEC-8417** está en estado **\"en curso\"**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-4390?",
+            "answer": "El expediente **EXP--TEC-4390** está asignado a **Ramiro**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-4390?",
+            "answer": "El expediente **EXP--OPS-4390** tiene un presupuesto de **40.200 euros**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-4390?",
+            "answer": "El expediente **EXP--TEC-4390** está en estado **\"en curso\"**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-1370?",
+            "answer": "El expediente **EXP--TEC-1370** está asignado a **Bruno**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1370?",
+            "answer": "El expediente **EXP--TEC-1370** tiene un presupuesto de **34.200 euros**.",
+            "ok": true
+          }
+        ]
+      },
+      "answer": "El expediente **EXP--OPS-4797** tiene un presupuesto de **58.900 euros**.",
+      "ok": true
+    },
+    {
+      "doc": "memoria-hist",
+      "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+      "t_link_s": 0.854,
+      "battery": {
+        "score": 5,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3376?",
+            "answer": "El expediente **EXP--OPS-3376** tiene el estado **\"bloqueado\"**.",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4308?",
+            "answer": "El expediente **EXP--OPS-4308** está asignado a **Olalla**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4308?",
+            "answer": "El expediente **EXP--OPS-4308** tiene un presupuesto de **19.500 euros**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4308?",
+            "answer": "El expediente **EXP--OPS-4308** tiene el estado **\"aprobado\"**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5364?",
+            "answer": "El expediente **EXP--OPS-5364** está asignado a **Lorenzo**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5364?",
+            "answer": "El expediente **EXP--OPS-5364** tiene un presupuesto de **27.700 euros**.",
+            "ok": true
+          }
+        ]
+      },
+      "answer": "El expediente **EXP--OPS-4797** (asignado a Olalla) tiene un estado de **\"bloqueado\"**.",
+      "ok": true
+    },
+    {
+      "doc": "memoria-ops",
+      "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2967?",
+      "page_hit": true,
+      "battery": {
+        "score": 6,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4704?",
+            "answer": "El expediente **EXP--OPS-4704** (asignado a Inés) tiene un estado de **\"en revisión\"**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2273?",
+            "answer": "El expediente **EXP--OPS-2273** está asignado a **Héctor**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2273?",
+            "answer": "El expediente **EXP--OPS-2273** tiene un presupuesto de **1.600 euros**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2273?",
+            "answer": "El expediente **EXP--OPS-2273** tiene un estado de **\"en revisión\"**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-5042?",
+            "answer": "El expediente **EXP--OPS-5042** está asignado a **Katia**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-5042?",
+            "answer": "El expediente **EXP--OPS-5042** tiene un presupuesto de **48.800 euros**.",
+            "ok": true
+          }
+        ]
+      },
+      "answer": "El expediente **EXP--OPS-2967** tiene un presupuesto de **16.900 euros**.",
+      "ok": true
+    },
+    {
+      "doc": "memoria-tec",
+      "q": "¿En qué estado está el expediente EXP--TEC-9831?",
+      "page_hit": true,
+      "battery": {
+        "score": 5,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-8417?",
+            "answer": "El expediente **EXP--TEC-8417** tiene un estado de **\"en revisión\"**.",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-4390?",
+            "answer": "El expediente **EXP--TEC-4390** está asignado a **Ramiro**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-4390?",
+            "answer": "El expediente **EXP--TEC-4390** tiene un presupuesto de **40.200 euros**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-4390?",
+            "answer": "El expediente **EXP--TEC-4390** tiene un estado de **\"en curso\"**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-1370?",
+            "answer": "El expediente **EXP--TEC-1370** está asignado a **Bruno**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1370?",
+            "answer": "El expediente **EXP--TEC-1370** tiene un presupuesto de **34.200 euros**.",
+            "ok": true
+          }
+        ]
+      },
+      "answer": "El expediente **EXP--TEC-9831** tiene un estado de **\"bloqueado\"**.",
+      "ok": true
+    },
+    {
+      "doc": "memoria-hist",
+      "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+      "page_hit": true,
+      "battery": {
+        "score": 6,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3376?",
+            "answer": "El expediente **EXP-HIST-3376** tiene un estado de **\"archivado\"**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4308?",
+            "answer": "El expediente **EXP-HIST-4308** está asignado a **Olalla**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4308?",
+            "answer": "El expediente **EXP-HIST-4308** tiene un presupuesto de **19.500 euros**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4308?",
+            "answer": "El expediente **EXP-HIST-4308** tiene un estado de **\"aprobado\"**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5364?",
+            "answer": "El expediente **EXP-HIST-5364** está asignado a **Lorenzo**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5364?",
+            "answer": "El expediente **EXP-HIST-5364** tiene un presupuesto de **27.700 euros**.",
+            "ok": true
+          }
+        ]
+      },
+      "answer": "El expediente **EXP-HIST-7273** está asignado a **Inés**.",
+      "ok": false
+    },
+    {
+      "doc": "memoria-hist",
+      "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-3376?",
+      "page_hit": true,
+      "battery": {
+        "score": 5,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3376?",
+            "answer": "El expediente **EXP-HIST-3376** tiene un estado de **\"bloqueado\"**.",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4308?",
+            "answer": "El expediente **EXP-HIST-4308** está asignado a **Olalla**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4308?",
+            "answer": "El expediente **EXP-HIST-4308** tiene un presupuesto de **19.500 euros**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4308?",
+            "answer": "El expediente **EXP-HIST-4308** tiene un estado de **\"aprobado\"**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5364?",
+            "answer": "El expediente **EXP-HIST-5364** está asignado a **Lorenzo**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5364?",
+            "answer": "El expediente **EXP-HIST-5364** tiene un presupuesto de **27.700 euros**.",
+            "ok": true
+          }
+        ]
+      },
+      "answer": "El expediente **EXP-HIST-3376** tiene un presupuesto de **30.600 euros**.",
+      "ok": true
+    }
+  ],
+  "sonda_coherencia": {
+    "esperado": "¿A quién está asignado el expediente EXP--OPS-4797?",
+    "answer": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-9831?"
+  },
+  "battery_total": {
+    "score": 39,
+    "total": 42
+  },
+  "recall_aciertos": 6,
+  "peak_cells": 29619
+}

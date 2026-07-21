@@ -1,0 +1,17 @@
+# Runtime dependency of the `kmd` tool (src/kmd/). Install with `pip install -e .`
+# or `pip install -r requirements.txt`.
+numpy>=1.24
+
+# --- External runtimes (NOT pip-installable here; see scripts/ and patches/) ---
+# llama.cpp release b10068
+#   machine A: official win-vulkan-x64 binaries
+#   machine B: built from source with CUDA (scripts/setup-linux.sh)
+#   E13/E19 additionally require the library patch in patches/ (MTP draft-head KV).
+# vLLM 0.22.1  (only for E9 / E19; heavy, optional):
+#   pip install vllm==0.22.1
+#
+# Python: >=3.10 supported; the paper's runs used 3.14 on the server.
+# A full pinned lockfile (`pip freeze`) from the experiment environment is in
+# requirements.lock — the exact machine-B venv (vLLM 0.22.1 / CUDA 13 stack).
+# It is a record of what ran, not a portable install target; for the offline
+# tool + stats you only need numpy (above).

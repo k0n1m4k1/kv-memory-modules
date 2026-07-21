@@ -1,0 +1,14 @@
+# Normalize to LF in the repository; keep working-tree defaults per platform.
+* text=auto
+
+# Shell scripts must stay LF (CRLF breaks bash) and PowerShell prefers CRLF.
+*.sh text eol=lf
+*.py text eol=lf
+*.ps1 text eol=crlf
+
+# Patches apply byte-exact: never rewrite their line endings.
+*.patch -text
+
+# Binary artifacts.
+*.pdf -text
+*.png -text

@@ -1,0 +1,24 @@
+# GGUF checkpoints used by the experiment suite (see paper Appendix A).
+# Format: <huggingface-repo> <filename-in-repo>
+# Lines starting with '#' are skipped. setup-linux.sh downloads the active ones
+# into models/ with `huggingface-cli download`.
+#
+# Repos verified against Hugging Face on 2026-07-20. Exact FILE names inside
+# each repo may differ per revision — check the repo file listing if a
+# download 404s.
+
+Qwen/Qwen2.5-Coder-7B-Instruct-GGUF qwen2.5-coder-7b-instruct-q4_k_m.gguf
+unsloth/Qwen3-4B-Instruct-2507-GGUF Qwen3-4B-Instruct-2507-Q4_K_M.gguf
+unsloth/Llama-3.2-3B-Instruct-GGUF Llama-3.2-3B-Instruct-Q4_K_M.gguf
+unsloth/Qwen3-14B-GGUF Qwen3-14B-Q4_K_M.gguf
+
+# Hybrid (Gated DeltaNet) models for the hybrid-linker experiments:
+unsloth/Qwen3.5-2B-GGUF Qwen3.5-2B-Q4_K_M.gguf
+unsloth/Qwen3.5-4B-GGUF Qwen3.5-4B-Q4_K_M.gguf
+unsloth/Qwen3.5-9B-GGUF Qwen3.5-9B-Q8_0.gguf
+
+# Hybrid + MTP draft head (E13, requires the patches/ build of llama.cpp):
+Jackrong/Qwopus3.5-4B-Coder-MTP-GGUF Qwopus3.5-4B-Coder-MTP-Q6_K.gguf
+
+# Interleaved sliding-window attention (E20):
+ggml-org/gemma-3-4b-it-GGUF gemma-3-4b-it-Q4_K_M.gguf

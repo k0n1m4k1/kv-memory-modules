@@ -1,0 +1,1872 @@
+{
+  "model": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "P": 1046,
+  "mds": {
+    "memoria-hist": {
+      "kvm": "memoria-hist.ea031f7444d1.kvm",
+      "kvm_MB": 629.4,
+      "n_q": 48,
+      "t_setup_joint_s": 2.466,
+      "joint": {
+        "score": 42,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "El expediente EXP-HIST-5879 está asignado a Ramiro.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "63.400 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "El expediente EXP-HIST-5879 está en estado \"bloqueado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "A Lorenzo.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "15300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está en estado \"archivado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-3376?",
+            "answer": "A Sole.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-3376?",
+            "answer": "30600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3376?",
+            "answer": "El expediente EXP-HIST-3376 está en estado \"archivado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4308?",
+            "answer": "A Olalla.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4308?",
+            "answer": "19500 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4308?",
+            "answer": "En curso.",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5364?",
+            "answer": "El expediente EXP-HIST-5364 está asignado a Lorenzo.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5364?",
+            "answer": "27700 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5364?",
+            "answer": "En curso.  \nP",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-8838?",
+            "answer": "Fermín.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-8838?",
+            "answer": "44800 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-8838?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-1543?",
+            "answer": "Quima.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1543?",
+            "answer": "2200 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-1543?",
+            "answer": "El expediente EXP-HIST-1543 está en estado \"archivado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-9270?",
+            "answer": "Bruno.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-9270?",
+            "answer": "59400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-9270?",
+            "answer": "Aprobado, con fecha límite el 18 de febrero de 2027.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-9446?",
+            "answer": "Bruno está asignado al expediente EXP-HIST-9446.  \n(",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-9446?",
+            "answer": "29900 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-9446?",
+            "answer": "El expediente EXP-HIST-9446 está en estado \"bloqueado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-2057?",
+            "answer": "El expediente EXP-HIST-2057 está asignado a Lorenzo.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-2057?",
+            "answer": "30400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-2057?",
+            "answer": "En revisión.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-1874?",
+            "answer": "El expediente EXP-HIST-1874 está asignado a Olalla.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1874?",
+            "answer": "76400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-1874?",
+            "answer": "El expediente EXP-HIST-1874 está en estado \"bloqueado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-1892?",
+            "answer": "El expediente EXP-HIST-1892 está asignado a Fermín.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1892?",
+            "answer": "44700 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-1892?",
+            "answer": "El expediente EXP-HIST-1892 está en estado \"archivado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-3144?",
+            "answer": "A Katia está asignado el expediente EXP-HIST-3144.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-3144?",
+            "answer": "13700 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3144?",
+            "answer": "El expediente EXP-HIST-3144 está en estado \"archivado\".",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4909?",
+            "answer": "A Katia está asignado el expediente EXP-HIST-4909.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4909?",
+            "answer": "13700 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4909?",
+            "answer": "Archivado.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-8919?",
+            "answer": "Héctor está asignado al expediente EXP-HIST-8919.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-8919?",
+            "answer": "51100 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-8919?",
+            "answer": "En revisión, con fecha límite el 6 de marzo de 2027.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-6941?",
+            "answer": "Inés.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-6941?",
+            "answer": "32300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-6941?",
+            "answer": "En revisión, con fecha límite el 24 de febrero de 2027.",
+            "ok": true
+          }
+        ]
+      },
+      "t_setup_linked_s": 0.826,
+      "linked": {
+        "score": 46,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "El expediente EXP-HIST-5879 está asignado a **Ramiro**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "63400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "El expediente EXP-HIST-5879 está en estado \"bloqueado\", con fecha límite el 6 de junio de 2",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está asignado a Lorenzo.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "15300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está en estado \"archivado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-3376?",
+            "answer": "El expediente EXP-HIST-3376 está asignado a Sole.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-3376?",
+            "answer": "30600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3376?",
+            "answer": "El expediente EXP-HIST-3376 está en estado \"archivado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4308?",
+            "answer": "El expediente EXP-HIST-4308 está asignado a Olalla.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4308?",
+            "answer": "19500 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4308?",
+            "answer": "El expediente EXP-HIST-4308 está en estado \"aprobado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5364?",
+            "answer": "El expediente EXP-HIST-5364 está asignado a Lorenzo.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5364?",
+            "answer": "27700 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5364?",
+            "answer": "El expediente EXP-HIST-5364 está en estado \"aprobado\".  \n(",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-8838?",
+            "answer": "Fermín.  \n(",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-8838?",
+            "answer": "44800 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-8838?",
+            "answer": "El expediente EXP-HIST-8838 está en estado \"en curso\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-1543?",
+            "answer": "El expediente EXP-HIST-1543 está asignado a Quima.  \n(",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1543?",
+            "answer": "2200 euros.  \n(",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-1543?",
+            "answer": "El expediente EXP-HIST-1543 está en estado \"archivado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-9270?",
+            "answer": "Bruno.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-9270?",
+            "answer": "59400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-9270?",
+            "answer": "El expediente EXP-HIST-9270 está en estado \"aprobado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-9446?",
+            "answer": "Bruno.  \nP",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-9446?",
+            "answer": "29900 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-9446?",
+            "answer": "El expediente EXP-HIST-9446 está en estado \"bloqueado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-2057?",
+            "answer": "El expediente EXP-HIST-2057 está asignado a Lorenzo.  \n(",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-2057?",
+            "answer": "30400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-2057?",
+            "answer": "En revisión.  \nFecha",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-1874?",
+            "answer": "El expediente EXP-HIST-1874 está asignado a Olalla.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1874?",
+            "answer": "76400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-1874?",
+            "answer": "El expediente EXP-HIST-1874 está en estado \"bloqueado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-1892?",
+            "answer": "A **Fermín**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1892?",
+            "answer": "44700 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-1892?",
+            "answer": "El expediente EXP-HIST-1892 está en estado \"archivado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-3144?",
+            "answer": "El expediente EXP-HIST-3144 está asignado a Katia.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-3144?",
+            "answer": "13700 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3144?",
+            "answer": "El expediente EXP-HIST-3144 está en estado \"en revisión\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4909?",
+            "answer": "A la persona llamada Katia.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4909?",
+            "answer": "13700 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4909?",
+            "answer": "El expediente EXP-HIST-4909 está en estado \"archivado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-8919?",
+            "answer": "El expediente EXP-HIST-8919 está asignado a Héctor.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-8919?",
+            "answer": "51100 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-8919?",
+            "answer": "En revisión, con fecha límite el 6 de marzo de 2027.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-6941?",
+            "answer": "El expediente EXP-HIST-6941 está asignado a Inés.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-6941?",
+            "answer": "32300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-6941?",
+            "answer": "El expediente EXP-HIST-6941 está en estado \"en revisión\".",
+            "ok": true
+          }
+        ]
+      },
+      "nomem": {
+        "score": 0,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "No se encuentra información disponible sobre el expediente EXP-HIST-5879.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "1. No se ha encontrado el expediente EXP-HIST-5879 en los registros de historial de proyectos.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "No se encuentra información disponible sobre el expediente EXP-HIST-7273 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "[No se encuentra en el historial de eventos]",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-3376?",
+            "answer": "No se encuentra información sobre el expediente EXP-HIST-3376 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-3376?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3376?",
+            "answer": "1. No se ha encontrado el expediente EXP-HIST-3376 en los registros de historial de proyectos.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4308?",
+            "answer": "No se encuentra información disponible sobre el expediente EXP-HIST-4308 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4308?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4308?",
+            "answer": "[No se encuentra en el historial de eventos]",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5364?",
+            "answer": "No se encuentra información sobre el expediente EXP-HIST-5364 en los datos proporcionados.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5364?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5364?",
+            "answer": "El expediente EXP-HIST-5364 no se encuentra en el historial de incidentes ni en ninguna base de datos de operaciones. No",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-8838?",
+            "answer": "No se encuentra información sobre el expediente EXP-HIST-8838 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-8838?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-8838?",
+            "answer": "[No se encuentra información disponible sobre el expediente EXP-HIST-8838 en el contexto actual.]",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-1543?",
+            "answer": "No se encuentra información sobre el expediente EXP-HIST-1543 en los datos proporcionados.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1543?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-1543?",
+            "answer": "1. El expediente EXP-HIST-1543 no se menciona en ninguna de las transacciones anteriores.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-9270?",
+            "answer": "No se encuentra información sobre el expediente EXP-HIST-9270 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-9270?",
+            "answer": "12.500 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-9270?",
+            "answer": "1. No se ha encontrado el expediente EXP-HIST-9270 en los registros de historial de proyectos.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-9446?",
+            "answer": "No se ha encontrado información sobre el expediente EXP-HIST-9446 en los registros disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-9446?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-9446?",
+            "answer": "[No se encuentra información disponible sobre el expediente EXP-HIST-9446 en el contexto actual.]",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-2057?",
+            "answer": "No se encuentra información disponible sobre el expediente EXP-HIST-2057 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-2057?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-2057?",
+            "answer": "1. No se ha encontrado el expediente EXP-HIST-2057 en los registros de historial de proyectos.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-1874?",
+            "answer": "No se encuentra información disponible sobre el expediente EXP-HIST-1874 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1874?",
+            "answer": "12.500 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-1874?",
+            "answer": "1. No se ha encontrado el expediente EXP-HIST-1874 en los registros de historial de proyectos.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-1892?",
+            "answer": "No se ha encontrado información sobre el expediente EXP-HIST-1892 en los registros disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1892?",
+            "answer": "0",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-1892?",
+            "answer": "1. No se ha encontrado el expediente EXP-HIST-1892 en los registros de historial de proyectos.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-3144?",
+            "answer": "No se encuentra información sobre el expediente EXP-HIST-3144 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-3144?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3144?",
+            "answer": "[No se encuentra información disponible sobre el expediente EXP-HIST-3144 en el contexto actual.]",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4909?",
+            "answer": "No se encuentra información sobre el expediente EXP-HIST-4909 en los datos proporcionados.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4909?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4909?",
+            "answer": "1. No se ha encontrado el expediente EXP-HIST-4909 en los registros de historial de proyectos.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-8919?",
+            "answer": "No se encuentra información sobre el expediente EXP-HIST-8919 en los datos disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-8919?",
+            "answer": "0",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-8919?",
+            "answer": "1. No se ha encontrado el expediente EXP-HIST-8919 en los registros de historial de proyectos.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-6941?",
+            "answer": "No se ha encontrado información sobre el expediente EXP-HIST-6941 en los registros disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-6941?",
+            "answer": "0",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-6941?",
+            "answer": "El expediente EXP-HIST-6941 no se encuentra en el historial de incidentes ni en ninguna base de datos de operaciones que haya",
+            "ok": false
+          }
+        ]
+      }
+    },
+    "memoria-tec": {
+      "kvm": "memoria-tec.903d352890c3.kvm",
+      "kvm_MB": 424.0,
+      "n_q": 36,
+      "t_setup_joint_s": 1.527,
+      "joint": {
+        "score": 33,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-3850?",
+            "answer": "A Olalla.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-3850?",
+            "answer": "58900 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-3850?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-9831?",
+            "answer": "A Quima.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-9831?",
+            "answer": "74700 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-9831?",
+            "answer": "El expediente EXP--TEC-9831 está en estado \"bloqueado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-8417?",
+            "answer": "Héctor.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-8417?",
+            "answer": "50500 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-8417?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-4390?",
+            "answer": "A Ramiro.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-4390?",
+            "answer": "40.200 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-4390?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-1370?",
+            "answer": "A Bruno.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1370?",
+            "answer": "34200 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-1370?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-5115?",
+            "answer": "A Héctor.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5115?",
+            "answer": "79300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-5115?",
+            "answer": "El expediente EXP--TEC-5115 está en estado \"bloqueado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-7603?",
+            "answer": "Aitana.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-7603?",
+            "answer": "6600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-7603?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-1495?",
+            "answer": "A Héctor.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1495?",
+            "answer": "41.700 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-1495?",
+            "answer": "En revisión.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-5033?",
+            "answer": "Maider está asignada al expediente EXP--TEC-5033.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5033?",
+            "answer": "14000 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-5033?",
+            "answer": "En revisión.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-5410?",
+            "answer": "A Inés, con un presupuesto de 36.300 euros, estado \"aprobado\", fecha límite el 25 de",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5410?",
+            "answer": "36.300 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-5410?",
+            "answer": "Aprobado. Fecha límite: 25 de marzo de 2027.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-6367?",
+            "answer": "Jorge está asignado al expediente EXP--TEC-6367.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-6367?",
+            "answer": "19200 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-6367?",
+            "answer": "El expediente EXP--TEC-6367 está en estado \"bloqueado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-7635?",
+            "answer": "El expediente EXP--TEC-7635 está asignado a Elvira.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-7635?",
+            "answer": "17600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-7635?",
+            "answer": "Aprobado. Fecha límite: 15 de abril de 2027.",
+            "ok": true
+          }
+        ]
+      },
+      "t_setup_linked_s": 0.679,
+      "linked": {
+        "score": 35,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-3850?",
+            "answer": "**Olalla**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-3850?",
+            "answer": "58900 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-3850?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-9831?",
+            "answer": "A Quima.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-9831?",
+            "answer": "74700 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-9831?",
+            "answer": "El expediente EXP--TEC-9831 está en estado \"bloqueado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-8417?",
+            "answer": "Héctor.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-8417?",
+            "answer": "50500 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-8417?",
+            "answer": "El expediente EXP--TEC-8417 está en estado \"en curso\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-4390?",
+            "answer": "El expediente EXP--TEC-4390 está asignado a Ramiro.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-4390?",
+            "answer": "40200 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-4390?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-1370?",
+            "answer": "Bruno.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1370?",
+            "answer": "34200 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-1370?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-5115?",
+            "answer": "Héctor.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5115?",
+            "answer": "36300 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-5115?",
+            "answer": "El expediente EXP--TEC-5115 está en estado \"bloqueado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-7603?",
+            "answer": "Aitana está asignada al expediente EXP--TEC-7603.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-7603?",
+            "answer": "6600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-7603?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-1495?",
+            "answer": "El expediente EXP--TEC-1495 está asignado a Héctor.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1495?",
+            "answer": "41700 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-1495?",
+            "answer": "El expediente EXP--TEC-1495 está en estado \"en revisión\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-5033?",
+            "answer": "El expediente EXP--TEC-5033 está asignado a Maider.  \n**",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5033?",
+            "answer": "14000 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-5033?",
+            "answer": "En revisión.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-5410?",
+            "answer": "A la persona **Inés**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5410?",
+            "answer": "36300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-5410?",
+            "answer": "**Aprobado**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-6367?",
+            "answer": "Jorge.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-6367?",
+            "answer": "19200 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-6367?",
+            "answer": "El expediente EXP--TEC-6367 está en estado \"bloqueado\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-7635?",
+            "answer": "El expediente EXP--TEC-7635 está asignado a **Elvira**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-7635?",
+            "answer": "17600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-7635?",
+            "answer": "El expediente EXP--TEC-7635 está en estado \"aprobado\".  \n**",
+            "ok": true
+          }
+        ]
+      },
+      "nomem": {
+        "score": 0,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-3850?",
+            "answer": "No se encuentra información sobre el expediente EXP--TEC-3850 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-3850?",
+            "answer": "12.500 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-3850?",
+            "answer": "[No se encuentra en la base de datos de proyectos]",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-9831?",
+            "answer": "No se encuentra información sobre el expediente EXP--TEC-9831 en los datos proporcionados.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-9831?",
+            "answer": "12.500 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-9831?",
+            "answer": "[No se ha encontrado información sobre el expediente EXP--TEC-9831 en los registros disponibles.]",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-8417?",
+            "answer": "No se encuentra información disponible sobre el expediente EXP--TEC-8417 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-8417?",
+            "answer": "12.500 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-8417?",
+            "answer": "El expediente EXP--TEC-8417 no se menciona en la transcripción de la conversación.",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-4390?",
+            "answer": "No se encuentra información sobre el expediente EXP--TEC-4390 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-4390?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-4390?",
+            "answer": "No se ha encontrado información sobre el expediente EXP--TEC-4390 en los registros disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-1370?",
+            "answer": "No se menciona en la transcripción.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1370?",
+            "answer": "12.500 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-1370?",
+            "answer": "1. No se ha encontrado el expediente EXP--TEC-1370 en los registros disponibles.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-5115?",
+            "answer": "No se encuentra información sobre el expediente EXP--TEC-5115 en los datos proporcionados.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5115?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-5115?",
+            "answer": "[No se encuentra información disponible sobre el expediente EXP--TEC-5115 en el contexto proporcionado.]",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-7603?",
+            "answer": "No se ha asignado un responsable específico al expediente EXP--TEC-7603.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-7603?",
+            "answer": "12.500 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-7603?",
+            "answer": "[No se ha encontrado información sobre el expediente EXP--TEC-7603 en los registros disponibles.]",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-1495?",
+            "answer": "No se ha encontrado información sobre el expediente EXP--TEC-1495 en los registros disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1495?",
+            "answer": "12.500 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-1495?",
+            "answer": "El expediente EXP--TEC-1495 no se menciona en la transcripción de la conversación.",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-5033?",
+            "answer": "No se ha encontrado información sobre el expediente EXP--TEC-5033 en los registros disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5033?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-5033?",
+            "answer": "El expediente EXP--TEC-5033 no se menciona en la transcripción de la conversación.",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-5410?",
+            "answer": "No se ha encontrado información sobre el expediente EXP--TEC-5410 en los registros disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5410?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-5410?",
+            "answer": "[No se encuentra en el historial de eventos ni en la base de datos de proyectos. No se ha encontrado información relevante sobre el expediente EXP--",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-6367?",
+            "answer": "No se encuentra información sobre el expediente EXP--TEC-6367 en los datos proporcionados.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-6367?",
+            "answer": "0",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-6367?",
+            "answer": "1. No se ha encontrado el expediente EXP--TEC-6367 en los registros disponibles.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-7635?",
+            "answer": "No se ha encontrado información sobre el expediente EXP--TEC-7635 en los registros disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-7635?",
+            "answer": "12.500 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-7635?",
+            "answer": "1. No se ha encontrado el expediente EXP--TEC-7635 en los registros disponibles.  \n2",
+            "ok": false
+          }
+        ]
+      }
+    },
+    "memoria-ops": {
+      "kvm": "memoria-ops.248e63cf3228.kvm",
+      "kvm_MB": 333.4,
+      "n_q": 36,
+      "t_setup_joint_s": 1.121,
+      "joint": {
+        "score": 35,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-4797?",
+            "answer": "A Quima.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4797?",
+            "answer": "36900 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4797?",
+            "answer": "Bloqueado.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2967?",
+            "answer": "A Inés.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2967?",
+            "answer": "16900 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2967?",
+            "answer": "Bloqueado.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-4704?",
+            "answer": "Inés.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4704?",
+            "answer": "1600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4704?",
+            "answer": "En revisión.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2273?",
+            "answer": "Héctor.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2273?",
+            "answer": "1600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2273?",
+            "answer": "En revisión.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-5042?",
+            "answer": "A Katia.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-5042?",
+            "answer": "48800 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-5042?",
+            "answer": "Bloqueado.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-1763?",
+            "answer": "El expediente EXP--OPS-1763 está asignado a Telmo.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-1763?",
+            "answer": "29300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-1763?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-4461?",
+            "answer": "A Darío está asignado el expediente EXP--OPS-4461.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4461?",
+            "answer": "32500 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4461?",
+            "answer": "En curso.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2216?",
+            "answer": "A Katia.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2216?",
+            "answer": "39800 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2216?",
+            "answer": "Aprobado, con fecha límite el 6 de marzo de 2027.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-3359?",
+            "answer": "Carla.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-3359?",
+            "answer": "20800 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-3359?",
+            "answer": "En revisión, con fecha límite el 23 de junio de 2027.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-8099?",
+            "answer": "Gadea.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-8099?",
+            "answer": "59400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-8099?",
+            "answer": "Aprobado, con fecha límite el 25 de junio de 2027.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-8189?",
+            "answer": "El expediente EXP--OPS-8189 está asignado a Lorenzo.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-8189?",
+            "answer": "15600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-8189?",
+            "answer": "Archivado.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-6581?",
+            "answer": "A la persona asignada al expediente EXP--OPS-6581 no se menciona directamente en el texto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-6581?",
+            "answer": "97200 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-6581?",
+            "answer": "En curso, con fecha límite el 10 de enero de 2027.",
+            "ok": true
+          }
+        ]
+      },
+      "t_setup_linked_s": 0.55,
+      "linked": {
+        "score": 35,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-4797?",
+            "answer": "A Quima.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4797?",
+            "answer": "36900 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4797?",
+            "answer": "**Bloqueado**, con fecha límite el 25 de abril de 2027.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2967?",
+            "answer": "El expediente EXP--OPS-2967 está asignado a Inés.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2967?",
+            "answer": "16900 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2967?",
+            "answer": "**Bloqueado**, con fecha límite el **2 de febrero de 2027**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-4704?",
+            "answer": "El expediente EXP--OPS-4704 está asignado a Inés.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4704?",
+            "answer": "1600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4704?",
+            "answer": "**En revisión**.  \n(",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2273?",
+            "answer": "El expediente EXP--OPS-2273 está asignado a Héctor.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2273?",
+            "answer": "1600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2273?",
+            "answer": "**En revisión**, con fecha límite el **2 de enero de 2027**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-5042?",
+            "answer": "A Katia.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-5042?",
+            "answer": "48800 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-5042?",
+            "answer": "El expediente EXP--OPS-5042 está en estado \"bloqueado\", con fecha límite el 20 de marzo de 2",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-1763?",
+            "answer": "A Telmo.  \nP",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-1763?",
+            "answer": "29300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-1763?",
+            "answer": "**En curso**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-4461?",
+            "answer": "Darío.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4461?",
+            "answer": "32500 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4461?",
+            "answer": "**En curso**.  \n(",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2216?",
+            "answer": "A Katia.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2216?",
+            "answer": "32500 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2216?",
+            "answer": "**Aprobado**.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-3359?",
+            "answer": "**Carla** está asignada al expediente EXP--OPS-3359.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-3359?",
+            "answer": "20800 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-3359?",
+            "answer": "En revisión, con fecha límite el 23 de junio de 2027.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-8099?",
+            "answer": "A Gadea.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-8099?",
+            "answer": "59400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-8099?",
+            "answer": "Aprobado, con fecha límite el 25 de junio de 2027.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-8189?",
+            "answer": "El expediente EXP--OPS-8189 está asignado a Lorenzo.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-8189?",
+            "answer": "15600 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-8189?",
+            "answer": "**Archivado**.  \n(",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-6581?",
+            "answer": "**Quima**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-6581?",
+            "answer": "97200 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-6581?",
+            "answer": "**En curso**.",
+            "ok": true
+          }
+        ]
+      },
+      "nomem": {
+        "score": 0,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-4797?",
+            "answer": "No se encuentra información sobre el expediente EXP--OPS-4797 en los datos proporcionados.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4797?",
+            "answer": "1200 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4797?",
+            "answer": "1. No se ha encontrado el expediente EXP--OPS-4797 en los registros de operaciones.  \n2",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2967?",
+            "answer": "No se ha encontrado información sobre el expediente EXP--OPS-2967.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2967?",
+            "answer": "0",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2967?",
+            "answer": "El expediente EXP--OPS-2967 no está registrado en el historial de operaciones ni en los sistemas de seguimiento mencionados.",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-4704?",
+            "answer": "No se encuentra información sobre el expediente EXP--OPS-4704 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4704?",
+            "answer": "0",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4704?",
+            "answer": "El expediente EXP--OPS-4704 no está registrado en los registros de operaciones ni en la base de datos de incidentes. No hay",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2273?",
+            "answer": "No se ha encontrado información sobre el expediente EXP--OPS-2273 en los datos disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2273?",
+            "answer": "1200 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2273?",
+            "answer": "El expediente EXP--OPS-2273 no se encuentra en el historial de eventos ni en los registros de operaciones. No hay información disponible",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-5042?",
+            "answer": "No se encuentra información sobre el expediente EXP--OPS-5042 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-5042?",
+            "answer": "1200 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-5042?",
+            "answer": "[No se encuentra en el historial de tickets de operaciones.]",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-1763?",
+            "answer": "No se ha encontrado información sobre el expediente EXP--OPS-1763 en los datos disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-1763?",
+            "answer": "0",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-1763?",
+            "answer": "1. El expediente EXP--OPS-1763 no está documentado en el historial de tickets ni en las bases de datos de operaciones",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-4461?",
+            "answer": "No se ha encontrado información sobre el expediente EXP--OPS-4461 en los registros disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4461?",
+            "answer": "0",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4461?",
+            "answer": "El expediente EXP--OPS-4461 no está documentado en el historial de operaciones ni en los registros de tickets de gestión de incident",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2216?",
+            "answer": "No se encuentra información sobre el expediente EXP--OPS-2216 en el contexto proporcionado.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2216?",
+            "answer": "0",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2216?",
+            "answer": "[No se encuentra información disponible sobre el expediente EXP--OPS-2216 en el contexto proporcionado.]",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-3359?",
+            "answer": "No se encuentra información sobre el expediente EXP--OPS-3359 en los datos proporcionados.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-3359?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-3359?",
+            "answer": "1. No se ha encontrado el expediente EXP--OPS-3359 en los registros de operaciones. 2. No se ha mencion",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-8099?",
+            "answer": "No se encuentra información disponible sobre el expediente EXP--OPS-8099.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-8099?",
+            "answer": "1200 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-8099?",
+            "answer": "El expediente EXP--OPS-8099 no está registrado en el sistema de seguimiento de operaciones ni en la transcripción de la convers",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-8189?",
+            "answer": "No se ha encontrado información sobre el expediente EXP--OPS-8189 en los registros disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-8189?",
+            "answer": "1200 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-8189?",
+            "answer": "El expediente EXP--OPS-8189 no se menciona en la transcripción de la conversación.",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-6581?",
+            "answer": "No se ha encontrado información sobre el expediente EXP--OPS-6581 en los registros disponibles.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-6581?",
+            "answer": "12.000 euros.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-6581?",
+            "answer": "El expediente EXP--OPS-6581 no está registrado en los registros de operaciones que tengo acceso. No hay información disponible sobre su estado.",
+            "ok": false
+          }
+        ]
+      }
+    }
+  }
+}

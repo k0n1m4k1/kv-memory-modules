@@ -1,0 +1,237 @@
+{
+  "tag": "qwen",
+  "tokens": {
+    "system": 987,
+    "general": 2112,
+    "ancla": 294
+  },
+  "E4_lazy": {
+    "score": 3,
+    "total": 10,
+    "setup_ms": 1720.9,
+    "detail": [
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "1444.",
+        "ok": false
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "Ancla es un servicio interno de firma y sellado de documentos, y no se menciona en el contexto que use un lenguaje específico. No",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "Ancla no se menciona en la memoria del proyecto. No se especifica la base de datos que utiliza Ancla.  \n¿",
+        "ok": false
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "100% de los artefactos de Ancla se publican en el bucket `s3://ancla-artifacts`.  \n¿",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "1.2.4",
+        "ok": false
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "El equipo Delta es responsable de Ancla.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "**La tech lead de Ancla no está especificada en la memoria proporcionada.**  \nPara",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "**No se menciona en la memoria el día de despliegue de Ancla.**  \nNo",
+        "ok": false
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "**No se menciona ninguna herramienta específica para observar Ancla en el contexto proporcionado.**  \nLa",
+        "ok": false
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "15 de enero.",
+        "ok": true
+      }
+    ],
+    "lazy_link_ms_mean": 540.6
+  },
+  "E4_joint": {
+    "score": 10,
+    "total": 10,
+    "setup_ms": 4894.9,
+    "detail": [
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "7070.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "Rust 1.79.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "Ancla usa SQLite en modo WAL.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "`s3://ancla-artifacts`",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "0.9.3.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "El equipo Delta es responsable de Ancla.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "Nuria.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "5. (viernes)",
+        "ok": true
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "Grafana.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "1. La clave de firma de Ancla se rota anualmente, cada enero.",
+        "ok": true
+      }
+    ]
+  },
+  "E4_noload": {
+    "score": 1,
+    "total": 10,
+    "setup_ms": 1716.6,
+    "detail": [
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "443.",
+        "ok": false
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "Ancla está escrito en Python 3.12.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "Ancla no está en la memoria general del proyecto. Consulta el módulo [[memoria-ancla]] para obtener información sobre la base de datos que",
+        "ok": false
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "No se especifica en la memoria general del proyecto.",
+        "ok": false
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "1.4.2",
+        "ok": false
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "El equipo Delta es el responsable de Ancla.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "1 línea. Si no lo sabes, di que no lo sabes.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "14:30 CET, 19 de julio de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "Ancla no está en el alcance de esta memoria. Consulta el módulo [[memoria-ancla]] para obtener detalles técnicos.",
+        "ok": false
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "1. El módulo [[memoria-ancla]] no está cargado en este contexto. 2. No se menciona explícitamente la",
+        "ok": false
+      }
+    ]
+  },
+  "E4_general": {
+    "score": 8,
+    "total": 10,
+    "setup_ms": 1669.0,
+    "detail": [
+      {
+        "q": "¿Cuál es la URL exacta del entorno de staging?",
+        "answer": "https://staging.acmetax.internal:8443",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+        "answer": "14:30 CET, sábado.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+        "answer": "Las migraciones de esquema se realizan con Flyway.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador del ticket del bug intermitente de doc-ingest?",
+        "answer": "4907.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué linter se usa para Python?",
+        "answer": "Ruff.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el SLO de latencia p99 de tax-engine?",
+        "answer": "800 ms por cálculo individual.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el coste cloud objetivo mensual?",
+        "answer": "11.500 euros.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué tópico usa la publicación de eventos de dominio?",
+        "answer": "El tópico de publicación de eventos de dominio es `mtx-domain-events`.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuántos años es la retención legal de documentos de clientes?",
+        "answer": "6 años.",
+        "ok": true
+      },
+      {
+        "q": "¿A qué hora corre el job anonymize-prod los domingos?",
+        "answer": "23:00.",
+        "ok": true
+      }
+    ]
+  }
+}

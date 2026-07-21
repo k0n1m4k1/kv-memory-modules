@@ -1,0 +1,345 @@
+{
+  "model": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "control": false,
+  "n_ctx": 20480,
+  "turnos": [
+    {
+      "doc": "memoria-ops",
+      "q": "¿A quién está asignado el expediente EXP--OPS-4797?",
+      "tool_raw": "CARGAR(memoria-ops)\n[",
+      "tool_ok": true,
+      "t_link_s": 0.3,
+      "battery": {
+        "score": 4,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4704?",
+            "answer": "En revisión",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2273?",
+            "answer": "CARGAR(memoria-ops)\n[",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2273?",
+            "answer": "1600 euros.  \nUsuario",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2273?",
+            "answer": "En revisión.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-5042?",
+            "answer": "CARGAR(memoria-ops)\n[",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-5042?",
+            "answer": "48800 euros.",
+            "ok": true
+          }
+        ]
+      },
+      "t_decode_tras_defrag_s": 0.005,
+      "answer": "El expediente EXP--OPS-4797 está asignado a la unidad de operaciones de la Agencia de Tecnología de la Información.",
+      "ok": false
+    },
+    {
+      "doc": "memoria-tec",
+      "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-3850?",
+      "tool_raw": "CARGAR(memoria-tec)\n[",
+      "tool_ok": true,
+      "t_defrag_ms": 0.53,
+      "t_link_s": 2.81,
+      "battery": {
+        "score": 4,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-8417?",
+            "answer": "El expediente EXP--TEC-8417 está en estado \"en curso\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-4390?",
+            "answer": "El expediente EXP--TEC-4390 está asignado a la unidad de tecnología de la información de la Agencia de Innovación Digital.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-4390?",
+            "answer": "El expediente EXP--TEC-4390 tiene un presupuesto de 40200 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-4390?",
+            "answer": "El expediente EXP--TEC-4390 está en estado \"en curso\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-1370?",
+            "answer": "El expediente EXP--TEC-1370 está asignado a la unidad de investigación de inteligencia artificial de la Agencia de Tecnología de",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1370?",
+            "answer": "El expediente EXP--TEC-1370 tiene un presupuesto de 34200 euros.",
+            "ok": true
+          }
+        ]
+      },
+      "t_decode_tras_defrag_s": 0.005,
+      "answer": "El expediente EXP--TEC-3850 tiene un presupuesto de 66000 euros.\nUsuario",
+      "ok": false
+    },
+    {
+      "doc": "memoria-hist",
+      "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+      "tool_raw": "CARGAR(memoria-hist)\n[",
+      "tool_ok": true,
+      "t_defrag_ms": 0.67,
+      "t_link_s": 4.19,
+      "battery": {
+        "score": 4,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3376?",
+            "answer": "El expediente EXP-HIST-3376 está archivado.",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4308?",
+            "answer": "El expediente EXP-HIST-4308 está asignado a la unidad de investigación de la Agencia de Historia.\nUsuario",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4308?",
+            "answer": "El expediente EXP-HIST-4308 tiene un presupuesto de 19500 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4308?",
+            "answer": "El expediente EXP-HIST-4308 está en estado \"archivado\".",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5364?",
+            "answer": "El expediente EXP-HIST-5364 está asignado a Lorenzo.\nUsuario",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5364?",
+            "answer": "El expediente EXP-HIST-5364 tiene un presupuesto de 27700 euros.",
+            "ok": true
+          }
+        ]
+      },
+      "t_decode_tras_defrag_s": 0.007,
+      "answer": "El expediente EXP-HIST-5879 está en estado \"en revisión\".",
+      "ok": false
+    },
+    {
+      "doc": "memoria-ops",
+      "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2967?",
+      "tool_raw": "CARGAR(memoria-ops)\n[",
+      "tool_ok": true,
+      "t_defrag_ms": 0.97,
+      "t_link_s": 0.312,
+      "battery": {
+        "score": 3,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-4704?",
+            "answer": "El expediente EXP--OPS-4704 está en estado \"en revisión\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-2273?",
+            "answer": "El expediente EXP--OPS-2273 está asignado a la unidad de operaciones de la Agencia de Tecnología de la Información.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2273?",
+            "answer": "El expediente EXP--OPS-2273 no tiene un presupuesto asignado.",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--OPS-2273?",
+            "answer": "El expediente EXP--OPS-2273 está en estado \"en revisión\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--OPS-5042?",
+            "answer": "El expediente EXP--OPS-5042 está asignado a la unidad de operaciones de la Agencia de Tecnología de la Información.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--OPS-5042?",
+            "answer": "El expediente EXP--OPS-5042 tiene un presupuesto de 48800 euros.",
+            "ok": true
+          }
+        ]
+      },
+      "t_decode_tras_defrag_s": 0.007,
+      "answer": "El expediente EXP--OPS-2967 tiene un presupuesto de 45000 euros.",
+      "ok": false
+    },
+    {
+      "doc": "memoria-tec",
+      "q": "¿En qué estado está el expediente EXP--TEC-9831?",
+      "tool_raw": "CARGAR(memoria-tec)\n[",
+      "tool_ok": true,
+      "t_defrag_ms": 0.6,
+      "t_link_s": 2.803,
+      "battery": {
+        "score": 4,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-8417?",
+            "answer": "El expediente EXP--TEC-8417 está en estado \"en curso\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-4390?",
+            "answer": "El expediente EXP--TEC-4390 está asignado a la unidad de tecnología de la Agencia de Innovación Digital.\nUsuario",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-4390?",
+            "answer": "El expediente EXP--TEC-4390 tiene un presupuesto de 40200 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP--TEC-4390?",
+            "answer": "El expediente EXP--TEC-4390 está en estado \"en curso\".",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP--TEC-1370?",
+            "answer": "El expediente EXP--TEC-1370 está asignado a la unidad de tecnología de la Agencia de Innovación Digital.\nUsuario",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1370?",
+            "answer": "El expediente EXP--TEC-1370 tiene un presupuesto de 34200 euros.",
+            "ok": true
+          }
+        ]
+      },
+      "t_decode_tras_defrag_s": 0.007,
+      "answer": "El expediente EXP--TEC-9831 está en estado \"en revisión\".\nUsuario",
+      "ok": false
+    },
+    {
+      "doc": "memoria-hist",
+      "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+      "tool_raw": "CARGAR(memoria-hist)\n[",
+      "tool_ok": true,
+      "t_defrag_ms": 0.66,
+      "t_link_s": 4.188,
+      "battery": {
+        "score": 1,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3376?",
+            "answer": "El expediente EXP-HIST-3376 está en estado \"archivado\".\nUsuario",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4308?",
+            "answer": "El expediente EXP-HIST-4308 está asignado a la unidad de historiografía del departamento de investigación.\nUsuario",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4308?",
+            "answer": "El expediente EXP-HIST-4308 no tiene un presupuesto asignado.\nUsuario",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4308?",
+            "answer": "El expediente EXP-HIST-4308 está en estado \"archivado\".\nUsuario",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5364?",
+            "answer": "El expediente EXP-HIST-5364 está asignado a la unidad de historiografía.\nUsuario",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5364?",
+            "answer": "El expediente EXP-HIST-5364 tiene un presupuesto de 25000 euros.\nUsuario",
+            "ok": false
+          }
+        ]
+      },
+      "t_decode_tras_defrag_s": 0.007,
+      "answer": "El expediente EXP-HIST-7273 está asignado a la unidad de investigación de operaciones de la Agencia de Tecnología de la Inform",
+      "ok": false
+    },
+    {
+      "doc": "memoria-hist",
+      "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-3376?",
+      "tool_raw": "CARGAR(memoria-hist)\n[",
+      "tool_ok": true,
+      "page_hit": true,
+      "battery": {
+        "score": 2,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-3376?",
+            "answer": "El expediente EXP-HIST-3376 está en estado \"archivado\".\nUsuario",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-4308?",
+            "answer": "El expediente EXP-HIST-4308 está asignado a la unidad de investigación de operaciones de la Agencia de Tecnología de la Inform",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4308?",
+            "answer": "El expediente EXP-HIST-4308 tiene un presupuesto de 15000 euros.\nUsuario",
+            "ok": false
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-4308?",
+            "answer": "El expediente EXP-HIST-4308 está en estado \"archivado\".\nUsuario",
+            "ok": false
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5364?",
+            "answer": "El expediente EXP-HIST-5364 está asignado a la unidad de operaciones de la Agencia de Tecnología de la Información.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5364?",
+            "answer": "El expediente EXP-HIST-5364 tiene un presupuesto de 27700 euros.\nUsuario",
+            "ok": true
+          }
+        ]
+      },
+      "t_decode_tras_defrag_s": 0.007,
+      "answer": "El expediente EXP-HIST-3376 tiene un presupuesto de 15300 euros.\nUsuario",
+      "ok": false
+    }
+  ],
+  "sonda_coherencia": {
+    "esperado": "¿A quién está asignado el expediente EXP--OPS-4797?",
+    "answer": "La primera pregunta que te hice en esta conversación fue: ¿Qué dice sobre el plazo?\nUsuario"
+  },
+  "tool_aciertos": 7,
+  "recall_aciertos": 0,
+  "battery_total": {
+    "score": 22,
+    "total": 42
+  },
+  "peak_cells": 16124
+}

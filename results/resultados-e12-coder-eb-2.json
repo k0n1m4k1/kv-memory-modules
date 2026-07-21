@@ -1,0 +1,345 @@
+{
+  "model": "Qwen2.5-Coder-7B-Instruct-Q4_K_M.gguf",
+  "kmd": "memoria-hist.aa650d7c8f71.kmd",
+  "kmd_MB": 870.2,
+  "M": 15171,
+  "n_q": 6,
+  "regimenes": {
+    "0": {
+      "t_prefill_s": 18.875,
+      "prefill_tps": 803.8,
+      "prefill": {
+        "score": 6,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "Ramiro",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "63400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "**Estado \"bloqueado\"**",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "Lorenzo",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "15300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está en estado \"archivado\".",
+            "ok": true
+          }
+        ]
+      },
+      "t_restore_s": 0.541,
+      "restore": {
+        "score": 6,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "Ramiro",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "63400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "**Estado \"bloqueado\"**",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "Lorenzo",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "15300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está en estado \"archivado\".",
+            "ok": true
+          }
+        ]
+      },
+      "t_restore_cold_s": 0.679,
+      "restore_cold": {
+        "score": 6,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "Ramiro",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "63400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "**Estado \"bloqueado\"**",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "Lorenzo",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "15300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está en estado \"archivado\".",
+            "ok": true
+          }
+        ]
+      },
+      "ratio": 34.9
+    },
+    "12": {
+      "t_prefill_s": 13.632,
+      "prefill_tps": 1112.9,
+      "prefill": {
+        "score": 6,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "Ramiro",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "63400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "**Estado \"bloqueado\"**",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "Lorenzo",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "15300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está en estado \"archivado\".",
+            "ok": true
+          }
+        ]
+      },
+      "t_restore_s": 0.592,
+      "restore": {
+        "score": 6,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "Ramiro",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "63400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "**Estado \"bloqueado\"**",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "Lorenzo",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "15300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está en estado \"archivado\".",
+            "ok": true
+          }
+        ]
+      },
+      "t_restore_cold_s": 0.716,
+      "restore_cold": {
+        "score": 6,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "Ramiro",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "63400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "**Estado \"bloqueado\"**",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "Lorenzo",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "15300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está en estado \"archivado\".",
+            "ok": true
+          }
+        ]
+      },
+      "ratio": 23.0
+    },
+    "99": {
+      "t_prefill_s": 5.452,
+      "prefill_tps": 2782.6,
+      "prefill": {
+        "score": 6,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "Ramiro",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "63400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "**Estado \"bloqueado\"**",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "Lorenzo",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "15300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está en el estado \"archivado\".",
+            "ok": true
+          }
+        ]
+      },
+      "t_restore_s": 0.65,
+      "restore": {
+        "score": 6,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "Ramiro",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "63400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "**Estado \"bloqueado\"**",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "Lorenzo",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "15300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está en el estado \"archivado\".",
+            "ok": true
+          }
+        ]
+      },
+      "t_restore_cold_s": 0.78,
+      "restore_cold": {
+        "score": 6,
+        "detail": [
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-5879?",
+            "answer": "Ramiro",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+            "answer": "63400 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-5879?",
+            "answer": "**Estado \"bloqueado\"**",
+            "ok": true
+          },
+          {
+            "q": "¿A quién está asignado el expediente EXP-HIST-7273?",
+            "answer": "Lorenzo",
+            "ok": true
+          },
+          {
+            "q": "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+            "answer": "15300 euros.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué estado está el expediente EXP-HIST-7273?",
+            "answer": "El expediente EXP-HIST-7273 está en el estado \"archivado\".",
+            "ok": true
+          }
+        ]
+      },
+      "ratio": 8.4
+    }
+  }
+}

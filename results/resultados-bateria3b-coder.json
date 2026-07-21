@@ -1,0 +1,60 @@
+{
+  "tag": "coder",
+  "E4b_requestion": {
+    "score": 9,
+    "total": 10,
+    "relink_ms_mean": 581.5,
+    "detail": [
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "7070\n---",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "Ancla está escrito en Rust 1.79.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "Ancla usa PostgreSQL 16 gestionado (Azure Flexible Server). La migración a PostgreSQL 17 está planificada para noviembre de 2",
+        "ok": false
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "`s3://ancla-artifacts`",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "0.9.3\n---",
+        "ok": true
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "El equipo responsable de Ancla es el equipo Delta, liderado por Nuria.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "Nuria es la tech lead de Ancla.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "Los despliegues de Ancla ocurren los viernes por la mañana, siempre antes del corte de las 10:00 CET",
+        "ok": true
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "Azure Monitor + Grafana gestionado.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "1 de enero.",
+        "ok": true
+      }
+    ]
+  }
+}

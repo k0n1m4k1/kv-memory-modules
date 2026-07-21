@@ -1,0 +1,737 @@
+{
+  "memoria-hist": {
+    "tokens": 15171,
+    "preguntas": [
+      [
+        "¿A quién está asignado el expediente EXP-HIST-5879?",
+        [
+          "ramiro"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5879?",
+        [
+          "63400"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-5879?",
+        [
+          "bloqueado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-7273?",
+        [
+          "lorenzo"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-7273?",
+        [
+          "15300"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-7273?",
+        [
+          "archivado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-3376?",
+        [
+          "sole"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-3376?",
+        [
+          "30600"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-3376?",
+        [
+          "archivado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-4308?",
+        [
+          "olalla"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4308?",
+        [
+          "19500"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-4308?",
+        [
+          "aprobado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-5364?",
+        [
+          "lorenzo"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-5364?",
+        [
+          "27700"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-5364?",
+        [
+          "aprobado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-8838?",
+        [
+          "fermín"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-8838?",
+        [
+          "44800"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-8838?",
+        [
+          "en curso"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-1543?",
+        [
+          "quima"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1543?",
+        [
+          "2200"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-1543?",
+        [
+          "archivado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-9270?",
+        [
+          "bruno"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-9270?",
+        [
+          "59400"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-9270?",
+        [
+          "aprobado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-9446?",
+        [
+          "bruno"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-9446?",
+        [
+          "29900"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-9446?",
+        [
+          "bloqueado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-2057?",
+        [
+          "lorenzo"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-2057?",
+        [
+          "30400"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-2057?",
+        [
+          "en revisión"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-1874?",
+        [
+          "olalla"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1874?",
+        [
+          "76400"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-1874?",
+        [
+          "bloqueado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-1892?",
+        [
+          "fermín"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-1892?",
+        [
+          "44700"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-1892?",
+        [
+          "archivado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-3144?",
+        [
+          "ramiro"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-3144?",
+        [
+          "25300"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-3144?",
+        [
+          "en revisión"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-4909?",
+        [
+          "katia"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-4909?",
+        [
+          "13700"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-4909?",
+        [
+          "archivado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-8919?",
+        [
+          "héctor"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-8919?",
+        [
+          "51100"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-8919?",
+        [
+          "en revisión"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP-HIST-6941?",
+        [
+          "inés"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP-HIST-6941?",
+        [
+          "32300"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP-HIST-6941?",
+        [
+          "en revisión"
+        ]
+      ]
+    ]
+  },
+  "memoria-tec": {
+    "tokens": 10219,
+    "preguntas": [
+      [
+        "¿A quién está asignado el expediente EXP--TEC-3850?",
+        [
+          "olalla"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-3850?",
+        [
+          "58900"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-3850?",
+        [
+          "en curso"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--TEC-9831?",
+        [
+          "quima"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-9831?",
+        [
+          "74700"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-9831?",
+        [
+          "bloqueado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--TEC-8417?",
+        [
+          "héctor"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-8417?",
+        [
+          "50500"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-8417?",
+        [
+          "en curso"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--TEC-4390?",
+        [
+          "ramiro"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-4390?",
+        [
+          "40200"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-4390?",
+        [
+          "en curso"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--TEC-1370?",
+        [
+          "bruno"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1370?",
+        [
+          "34200"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-1370?",
+        [
+          "en curso"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--TEC-5115?",
+        [
+          "héctor"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5115?",
+        [
+          "79300"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-5115?",
+        [
+          "bloqueado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--TEC-7603?",
+        [
+          "aitana"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-7603?",
+        [
+          "6600"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-7603?",
+        [
+          "en curso"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--TEC-1495?",
+        [
+          "héctor"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-1495?",
+        [
+          "41700"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-1495?",
+        [
+          "en revisión"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--TEC-5033?",
+        [
+          "maider"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5033?",
+        [
+          "14000"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-5033?",
+        [
+          "en revisión"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--TEC-5410?",
+        [
+          "inés"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-5410?",
+        [
+          "36300"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-5410?",
+        [
+          "aprobado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--TEC-6367?",
+        [
+          "jorge"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-6367?",
+        [
+          "19200"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-6367?",
+        [
+          "bloqueado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--TEC-7635?",
+        [
+          "elvira"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--TEC-7635?",
+        [
+          "17600"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--TEC-7635?",
+        [
+          "aprobado"
+        ]
+      ]
+    ]
+  },
+  "memoria-ops": {
+    "tokens": 8035,
+    "preguntas": [
+      [
+        "¿A quién está asignado el expediente EXP--OPS-4797?",
+        [
+          "quima"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4797?",
+        [
+          "36900"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-4797?",
+        [
+          "bloqueado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--OPS-2967?",
+        [
+          "inés"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2967?",
+        [
+          "16900"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-2967?",
+        [
+          "bloqueado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--OPS-4704?",
+        [
+          "inés"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4704?",
+        [
+          "1600"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-4704?",
+        [
+          "en revisión"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--OPS-2273?",
+        [
+          "héctor"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2273?",
+        [
+          "1600"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-2273?",
+        [
+          "en revisión"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--OPS-5042?",
+        [
+          "katia"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-5042?",
+        [
+          "48800"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-5042?",
+        [
+          "bloqueado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--OPS-1763?",
+        [
+          "telmo"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-1763?",
+        [
+          "29300"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-1763?",
+        [
+          "en curso"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--OPS-4461?",
+        [
+          "darío"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-4461?",
+        [
+          "32500"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-4461?",
+        [
+          "en curso"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--OPS-2216?",
+        [
+          "katia"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-2216?",
+        [
+          "39800"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-2216?",
+        [
+          "aprobado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--OPS-3359?",
+        [
+          "carla"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-3359?",
+        [
+          "20800"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-3359?",
+        [
+          "en revisión"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--OPS-8099?",
+        [
+          "gadea"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-8099?",
+        [
+          "59400"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-8099?",
+        [
+          "aprobado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--OPS-8189?",
+        [
+          "lorenzo"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-8189?",
+        [
+          "15600"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-8189?",
+        [
+          "archivado"
+        ]
+      ],
+      [
+        "¿A quién está asignado el expediente EXP--OPS-6581?",
+        [
+          "quima"
+        ]
+      ],
+      [
+        "¿Qué presupuesto en euros tiene el expediente EXP--OPS-6581?",
+        [
+          "97200"
+        ]
+      ],
+      [
+        "¿En qué estado está el expediente EXP--OPS-6581?",
+        [
+          "en curso"
+        ]
+      ]
+    ]
+  }
+}

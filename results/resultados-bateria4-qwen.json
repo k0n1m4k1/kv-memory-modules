@@ -1,0 +1,657 @@
+{
+  "tag": "qwen",
+  "joint2": {
+    "score": 18,
+    "score_A": 8,
+    "score_B": 10,
+    "total": 20,
+    "detail": [
+      {
+        "q": "¿Cuál es la URL exacta del entorno de staging?",
+        "answer": "`https://staging.acmetax.internal:8443`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+        "answer": "14:30 CET, sábado 19 de julio de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+        "answer": "16.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+        "answer": "11 de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+        "answer": "Flyway, en el directorio `db/migrations/`.  \n---",
+        "ok": true
+      },
+      {
+        "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+        "answer": "`OCR_FALLBACK=local`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué motor de OCR se usa como fallback local?",
+        "answer": "Tesseract 5.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito el servicio notifier?",
+        "answer": "El servicio `notifier` está escrito en Go 1.23.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué framework usa el servicio bff-web?",
+        "answer": "El servicio `bff-web` usa **NestJS 10** como framework.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador de la épica activa?",
+        "answer": "4812.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "7070.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "Ancla está escrito en Rust 1.79.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "Ancla usa SQLite en modo WAL, con el archivo `ancla.db`.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "`s3://ancla-artifacts`",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "0.9.3.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "El equipo Delta es responsable de Ancla.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "Nuria.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "5. (Viernes)",
+        "ok": true
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "Ancla se observa en Grafana, con el dashboard \"Ancla — firma y sellado\".",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "1 de enero.",
+        "ok": true
+      }
+    ],
+    "setup_ms": 2020.1
+  },
+  "composed2": {
+    "score": 16,
+    "score_A": 8,
+    "score_B": 8,
+    "total": 20,
+    "detail": [
+      {
+        "q": "¿Cuál es la URL exacta del entorno de staging?",
+        "answer": "`https://staging.acmetax.internal:8443`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+        "answer": "14:30",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+        "answer": "16.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+        "answer": "11 de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+        "answer": "Flyway.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+        "answer": "`OCR_FALLBACK=local`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué motor de OCR se usa como fallback local?",
+        "answer": "Tesseract 5.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito el servicio notifier?",
+        "answer": "El servicio `notifier` está escrito en Go 1.23.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué framework usa el servicio bff-web?",
+        "answer": "El servicio `bff-web` usa **TypeScript con NestJS 10**.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador de la épica activa?",
+        "answer": "**MTX-4812**",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "7070.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "Ancla está escrito en Rust, Python y Go, dependiendo del componente.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "**PostgreSQL 16** (gestionado en Azure Flexible Server), con migraciones de esquema gestionadas por Flyway en `db/m",
+        "ok": false
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "`s3://ancla-artifacts`",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "0.9.3.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "El equipo Delta.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "**Nuria**.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "14:30 CET, 19 de julio de 2026",
+        "ok": false
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "Grafana.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "1 de enero.",
+        "ok": true
+      }
+    ],
+    "setup_ms": 762.1
+  },
+  "sep": {
+    "score": 15,
+    "score_A": 8,
+    "score_B": 7,
+    "total": 20,
+    "detail": [
+      {
+        "q": "¿Cuál es la URL exacta del entorno de staging?",
+        "answer": "`https://staging.acmetax.internal:8443`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+        "answer": "14:30 CET, sábado 19 de julio de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+        "answer": "16.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+        "answer": "2026",
+        "ok": false
+      },
+      {
+        "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+        "answer": "Flyway.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+        "answer": "`OCR_FALLBACK=local`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué motor de OCR se usa como fallback local?",
+        "answer": "Tesseract 5.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito el servicio notifier?",
+        "answer": "El servicio `notifier` está escrito en Go 1.23.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué framework usa el servicio bff-web?",
+        "answer": "El servicio `bff-web` usa **TypeScript con NestJS 10**.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador de la épica activa?",
+        "answer": "**MTX-4812**",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "7070",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "Ancla está escrito en múltiples lenguajes, pero el servicio principal `tax-engine` está escrito en **Java 21**.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "Ancla usa PostgreSQL 16 gestionado en Azure Flexible Server, con migraciones gestionadas por Flyway en `db/migrations/`.",
+        "ok": false
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "`s3://ancla-artifacts`",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "0.9.3.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "El equipo Delta.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "**Nuria**.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "14:30 CET, 19 de julio de 2026",
+        "ok": false
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "Grafana.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "1 de enero.",
+        "ok": true
+      }
+    ],
+    "setup_ms": 1275.0
+  },
+  "splice32": {
+    "score": 15,
+    "score_A": 8,
+    "score_B": 7,
+    "total": 20,
+    "detail": [
+      {
+        "q": "¿Cuál es la URL exacta del entorno de staging?",
+        "answer": "`https://staging.acmetax.internal:8443`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+        "answer": "14:30 CET, sábado 19 de julio de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+        "answer": "16.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+        "answer": "11 de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+        "answer": "Flyway, en `db/migrations/`.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+        "answer": "`OCR_FALLBACK=local`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué motor de OCR se usa como fallback local?",
+        "answer": "Tesseract 5.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito el servicio notifier?",
+        "answer": "El servicio `notifier` está escrito en Go 1.23.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué framework usa el servicio bff-web?",
+        "answer": "El servicio `bff-web` usa **NestJS 10** con **TypeScript**.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador de la épica activa?",
+        "answer": "**MTX-4812**",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "7070.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "Ancla no está documentado en el contexto proporcionado. Solo se menciona que el servicio principal (tax-engine) está en Java, doc-ingest en",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "Ancla no tiene una base de datos propia. El servicio Ancla es un servicio interno de firma y sellado de documentos, y no se menciona",
+        "ok": false
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "Los artefactos de Ancla se publican en el bucket `s3://ancla-artifacts`.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "0.9.3.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "El equipo Delta.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "**Nuria**.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "14:30 CET, 19 de julio de 2026",
+        "ok": false
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "Se observa en Grafana, con el dashboard \"Ancla — firma y sellado\".",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "1 de enero.",
+        "ok": true
+      }
+    ],
+    "setup_ms": 1007.9
+  },
+  "splice96": {
+    "score": 15,
+    "score_A": 8,
+    "score_B": 7,
+    "total": 20,
+    "detail": [
+      {
+        "q": "¿Cuál es la URL exacta del entorno de staging?",
+        "answer": "`https://staging.acmetax.internal:8443`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+        "answer": "14:30 CET, sábado 19 de julio de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+        "answer": "16.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+        "answer": "11 de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+        "answer": "Flyway.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+        "answer": "`OCR_FALLBACK=local`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué motor de OCR se usa como fallback local?",
+        "answer": "**Tesseract 5**.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito el servicio notifier?",
+        "answer": "El servicio `notifier` está escrito en Go 1.23.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué framework usa el servicio bff-web?",
+        "answer": "El servicio `bff-web` usa **NestJS 10** con **TypeScript**.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador de la épica activa?",
+        "answer": "**MTX-4812**",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "7070.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "Ancla está escrito en Rust 1.79, con el framework Axum.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "Ancla no utiliza una base de datos. El servicio está escrito en Rust con Axum y se centra en la firma y sellado de documentos,",
+        "ok": false
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "No se especifica en la memoria del proyecto Ancla.",
+        "ok": false
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "0.9.3",
+        "ok": true
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "El equipo Delta es responsable de Ancla.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "**Nuria**.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "14:30 CET, 19 de julio de 2026",
+        "ok": false
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "Ancla no tiene un dashboard propio. La observabilidad se integra en el dashboard general \"Ancla — firma y sellado\" de Grafana, que",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "1 de enero.",
+        "ok": true
+      }
+    ],
+    "setup_ms": 975.5
+  },
+  "sep_splice32": {
+    "score": 15,
+    "score_A": 9,
+    "score_B": 6,
+    "total": 20,
+    "detail": [
+      {
+        "q": "¿Cuál es la URL exacta del entorno de staging?",
+        "answer": "`https://staging.acmetax.internal:8443`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+        "answer": "14:30 CET, sábado.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+        "answer": "16.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+        "answer": "2026, noviembre.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+        "answer": "Flyway, en `db/migrations/`.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+        "answer": "`OCR_FALLBACK=local`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué motor de OCR se usa como fallback local?",
+        "answer": "Tesseract 5.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito el servicio notifier?",
+        "answer": "El servicio `notifier` está escrito en Go 1.23.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué framework usa el servicio bff-web?",
+        "answer": "El servicio `bff-web` usa **TypeScript con NestJS 10**.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador de la épica activa?",
+        "answer": "**MTX-4812**",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "7070",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "Ancla no está escrito en ningún lenguaje, es un servicio interno de firma y sellado de documentos. No se menciona en la ar",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "Ancla no tiene una base de datos propia. El servicio Ancla es un servicio interno de firma y sellado de documentos, y no se menciona",
+        "ok": false
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "Los artefactos de Ancla no se mencionan en la memoria del proyecto. No se especifica un bucket para Ancla.",
+        "ok": false
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "0.9.3.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "El equipo Delta.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "**Nuria**.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "14:30 CET, sábado 19 de julio de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "Grafana, con el dashboard \"Ancla — firma y sellado\".",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "1 de enero.",
+        "ok": true
+      }
+    ],
+    "setup_ms": 1544.5
+  }
+}

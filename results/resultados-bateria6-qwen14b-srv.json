@@ -1,0 +1,928 @@
+{
+  "model": "Qwen3-14B-Q4_K_M.gguf",
+  "P": 1046,
+  "M": 5114,
+  "n_q": 60,
+  "t_compile_s": 2.1,
+  "module_MB": 837.9,
+  "t_setup_joint_s": 2.87,
+  "joint": {
+    "score": 57,
+    "total": 60,
+    "detail": [
+      {
+        "q": "¿Quién lleva la guardia de svc-canela?",
+        "answer": "La guardia principal de svc-canela la lleva Katia.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-wolframio está en producción?",
+        "answer": "3.3.6",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-jara?",
+        "answer": "lunes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-grulla está en producción?",
+        "answer": "0.9.8",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-tejo?",
+        "answer": "viernes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-sargazo?",
+        "answer": "Cassandra",
+        "ok": true
+      },
+      {
+        "q": "¿Cuántos minutos duró la incidencia INC-2435?",
+        "answer": "83 minutos.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-pinar está en producción?",
+        "answer": "0.9.8",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-faro?",
+        "answer": "1",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-iris está en producción?",
+        "answer": "1.2.4",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-nacar?",
+        "answer": "MongoDB",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-kiosco?",
+        "answer": "lunes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-fresno?",
+        "answer": "PostgreSQL",
+        "ok": true
+      },
+      {
+        "q": "¿Qué servicio cayó en la incidencia INC-2407?",
+        "answer": "El servicio que cayó en la incidencia INC-2407 fue svc-ocaso.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-nacar?",
+        "answer": "Pau",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-islote?",
+        "answer": "Ines",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-brezo?",
+        "answer": "7842",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-hinojo?",
+        "answer": "7086",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-nogal?",
+        "answer": "7484",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-abedul?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-quasar?",
+        "answer": "7149",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-islote está en producción?",
+        "answer": "2.0.4",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-canela?",
+        "answer": "Cassandra",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-fresno?",
+        "answer": "7365",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-granito está en producción?",
+        "answer": "4.9.14",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-madrono?",
+        "answer": "7490",
+        "ok": true
+      },
+      {
+        "q": "¿Qué servicio cayó en la incidencia INC-2414?",
+        "answer": "El servicio que cayó en la incidencia INC-2414 fue svc-albatros.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-quasar?",
+        "answer": "lunes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-xenon?",
+        "answer": "jueves",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-mistral?",
+        "answer": "7429",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-junco?",
+        "answer": "viernes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-nacar?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-kraken?",
+        "answer": "martes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-roble está en producción?",
+        "answer": "1.9.0",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-cierzo?",
+        "answer": "7566",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-nacar está en producción?",
+        "answer": "4.9.16",
+        "ok": true
+      },
+      {
+        "q": "¿Qué servicio cayó en la incidencia INC-2533?",
+        "answer": "El servicio que cayó en la incidencia INC-2533 fue svc-faro.\n---",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-nogal está en producción?",
+        "answer": "1.3.8",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-madrono está en producción?",
+        "answer": "1.6.11",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-esparto?",
+        "answer": "Dario",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-roble?",
+        "answer": "7580",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-sargazo?",
+        "answer": "7297",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-mistral está en producción?",
+        "answer": "1.8.11",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-abedul está en producción?",
+        "answer": "0.8.1",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-mistral?",
+        "answer": "jueves",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-helice?",
+        "answer": "jueves",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-enebro?",
+        "answer": "La guardia principal de svc-enebro la lleva Carla.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-vereda está en producción?",
+        "answer": "3.1.3",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-zocalo?",
+        "answer": "Aitana",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-islote?",
+        "answer": "1.0.19",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-mistral?",
+        "answer": "Olalla",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-abedul?",
+        "answer": "MongoDB",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-esparto?",
+        "answer": "1.33",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-ocaso?",
+        "answer": "Carla",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-laurel?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-umbral?",
+        "answer": "7152",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-grulla?",
+        "answer": "7268",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-roble?",
+        "answer": "PostgreSQL",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-yunque está en producción?",
+        "answer": "0.0.18",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-yunque?",
+        "answer": "7186",
+        "ok": true
+      }
+    ]
+  },
+  "t_setup_naive_s": 0.82,
+  "naive": {
+    "score": 57,
+    "total": 60,
+    "detail": [
+      {
+        "q": "¿Quién lleva la guardia de svc-canela?",
+        "answer": "La guardia principal de svc-canela la lleva Katia.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-wolframio está en producción?",
+        "answer": "3.3.6",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-jara?",
+        "answer": "lunes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-grulla está en producción?",
+        "answer": "0.9.8",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-tejo?",
+        "answer": "viernes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-sargazo?",
+        "answer": "Cassandra",
+        "ok": true
+      },
+      {
+        "q": "¿Cuántos minutos duró la incidencia INC-2435?",
+        "answer": "83 minutos.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-pinar está en producción?",
+        "answer": "0.9.8",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-faro?",
+        "answer": "La guardia principal de svc-faro la lleva Lorenzo.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-iris está en producción?",
+        "answer": "1.2.4",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-nacar?",
+        "answer": "MongoDB",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-kiosco?",
+        "answer": "19 de julio de 2026, lunes.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-fresno?",
+        "answer": "PostgreSQL",
+        "ok": true
+      },
+      {
+        "q": "¿Qué servicio cayó en la incidencia INC-2407?",
+        "answer": "El servicio que cayó en la incidencia INC-2407 fue svc-ocaso.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-nacar?",
+        "answer": "Pau",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-islote?",
+        "answer": "Ines",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-brezo?",
+        "answer": "7842",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-hinojo?",
+        "answer": "7086",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-nogal?",
+        "answer": "7484",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-abedul?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-quasar?",
+        "answer": "7149",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-islote está en producción?",
+        "answer": "2.0.4",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-canela?",
+        "answer": "Cassandra\n---",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-fresno?",
+        "answer": "7365",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-granito está en producción?",
+        "answer": "4.9.14",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-madrono?",
+        "answer": "7490",
+        "ok": true
+      },
+      {
+        "q": "¿Qué servicio cayó en la incidencia INC-2414?",
+        "answer": "El servicio que cayó en la incidencia INC-2414 fue svc-albatros.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-quasar?",
+        "answer": "lunes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-xenon?",
+        "answer": "jueves",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-mistral?",
+        "answer": "7429",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-junco?",
+        "answer": "viernes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-nacar?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-kraken?",
+        "answer": "martes",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-roble está en producción?",
+        "answer": "1.9.0",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-cierzo?",
+        "answer": "7566",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-nacar está en producción?",
+        "answer": "4.9.16",
+        "ok": true
+      },
+      {
+        "q": "¿Qué servicio cayó en la incidencia INC-2533?",
+        "answer": "El servicio que cayó en la incidencia INC-2533 fue svc-faro.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-nogal está en producción?",
+        "answer": "1.3.8",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-madrono está en producción?",
+        "answer": "1.6.11",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-esparto?",
+        "answer": "Dario",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-roble?",
+        "answer": "7580",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-sargazo?",
+        "answer": "7297",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-mistral está en producción?",
+        "answer": "1.8.11",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-abedul está en producción?",
+        "answer": "0.8.1",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-mistral?",
+        "answer": "El jueves.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-helice?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-enebro?",
+        "answer": "Carla",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-vereda está en producción?",
+        "answer": "3.1.3",
+        "ok": true
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-zocalo?",
+        "answer": "Aitana.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-islote?",
+        "answer": "1.0.4",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-mistral?",
+        "answer": "La guardia principal de svc-mistral la lleva Olalla.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-abedul?",
+        "answer": "MongoDB",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-esparto?",
+        "answer": "1.33",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-ocaso?",
+        "answer": "Carla",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-laurel?",
+        "answer": "miércoles",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-umbral?",
+        "answer": "7152",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-grulla?",
+        "answer": "7268",
+        "ok": true
+      },
+      {
+        "q": "¿Qué base de datos usa svc-roble?",
+        "answer": "PostgreSQL",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de svc-yunque está en producción?",
+        "answer": "0.0.18",
+        "ok": true
+      },
+      {
+        "q": "¿En qué puerto escucha svc-yunque?",
+        "answer": "7186",
+        "ok": true
+      }
+    ]
+  },
+  "nomem": {
+    "score": 0,
+    "total": 60,
+    "detail": [
+      {
+        "q": "¿Quién lleva la guardia de svc-canela?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-wolframio está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-jara?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-grulla está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-tejo?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa svc-sargazo?",
+        "answer": "MySQL 8.0 en una máquina virtual en northeurope.",
+        "ok": false
+      },
+      {
+        "q": "¿Cuántos minutos duró la incidencia INC-2435?",
+        "answer": "120 minutos.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-pinar está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-faro?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-iris está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa svc-nacar?",
+        "answer": "MySQL 8.0 en una máquina virtual en northeurope.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-kiosco?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa svc-fresno?",
+        "answer": "MySQL 8.0 en una máquina virtual en northeurope.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué servicio cayó en la incidencia INC-2407?",
+        "answer": "El servicio de facturación electrónica (e-billing) cayó en la incidencia INC-2407.",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-nacar?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-islote?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-brezo?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-hinojo?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-nogal?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-abedul?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-quasar?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-islote está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa svc-canela?",
+        "answer": "MySQL 8.0 en una máquina virtual en northeurope.",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-fresno?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-granito está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-madrono?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué servicio cayó en la incidencia INC-2414?",
+        "answer": "El servicio de facturación electrónica (e-billing) cayó durante la incidencia INC-2414.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-quasar?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-xenon?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-mistral?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-junco?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-nacar?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-kraken?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-roble está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-cierzo?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-nacar está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿Qué servicio cayó en la incidencia INC-2533?",
+        "answer": "El servicio de facturación electrónica (e-billing) cayó durante la incidencia INC-2533.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-nogal está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-madrono está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-esparto?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-roble?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-sargazo?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-mistral está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-abedul está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-mistral?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-helice?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-enebro?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-vereda está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-zocalo?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa svc-islote?",
+        "answer": "MySQL 8.0 en una máquina virtual en northeurope.",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-mistral?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa svc-abedul?",
+        "answer": "MySQL 8.0 en máquina virtual northeurope.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa svc-esparto?",
+        "answer": "MySQL 8.0",
+        "ok": false
+      },
+      {
+        "q": "¿Quién lleva la guardia de svc-ocaso?",
+        "answer": ".",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día es la ventana de despliegue de svc-laurel?",
+        "answer": "19 de julio de 2026, 14:30 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-umbral?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-grulla?",
+        "answer": "8080",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa svc-roble?",
+        "answer": "MySQL 8.0 en una máquina virtual en northeurope.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de svc-yunque está en producción?",
+        "answer": "1.2.7",
+        "ok": false
+      },
+      {
+        "q": "¿En qué puerto escucha svc-yunque?",
+        "answer": "8080",
+        "ok": false
+      }
+    ]
+  }
+}

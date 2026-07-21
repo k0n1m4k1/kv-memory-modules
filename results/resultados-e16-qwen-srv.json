@@ -1,0 +1,469 @@
+{
+  "model": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "n_ctx": 4096,
+  "watermark": 3000,
+  "n_seg": 14,
+  "sellados": [
+    {
+      "seg": 0,
+      "n_cells": 392,
+      "blob_MB": 57.81,
+      "t_seal_ms": 238.4
+    },
+    {
+      "seg": 1,
+      "n_cells": 391,
+      "blob_MB": 57.66,
+      "t_seal_ms": 238.5
+    },
+    {
+      "seg": 2,
+      "n_cells": 391,
+      "blob_MB": 57.66,
+      "t_seal_ms": 258.1
+    },
+    {
+      "seg": 3,
+      "n_cells": 393,
+      "blob_MB": 57.96,
+      "t_seal_ms": 257.2
+    },
+    {
+      "seg": 4,
+      "n_cells": 393,
+      "blob_MB": 57.96,
+      "t_seal_ms": 238.1
+    },
+    {
+      "seg": 5,
+      "n_cells": 393,
+      "blob_MB": 57.96,
+      "t_seal_ms": 237.8
+    },
+    {
+      "seg": 6,
+      "n_cells": 394,
+      "blob_MB": 58.1,
+      "t_seal_ms": 238.0
+    }
+  ],
+  "total_conv_tokens": 5528,
+  "resident_final": 2781,
+  "residentes": {
+    "score": 14,
+    "total": 21,
+    "detail": [
+      {
+        "seg": 7,
+        "q": "¿Cuál es el código de acceso del laboratorio de metrología?",
+        "answer": "5644-H",
+        "ok": false
+      },
+      {
+        "seg": 7,
+        "q": "¿Quién es la persona responsable del laboratorio de metrología?",
+        "answer": "Hector.",
+        "ok": true
+      },
+      {
+        "seg": 7,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de metrología?",
+        "answer": "74000 euros.",
+        "ok": true
+      },
+      {
+        "seg": 8,
+        "q": "¿Cuál es el código de acceso del laboratorio de vacío?",
+        "answer": "7104-I",
+        "ok": false
+      },
+      {
+        "seg": 8,
+        "q": "¿Quién es la persona responsable del laboratorio de vacío?",
+        "answer": "Ines",
+        "ok": true
+      },
+      {
+        "seg": 8,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de vacío?",
+        "answer": "57000 euros.",
+        "ok": true
+      },
+      {
+        "seg": 9,
+        "q": "¿Cuál es el código de acceso del laboratorio de fotónica?",
+        "answer": "3927-J",
+        "ok": false
+      },
+      {
+        "seg": 9,
+        "q": "¿Quién es la persona responsable del laboratorio de fotónica?",
+        "answer": "Jorge.",
+        "ok": true
+      },
+      {
+        "seg": 9,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de fotónica?",
+        "answer": "15000 euros.",
+        "ok": true
+      },
+      {
+        "seg": 10,
+        "q": "¿Cuál es el código de acceso del laboratorio de microscopía?",
+        "answer": "5533-K",
+        "ok": false
+      },
+      {
+        "seg": 10,
+        "q": "¿Quién es la persona responsable del laboratorio de microscopía?",
+        "answer": "Katia.",
+        "ok": true
+      },
+      {
+        "seg": 10,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de microscopía?",
+        "answer": "28000 euros.",
+        "ok": true
+      },
+      {
+        "seg": 11,
+        "q": "¿Cuál es el código de acceso del laboratorio de electrónica?",
+        "answer": "6918-L.",
+        "ok": false
+      },
+      {
+        "seg": 11,
+        "q": "¿Quién es la persona responsable del laboratorio de electrónica?",
+        "answer": "Lorenzo.",
+        "ok": true
+      },
+      {
+        "seg": 11,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de electrónica?",
+        "answer": "58000 euros.",
+        "ok": true
+      },
+      {
+        "seg": 12,
+        "q": "¿Cuál es el código de acceso del laboratorio de materiales?",
+        "answer": "8400-M",
+        "ok": false
+      },
+      {
+        "seg": 12,
+        "q": "¿Quién es la persona responsable del laboratorio de materiales?",
+        "answer": "Maider.",
+        "ok": true
+      },
+      {
+        "seg": 12,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de materiales?",
+        "answer": "95000 euros.",
+        "ok": true
+      },
+      {
+        "seg": 13,
+        "q": "¿Cuál es el código de acceso del laboratorio de climatización?",
+        "answer": "7645-N",
+        "ok": false
+      },
+      {
+        "seg": 13,
+        "q": "¿Quién es la persona responsable del laboratorio de climatización?",
+        "answer": "**Nestor**.",
+        "ok": true
+      },
+      {
+        "seg": 13,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de climatización?",
+        "answer": "79000 euros.",
+        "ok": true
+      }
+    ]
+  },
+  "arch_sin": {
+    "score": 0,
+    "total": 21,
+    "detail": [
+      {
+        "seg": 0,
+        "q": "¿Cuál es el código de acceso del laboratorio de ventilación?",
+        "answer": "No se proporciona información sobre el laboratorio de ventilación.",
+        "ok": false
+      },
+      {
+        "seg": 0,
+        "q": "¿Quién es la persona responsable del laboratorio de ventilación?",
+        "answer": "**No se menciona**.",
+        "ok": false
+      },
+      {
+        "seg": 0,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de ventilación?",
+        "answer": "0 euros.",
+        "ok": false
+      },
+      {
+        "seg": 1,
+        "q": "¿Cuál es el código de acceso del laboratorio de criogenia?",
+        "answer": "No se menciona el laboratorio de criogenia en los informes proporcionados.",
+        "ok": false
+      },
+      {
+        "seg": 1,
+        "q": "¿Quién es la persona responsable del laboratorio de criogenia?",
+        "answer": "No se menciona la persona responsable del laboratorio de criogenia en los informes proporcionados.",
+        "ok": false
+      },
+      {
+        "seg": 1,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de criogenia?",
+        "answer": "0",
+        "ok": false
+      },
+      {
+        "seg": 2,
+        "q": "¿Cuál es el código de acceso del laboratorio de óptica?",
+        "answer": "No se proporciona información sobre el laboratorio de óptica.",
+        "ok": false
+      },
+      {
+        "seg": 2,
+        "q": "¿Quién es la persona responsable del laboratorio de óptica?",
+        "answer": "**No hay información sobre la persona responsable del laboratorio de óptica en el informe proporcionado.**",
+        "ok": false
+      },
+      {
+        "seg": 2,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de óptica?",
+        "answer": "15000 euros.",
+        "ok": false
+      },
+      {
+        "seg": 3,
+        "q": "¿Cuál es el código de acceso del laboratorio de acústica?",
+        "answer": "No se menciona el laboratorio de acústica en los informes proporcionados.",
+        "ok": false
+      },
+      {
+        "seg": 3,
+        "q": "¿Quién es la persona responsable del laboratorio de acústica?",
+        "answer": "No hay información sobre el laboratorio de acústica en los informes proporcionados.",
+        "ok": false
+      },
+      {
+        "seg": 3,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de acústica?",
+        "answer": "0",
+        "ok": false
+      },
+      {
+        "seg": 4,
+        "q": "¿Cuál es el código de acceso del laboratorio de robótica?",
+        "answer": "No se proporciona información sobre el laboratorio de robótica.",
+        "ok": false
+      },
+      {
+        "seg": 4,
+        "q": "¿Quién es la persona responsable del laboratorio de robótica?",
+        "answer": "No se menciona la persona responsable del laboratorio de robótica en los informes proporcionados.",
+        "ok": false
+      },
+      {
+        "seg": 4,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de robótica?",
+        "answer": "0",
+        "ok": false
+      },
+      {
+        "seg": 5,
+        "q": "¿Cuál es el código de acceso del laboratorio de hidráulica?",
+        "answer": "No se menciona el laboratorio de hidráulica en los informes proporcionados.",
+        "ok": false
+      },
+      {
+        "seg": 5,
+        "q": "¿Quién es la persona responsable del laboratorio de hidráulica?",
+        "answer": "**No hay información sobre el laboratorio de hidráulica en el informe proporcionado.**",
+        "ok": false
+      },
+      {
+        "seg": 5,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de hidráulica?",
+        "answer": "0",
+        "ok": false
+      },
+      {
+        "seg": 6,
+        "q": "¿Cuál es el código de acceso del laboratorio de telemetría?",
+        "answer": "No se menciona el laboratorio de telemetría en los informes proporcionados.",
+        "ok": false
+      },
+      {
+        "seg": 6,
+        "q": "¿Quién es la persona responsable del laboratorio de telemetría?",
+        "answer": "No se menciona la persona responsable del laboratorio de telemetría en los informes proporcionados.",
+        "ok": false
+      },
+      {
+        "seg": 6,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de telemetría?",
+        "answer": "0",
+        "ok": false
+      }
+    ]
+  },
+  "arch_con": {
+    "score": 15,
+    "total": 21,
+    "detail": [
+      {
+        "seg": 0,
+        "q": "¿Cuál es el código de acceso del laboratorio de ventilación?",
+        "answer": "LAB-9973-A",
+        "ok": true,
+        "t_pagein_ms": 142.8
+      },
+      {
+        "seg": 0,
+        "q": "¿Quién es la persona responsable del laboratorio de ventilación?",
+        "answer": "Aitana.",
+        "ok": true,
+        "t_pagein_ms": 141.8
+      },
+      {
+        "seg": 0,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de ventilación?",
+        "answer": "61000 euros.",
+        "ok": true,
+        "t_pagein_ms": 142.1
+      },
+      {
+        "seg": 1,
+        "q": "¿Cuál es el código de acceso del laboratorio de criogenia?",
+        "answer": "2107-B",
+        "ok": false,
+        "t_pagein_ms": 141.6
+      },
+      {
+        "seg": 1,
+        "q": "¿Quién es la persona responsable del laboratorio de criogenia?",
+        "answer": "Bruno.",
+        "ok": true,
+        "t_pagein_ms": 141.6
+      },
+      {
+        "seg": 1,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de criogenia?",
+        "answer": "61000 euros.",
+        "ok": true,
+        "t_pagein_ms": 141.5
+      },
+      {
+        "seg": 2,
+        "q": "¿Cuál es el código de acceso del laboratorio de óptica?",
+        "answer": "3927",
+        "ok": false,
+        "t_pagein_ms": 141.4
+      },
+      {
+        "seg": 2,
+        "q": "¿Quién es la persona responsable del laboratorio de óptica?",
+        "answer": "Carla.",
+        "ok": true,
+        "t_pagein_ms": 141.6
+      },
+      {
+        "seg": 2,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de óptica?",
+        "answer": "41000 euros.",
+        "ok": true,
+        "t_pagein_ms": 141.6
+      },
+      {
+        "seg": 3,
+        "q": "¿Cuál es el código de acceso del laboratorio de acústica?",
+        "answer": "2887-D",
+        "ok": false,
+        "t_pagein_ms": 141.8
+      },
+      {
+        "seg": 3,
+        "q": "¿Quién es la persona responsable del laboratorio de acústica?",
+        "answer": "Dario.",
+        "ok": true,
+        "t_pagein_ms": 141.6
+      },
+      {
+        "seg": 3,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de acústica?",
+        "answer": "20000 euros.",
+        "ok": true,
+        "t_pagein_ms": 141.7
+      },
+      {
+        "seg": 4,
+        "q": "¿Cuál es el código de acceso del laboratorio de robótica?",
+        "answer": "7854-E",
+        "ok": false,
+        "t_pagein_ms": 141.7
+      },
+      {
+        "seg": 4,
+        "q": "¿Quién es la persona responsable del laboratorio de robótica?",
+        "answer": "Elvira.",
+        "ok": true,
+        "t_pagein_ms": 142.1
+      },
+      {
+        "seg": 4,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de robótica?",
+        "answer": "84000 euros.",
+        "ok": true,
+        "t_pagein_ms": 142.1
+      },
+      {
+        "seg": 5,
+        "q": "¿Cuál es el código de acceso del laboratorio de hidráulica?",
+        "answer": "7645-N",
+        "ok": false,
+        "t_pagein_ms": 141.5
+      },
+      {
+        "seg": 5,
+        "q": "¿Quién es la persona responsable del laboratorio de hidráulica?",
+        "answer": "Fermin.",
+        "ok": true,
+        "t_pagein_ms": 141.7
+      },
+      {
+        "seg": 5,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de hidráulica?",
+        "answer": "62000 euros.",
+        "ok": true,
+        "t_pagein_ms": 141.9
+      },
+      {
+        "seg": 6,
+        "q": "¿Cuál es el código de acceso del laboratorio de telemetría?",
+        "answer": "5536-G",
+        "ok": false,
+        "t_pagein_ms": 141.8
+      },
+      {
+        "seg": 6,
+        "q": "¿Quién es la persona responsable del laboratorio de telemetría?",
+        "answer": "Gadea.",
+        "ok": true,
+        "t_pagein_ms": 142.0
+      },
+      {
+        "seg": 6,
+        "q": "¿Qué presupuesto anual tiene el laboratorio de telemetría?",
+        "answer": "27000 euros.",
+        "ok": true,
+        "t_pagein_ms": 141.7
+      }
+    ]
+  }
+}

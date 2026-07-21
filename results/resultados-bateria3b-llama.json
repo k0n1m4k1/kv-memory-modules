@@ -1,0 +1,60 @@
+{
+  "tag": "llama",
+  "E4b_requestion": {
+    "score": 6,
+    "total": 10,
+    "relink_ms_mean": 461.9,
+    "detail": [
+      {
+        "q": "¿En qué puerto escucha el servicio Ancla?",
+        "answer": "7070.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito Ancla?",
+        "answer": "1. ¿Qué lenguaje es el principal de Ancla?\nResp",
+        "ok": false
+      },
+      {
+        "q": "¿Qué base de datos usa Ancla?",
+        "answer": "PostgreSQL 16.",
+        "ok": false
+      },
+      {
+        "q": "¿En qué bucket se publican los artefactos de Ancla?",
+        "answer": "`s3://ancla-artifacts`.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es la versión de Ancla en producción?",
+        "answer": "0.9.3. El siguiente lanzamiento está programado para septiembre de 2026.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué equipo es responsable de Ancla?",
+        "answer": "Delta.",
+        "ok": true
+      },
+      {
+        "q": "¿Quién es la tech lead de Ancla?",
+        "answer": "Lucía.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día de la semana se despliega Ancla?",
+        "answer": "2. El despliegue de Ancla es el martes.",
+        "ok": false
+      },
+      {
+        "q": "¿Con qué herramienta de dashboards se observa Ancla?",
+        "answer": "Grafana.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes se rota la clave de firma de Ancla?",
+        "answer": "1. El mes de enero. La rotación de la clave de firma se hace anual, en enero. La fecha de la rotación es",
+        "ok": true
+      }
+    ]
+  }
+}

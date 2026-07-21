@@ -1,0 +1,21 @@
+# --- Third-party checkouts (built/consulted locally, never committed) ---
+third_party/
+
+# --- Regenerable binary artifacts ---
+kmd/           # compiled .kmd memory modules (mdc compile/index output)
+slots/         # raw llama_state_seq_save_file blobs (Phase A PoC)
+kvstore/       # vLLM ExampleConnector KV store (E9)
+models/        # GGUF checkpoints, multi-GB (see scripts/models.txt)
+bin/           # llama.cpp shared libraries / executables
+*.gguf
+
+# --- Local run noise ---
+results/logs/  # server logs may embed absolute local paths
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# --- Packaging ---
+build/
+*.egg-info/

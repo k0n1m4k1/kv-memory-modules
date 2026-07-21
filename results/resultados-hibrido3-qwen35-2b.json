@@ -1,0 +1,660 @@
+{
+  "model": "Qwen3.5-2B-Q4_K_M.gguf",
+  "P": 1082,
+  "corto": {
+    "M": 290,
+    "val_extraccion": {
+      "9": 0.004439431708306074,
+      "17": 0.004480914678424597
+    },
+    "joint": {
+      "ses": {
+        "score": 8,
+        "total": 8,
+        "detail": [
+          {
+            "q": "¿Cuál es el código de verificación de esta sesión?",
+            "answer": "8842-ZK",
+            "ok": true
+          },
+          {
+            "q": "¿Qué sala de guerra está reservada?",
+            "answer": "La sala de guerra reservada es **Bravo-3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el alias del despliegue en curso?",
+            "answer": "El alias del despliegue en curso es **lince**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el canal temporal de la incidencia?",
+            "answer": "El canal temporal de la incidencia es **#inc-4471**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la contraseña del panel de emergencia?",
+            "answer": "trebol-92",
+            "ok": true
+          },
+          {
+            "q": "¿Qué runbook está activo?",
+            "answer": "El runbook activo es el **RB-207**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la última build verde?",
+            "answer": "La última build verde es la **2026.07.19-b4**.",
+            "ok": true
+          },
+          {
+            "q": "¿Quién es la responsable de comunicación?",
+            "answer": "Irene.",
+            "ok": true
+          }
+        ]
+      },
+      "ini": {
+        "score": 3,
+        "total": 3,
+        "detail": [
+          {
+            "q": "¿Quién lleva la guardia principal esta semana?",
+            "answer": "Marcos, del equipo de infraestructura.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día se reinicia automáticamente el clúster de pruebas de rendimiento?",
+            "answer": "El clúster de pruebas de rendimiento se reinicia automáticamente los **miércoles a las 05:00 CET**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué proveedor de correo transaccional es el principal?",
+            "answer": "El proveedor de correo transaccional principal es **SendGrid**.",
+            "ok": true
+          }
+        ]
+      },
+      "mod": {
+        "score": 6,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué puerto escucha el servicio Ancla?",
+            "answer": "El servicio **Ancla** escucha en el puerto **7070** (protocolo HTTP interno, sin TLS).",
+            "ok": true
+          },
+          {
+            "q": "¿En qué lenguaje está escrito Ancla?",
+            "answer": "Ancla está escrito en **Rust 1.79** utilizando el framework **Axum**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué base de datos usa Ancla?",
+            "answer": "Ancla utiliza **SQLite** en modo WAL (Write-Ahead Logging) para su base de datos propia, almacenada en el archivo `ancla.db`. No usa la PostgreSQL corporativa.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué bucket se publican los artefactos de release de Ancla?",
+            "answer": "Los artefactos de release de Ancla se publican en el bucket **`s3://ancla-artifacts`**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué versión de Ancla está en producción?",
+            "answer": "La versión actual en producción de Ancla es la **0.9.3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué equipo es responsable de Ancla?",
+            "answer": "El equipo responsable de **Ancla** es el **equipo Delta**, con **Nuria** como tech lead.",
+            "ok": true
+          }
+        ]
+      }
+    },
+    "diag": {
+      "rel_naive_vs_joint": 0.39284311256916904,
+      "rel_affine_vs_joint": 0.26808854889518546
+    },
+    "naive": {
+      "ses": {
+        "score": 8,
+        "total": 8,
+        "detail": [
+          {
+            "q": "¿Cuál es el código de verificación de esta sesión?",
+            "answer": "El código de verificación de esta sesión es **8842-ZK**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué sala de guerra está reservada?",
+            "answer": "La sala de guerra reservada es la **Bravo-3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el alias del despliegue en curso?",
+            "answer": "El alias del despliegue en curso es **`lince`**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el canal temporal de la incidencia?",
+            "answer": "El canal temporal de la incidencia es **#inc-4471**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la contraseña del panel de emergencia?",
+            "answer": "La contraseña del panel de emergencia es **trebol-92**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué runbook está activo?",
+            "answer": "El runbook activo es el **RB-207**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la última build verde?",
+            "answer": "La última build verde es la **2026.07.19-b4**.",
+            "ok": true
+          },
+          {
+            "q": "¿Quién es la responsable de comunicación?",
+            "answer": "La responsable de comunicación es **Irene**.",
+            "ok": true
+          }
+        ]
+      },
+      "ini": {
+        "score": 3,
+        "total": 3,
+        "detail": [
+          {
+            "q": "¿Quién lleva la guardia principal esta semana?",
+            "answer": "La guardia principal de esta semana la lleva **Marcos**, del equipo de infraestructura.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día se reinicia automáticamente el clúster de pruebas de rendimiento?",
+            "answer": "El clúster de pruebas de rendimiento se reinicia automáticamente los **miércoles a las 05:00 CET**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué proveedor de correo transaccional es el principal?",
+            "answer": "El proveedor de correo transaccional principal es **SendGrid**.",
+            "ok": true
+          }
+        ]
+      },
+      "mod": {
+        "score": 6,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué puerto escucha el servicio Ancla?",
+            "answer": "El servicio Ancla escucha en el puerto **7070**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué lenguaje está escrito Ancla?",
+            "answer": "Ancla está escrito en **Rust**, utilizando el framework **Axum** para el desarrollo del servicio.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué base de datos usa Ancla?",
+            "answer": "Ancla utiliza **SQLite** como base de datos propia.\n\nSe configura en modo WAL (Write-Ahead Logging) y el archivo de base de datos se almacena en el archivo `ancla.db`.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué bucket se publican los artefactos de release de Ancla?",
+            "answer": "Los artefactos de release de Ancla se publican en el bucket **`s3://ancla-artifacts`**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué versión de Ancla está en producción?",
+            "answer": "La versión de Ancla en producción es la **0.9.3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué equipo es responsable de Ancla?",
+            "answer": "El equipo responsable de **Ancla** es el **equipo Delta**.",
+            "ok": true
+          }
+        ]
+      },
+      "t_link_s": 0.113
+    },
+    "affine": {
+      "ses": {
+        "score": 8,
+        "total": 8,
+        "detail": [
+          {
+            "q": "¿Cuál es el código de verificación de esta sesión?",
+            "answer": "El código de verificación de esta sesión es **8842-ZK**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué sala de guerra está reservada?",
+            "answer": "La sala de guerra reservada es la **Bravo-3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el alias del despliegue en curso?",
+            "answer": "El alias del despliegue en curso es **`lince`**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el canal temporal de la incidencia?",
+            "answer": "El canal temporal de la incidencia es **#inc-4471**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la contraseña del panel de emergencia?",
+            "answer": "La contraseña del panel de emergencia es **trebol-92**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué runbook está activo?",
+            "answer": "El runbook activo es el **RB-207**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la última build verde?",
+            "answer": "La última build verde es la **2026.07.19-b4**.",
+            "ok": true
+          },
+          {
+            "q": "¿Quién es la responsable de comunicación?",
+            "answer": "La responsable de comunicación es **Irene**.",
+            "ok": true
+          }
+        ]
+      },
+      "ini": {
+        "score": 3,
+        "total": 3,
+        "detail": [
+          {
+            "q": "¿Quién lleva la guardia principal esta semana?",
+            "answer": "La guardia principal de esta semana la lleva **Marcos**, del equipo de infraestructura.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día se reinicia automáticamente el clúster de pruebas de rendimiento?",
+            "answer": "El clúster de pruebas de rendimiento se reinicia automáticamente los **miércoles a las 05:00 CET**, fuera del horario de las pruebas de carga.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué proveedor de correo transaccional es el principal?",
+            "answer": "El proveedor de correo transaccional principal es **SendGrid**.",
+            "ok": true
+          }
+        ]
+      },
+      "mod": {
+        "score": 6,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿En qué puerto escucha el servicio Ancla?",
+            "answer": "El servicio Ancla escucha en el puerto **7070**.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué lenguaje está escrito Ancla?",
+            "answer": "Ancla está escrito en **Rust**, utilizando el framework **Axum** para el desarrollo del servicio.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué base de datos usa Ancla?",
+            "answer": "Ancla utiliza **SQLite** como base de datos propia.\n\nSe configura en modo WAL (Write-Ahead Logging) y el archivo de base de datos se almacena en `ancla.db`.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué bucket se publican los artefactos de release de Ancla?",
+            "answer": "Los artefactos de release de Ancla se publican en el bucket **s3://ancla-artifacts**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué versión de Ancla está en producción?",
+            "answer": "La versión actual en producción es la **0.9.3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué equipo es responsable de Ancla?",
+            "answer": "El equipo responsable de **Ancla** es el **equipo Delta**.",
+            "ok": true
+          }
+        ]
+      },
+      "t_link_s": 0.567
+    }
+  },
+  "largo": {
+    "M": 1282,
+    "val_extraccion": {
+      "9": 0.006583965849131346,
+      "17": 0.006344694644212723
+    },
+    "joint": {
+      "ses": {
+        "score": 8,
+        "total": 8,
+        "detail": [
+          {
+            "q": "¿Cuál es el código de verificación de esta sesión?",
+            "answer": "8842-ZK",
+            "ok": true
+          },
+          {
+            "q": "¿Qué sala de guerra está reservada?",
+            "answer": "La sala de guerra reservada es la **Bravo-3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el alias del despliegue en curso?",
+            "answer": "El alias del despliegue en curso es **lince**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el canal temporal de la incidencia?",
+            "answer": "El canal temporal de la incidencia es **#inc-4471**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la contraseña del panel de emergencia?",
+            "answer": "La contraseña del panel de emergencia es **trebol-92**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué runbook está activo?",
+            "answer": "El runbook activo es el **RB-207**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la última build verde?",
+            "answer": "La última build verde es **2026.07.19-b4**.",
+            "ok": true
+          },
+          {
+            "q": "¿Quién es la responsable de comunicación?",
+            "answer": "La responsable de comunicación es **Irene**.",
+            "ok": true
+          }
+        ]
+      },
+      "ini": {
+        "score": 3,
+        "total": 3,
+        "detail": [
+          {
+            "q": "¿Quién lleva la guardia principal esta semana?",
+            "answer": "La guardia principal de esta semana la lleva **Marcos**, del equipo de infraestructura.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día se reinicia automáticamente el clúster de pruebas de rendimiento?",
+            "answer": "El clúster de pruebas de rendimiento se reinicia automáticamente los **miércoles a las 05:00 CET**, fuera del horario de las pruebas de carga.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué proveedor de correo transaccional es el principal?",
+            "answer": "El proveedor de correo transaccional principal es **SendGrid**.\n\nSegún el plan aprobado, se mantendrá como proveedor principal y se añadirá **Mailgun** como respaldo. El failover automático se probará el martes 29 de julio a las 16:00 CET",
+            "ok": true
+          }
+        ]
+      },
+      "mod": {
+        "score": 6,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿Cuál es la URL exacta del entorno de staging?",
+            "answer": "https://staging.acmetax.internal:8443",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+            "answer": "Los datos de staging se refrescan cada lunes a las **03:00 CET**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+            "answer": "Actualmente, la base de datos principal (PostgreSQL) está en versión **16**.\n\nLa migración a la versión 17 está programada para noviembre de 2026.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+            "answer": "La migración a PostgreSQL 17 está planificada para **noviembre de 2026**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+            "answer": "Las migraciones de esquema se ejecutan utilizando **Flyway**.\n\nSegún las convenciones del equipo, estas migraciones viven en la ruta `db/migrations/` y deben cumplir estrictamente con la regla de reversibilidad: cada migración debe incluir un script correspondiente de `undo",
+            "ok": true
+          },
+          {
+            "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+            "answer": "La variable de entorno activa el fallback local de OCR es `OCR_FALLBACK=local`.\n\nEsta variable se define en el archivo `.env.local` generado mediante el comando `make bootstrap-env` durante el despliegue local, y se inyecta como variable de entorno en el contenedor de",
+            "ok": true
+          }
+        ]
+      }
+    },
+    "diag": {
+      "rel_naive_vs_joint": 0.28203032332540495,
+      "rel_affine_vs_joint": 0.2360107771935298
+    },
+    "naive": {
+      "ses": {
+        "score": 8,
+        "total": 8,
+        "detail": [
+          {
+            "q": "¿Cuál es el código de verificación de esta sesión?",
+            "answer": "8842-ZK",
+            "ok": true
+          },
+          {
+            "q": "¿Qué sala de guerra está reservada?",
+            "answer": "La sala de guerra reservada es la **Bravo-3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el alias del despliegue en curso?",
+            "answer": "El alias del despliegue en curso es **`lince`**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el canal temporal de la incidencia?",
+            "answer": "El canal temporal de la incidencia es **#inc-4471**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la contraseña del panel de emergencia?",
+            "answer": "La contraseña del panel de emergencia es **trebol-92**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué runbook está activo?",
+            "answer": "El runbook activo es **RB-207**.\n\nEste documento se utiliza para la gestión de incidentes y emergencias en el sistema. Si necesitas información específica sobre su contenido o cómo aplicarlo en un caso concreto, consulta el archivo directamente en el repositorio del proyecto.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la última build verde?",
+            "answer": "La última build verde es **2026.07.19-b4**.",
+            "ok": true
+          },
+          {
+            "q": "¿Quién es la responsable de comunicación?",
+            "answer": "La responsable de comunicación es **Irene**.",
+            "ok": true
+          }
+        ]
+      },
+      "ini": {
+        "score": 3,
+        "total": 3,
+        "detail": [
+          {
+            "q": "¿Quién lleva la guardia principal esta semana?",
+            "answer": "La guardia principal de esta semana la lleva **Marcos**, del equipo de infraestructura.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día se reinicia automáticamente el clúster de pruebas de rendimiento?",
+            "answer": "El clúster de pruebas de rendimiento se reinicia automáticamente los **miércoles a las 05:00 CET**.\n\nEste ciclo se activa fuera del horario de las pruebas de carga para evitar interferencias con el trabajo del equipo. El cambio fue implementado por el equipo de plataforma a",
+            "ok": true
+          },
+          {
+            "q": "¿Qué proveedor de correo transaccional es el principal?",
+            "answer": "El proveedor de correo transaccional principal es **SendGrid**.\n\nSegún el plan aprobado en julio de 2026, SendGrid será el proveedor principal, con **Mailgun** como respaldo. El cambio de failover automático se probará el martes 29 de julio a",
+            "ok": true
+          }
+        ]
+      },
+      "mod": {
+        "score": 5,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿Cuál es la URL exacta del entorno de staging?",
+            "answer": "El entorno de staging está disponible en la URL:\n\n`https://staging.acmetax.internal:8443`\n\nEste entorno se despliega automáticamente al fusionar el código en la rama `develop` y se refresca los datos cada lunes a las 03:0",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+            "answer": "El entorno de staging se refresca automáticamente el **viernes a las 22:00 CET**.\n\nEl proceso de reconstrucción asegura que el lunes siguiente esté limpio, con datos sintéticos actualizados.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+            "answer": "Actualmente la base de datos principal (PostgreSQL) está en la versión **16**.\n\nEl equipo ha acordado mantenerla en esta versión para el presente año fiscal, con la migración a la versión 17 planificada para noviembre de 2026.",
+            "ok": true
+          },
+          {
+            "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+            "answer": "La migración a PostgreSQL 17 está planificada para **noviembre de 2026**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+            "answer": "La migración de esquema para la base de datos PostgreSQL se gestiona mediante **Flyway**.\n\nSegún los datos operativos de hoy, las migraciones de esquema viven en la carpeta `db/migrations/` y el equipo de sistemas las controla con el ticket de mantenimiento `LEG",
+            "ok": true
+          },
+          {
+            "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+            "answer": "La variable de entorno que activa el fallback local de OCR es `OCR_FALLBACK`.\n\nAl no estar definida en el archivo `.env.local` (que se genera con `make bootstrap-env`), el servicio `doc-ingest` detecta la ausencia de esta variable y activa automáticamente el servicio de",
+            "ok": true
+          }
+        ]
+      },
+      "t_link_s": 0.096
+    },
+    "affine": {
+      "ses": {
+        "score": 8,
+        "total": 8,
+        "detail": [
+          {
+            "q": "¿Cuál es el código de verificación de esta sesión?",
+            "answer": "8842-ZK",
+            "ok": true
+          },
+          {
+            "q": "¿Qué sala de guerra está reservada?",
+            "answer": "La sala de guerra reservada es la **Bravo-3**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el alias del despliegue en curso?",
+            "answer": "El alias del despliegue en curso es **`lince`**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es el canal temporal de la incidencia?",
+            "answer": "El canal temporal de la incidencia es **#inc-4471**.",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la contraseña del panel de emergencia?",
+            "answer": "La contraseña del panel de emergencia es **trebol-92**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué runbook está activo?",
+            "answer": "El runbook activo es **RB-207**.\n\nEste documento se utiliza como guía operativa para la resolución de incidencias y emergencias en el sistema. Dado que el equipo prioriza la reversibilidad y la seguridad, cualquier intervención en este runbook debe ser revisada por el equipo",
+            "ok": true
+          },
+          {
+            "q": "¿Cuál es la última build verde?",
+            "answer": "La última build verde es **2026.07.19-b4**.",
+            "ok": true
+          },
+          {
+            "q": "¿Quién es la responsable de comunicación?",
+            "answer": "La responsable de comunicación es **Irene**.",
+            "ok": true
+          }
+        ]
+      },
+      "ini": {
+        "score": 3,
+        "total": 3,
+        "detail": [
+          {
+            "q": "¿Quién lleva la guardia principal esta semana?",
+            "answer": "La guardia principal de esta semana la lleva **Marcos**, del equipo de infraestructura.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día se reinicia automáticamente el clúster de pruebas de rendimiento?",
+            "answer": "El clúster de pruebas de rendimiento se reinicia automáticamente los **miércoles a las 05:00 CET**, fuera del horario de las pruebas de carga.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué proveedor de correo transaccional es el principal?",
+            "answer": "El proveedor de correo transaccional principal es **SendGrid**.\n\nSegún el plan aprobado en julio de 2026, SendGrid será el proveedor principal, con **Mailgun** como respaldo. El cambio de failover automático se probará el martes 29 de julio a",
+            "ok": true
+          }
+        ]
+      },
+      "mod": {
+        "score": 5,
+        "total": 6,
+        "detail": [
+          {
+            "q": "¿Cuál es la URL exacta del entorno de staging?",
+            "answer": "El entorno de staging está disponible en:\n\n**https://staging.acmetax.internal:8443**\n\nEste entorno se despliega automáticamente al fusionar el código en la rama `develop` y se refresca los datos cada lunes a las 03:00 CET",
+            "ok": true
+          },
+          {
+            "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+            "answer": "El entorno de demos se reconstruye automáticamente los **viernes a las 22:00 CET** para que el lunes sea limpio.\n\n**TL;DR:** Viernes 22:00 CET.",
+            "ok": false
+          },
+          {
+            "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+            "answer": "Actualmente la base de datos principal (PostgreSQL) está en la versión **16**.\n\nEl equipo ha acordado mantenerla en esta versión para el presente año fiscal y se ha definido explícitamente que la migración a la versión 17 se pospone para noviembre de 2",
+            "ok": true
+          },
+          {
+            "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+            "answer": "La migración a PostgreSQL 17 está planificada para **noviembre de 2026**.",
+            "ok": true
+          },
+          {
+            "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+            "answer": "Se utiliza **Flyway** para las migraciones de esquema.\n\nSegún el documento de arquitectura, Flyway gestiona las migraciones de esquema en la base de datos PostgreSQL 16 (y 17 en el planificado), y el equipo ha establecido la regla de que todas las",
+            "ok": true
+          },
+          {
+            "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+            "answer": "La variable de entorno que activa el fallback local de OCR es `OCR_FALLBACK`.\n\nAl no estar definida en el archivo `.env.local` (que se genera con `make bootstrap-env`), el servicio `doc-ingest` detecta la ausencia de esta variable y activa automáticamente el servicio de",
+            "ok": true
+          }
+        ]
+      },
+      "t_link_s": 0.62
+    }
+  }
+}

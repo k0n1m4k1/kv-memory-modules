@@ -1,0 +1,330 @@
+{
+  "tag": "coder",
+  "tokens": {
+    "mem_a": 1379,
+    "mem_b": 294,
+    "short_prefix": 47,
+    "long_prefix": 1046
+  },
+  "E1_corto_joint": {
+    "score": 20,
+    "total": 20,
+    "detail": [
+      {
+        "q": "¿Cuál es la URL exacta del entorno de staging?",
+        "answer": "https://staging.acmetax.internal:8443\n---",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+        "answer": "03:00 CET lunes.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+        "answer": "16\n---",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+        "answer": "11 de noviembre de 2026.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+        "answer": "Flyway\n---",
+        "ok": true
+      },
+      {
+        "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+        "answer": "OCR_FALLBACK=local",
+        "ok": true
+      },
+      {
+        "q": "¿Qué motor de OCR se usa como fallback local?",
+        "answer": "Tesseract 5.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito el servicio notifier?",
+        "answer": "Go 1.23.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué framework usa el servicio bff-web?",
+        "answer": "NestJS 10.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador de la épica activa?",
+        "answer": "4812",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador del ticket del bug intermitente de doc-ingest?",
+        "answer": "4907\n---",
+        "ok": true
+      },
+      {
+        "q": "¿Cómo se llama la rama de trabajo de la épica activa?",
+        "answer": "`feature/MTX-4812-rule-loader`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué días de la semana son las ventanas de despliegue a producción?",
+        "answer": "Martes y jueves de 10:00 a 12:00 CET.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué herramienta de GitOps se usa para desplegar a producción?",
+        "answer": "ArgoCD",
+        "ok": true
+      },
+      {
+        "q": "¿Dónde se gestionan los secretos?",
+        "answer": "Azure Key Vault.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué linter se usa para Python?",
+        "answer": "Ruff.",
+        "ok": true
+      },
+      {
+        "q": "¿Con qué herramienta se gestionan las feature flags?",
+        "answer": "Unleash\n---",
+        "ok": true
+      },
+      {
+        "q": "¿Tras cuántos días al 100% debe eliminarse una feature flag?",
+        "answer": "90 días.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el canal de Slack para incidencias?",
+        "answer": "#mtx-incidentes",
+        "ok": true
+      },
+      {
+        "q": "¿En qué región de Azure corre el clúster AKS?",
+        "answer": "La región de Azure donde corre el clúster AKS es westeurope.",
+        "ok": true
+      }
+    ],
+    "setup_ms": 1948.0
+  },
+  "E1_corto_naive": {
+    "score": 20,
+    "total": 20,
+    "detail": [
+      {
+        "q": "¿Cuál es la URL exacta del entorno de staging?",
+        "answer": "https://staging.acmetax.internal:8443",
+        "ok": true
+      },
+      {
+        "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+        "answer": "03:00 CET lunes.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+        "answer": "16\n---",
+        "ok": true
+      },
+      {
+        "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+        "answer": "11 de noviembre de 2026.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+        "answer": "Flyway",
+        "ok": true
+      },
+      {
+        "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+        "answer": "OCR_FALLBACK=local",
+        "ok": true
+      },
+      {
+        "q": "¿Qué motor de OCR se usa como fallback local?",
+        "answer": "Tesseract 5.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito el servicio notifier?",
+        "answer": "El servicio notifier está escrito en Go 1.23.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué framework usa el servicio bff-web?",
+        "answer": "NestJS 10.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador de la épica activa?",
+        "answer": "4812",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador del ticket del bug intermitente de doc-ingest?",
+        "answer": "4907",
+        "ok": true
+      },
+      {
+        "q": "¿Cómo se llama la rama de trabajo de la épica activa?",
+        "answer": "`feature/MTX-4812-rule-loader`",
+        "ok": true
+      },
+      {
+        "q": "¿Qué días de la semana son las ventanas de despliegue a producción?",
+        "answer": "Martes y jueves de 10:00 a 12:00 CET.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué herramienta de GitOps se usa para desplegar a producción?",
+        "answer": "ArgoCD",
+        "ok": true
+      },
+      {
+        "q": "¿Dónde se gestionan los secretos?",
+        "answer": "Los secretos se gestionan con Azure Key Vault y se inyectan como variables de entorno vía CSI driver.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué linter se usa para Python?",
+        "answer": "Ruff.",
+        "ok": true
+      },
+      {
+        "q": "¿Con qué herramienta se gestionan las feature flags?",
+        "answer": "Se gestionan las feature flags con Unleash.",
+        "ok": true
+      },
+      {
+        "q": "¿Tras cuántos días al 100% debe eliminarse una feature flag?",
+        "answer": "90 días.",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el canal de Slack para incidencias?",
+        "answer": "#mtx-incidentes",
+        "ok": true
+      },
+      {
+        "q": "¿En qué región de Azure corre el clúster AKS?",
+        "answer": "La región de Azure donde corre el clúster AKS es westeurope.",
+        "ok": true
+      }
+    ],
+    "setup_ms": 560.9
+  },
+  "E1_corto_nomem": {
+    "score": 4,
+    "total": 20,
+    "detail": [
+      {
+        "q": "¿Cuál es la URL exacta del entorno de staging?",
+        "answer": "https://staging.example.com\n---",
+        "ok": false
+      },
+      {
+        "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+        "answer": "Se refrescan los datos de staging los viernes a las 23:00 CET.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+        "answer": "15.4\n---",
+        "ok": false
+      },
+      {
+        "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+        "answer": "10 de octubre de 2026.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+        "answer": "Herramienta para migraciones de esquema: Flyway.",
+        "ok": true
+      },
+      {
+        "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+        "answer": "OCR_FALLBACK_LOCAL",
+        "ok": true
+      },
+      {
+        "q": "¿Qué motor de OCR se usa como fallback local?",
+        "answer": "Tesseract OCR.",
+        "ok": true
+      },
+      {
+        "q": "¿En qué lenguaje está escrito el servicio notifier?",
+        "answer": "El servicio notifier está escrito en Python.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué framework usa el servicio bff-web?",
+        "answer": "NestJS\n---",
+        "ok": true
+      },
+      {
+        "q": "¿Cuál es el identificador de la épica activa?",
+        "answer": "12345",
+        "ok": false
+      },
+      {
+        "q": "¿Cuál es el identificador del ticket del bug intermitente de doc-ingest?",
+        "answer": "123456\n---",
+        "ok": false
+      },
+      {
+        "q": "¿Cómo se llama la rama de trabajo de la épica activa?",
+        "answer": "1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué días de la semana son las ventanas de despliegue a producción?",
+        "answer": "Lunes, Miércoles, Viernes.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué herramienta de GitOps se usa para desplegar a producción?",
+        "answer": "Argo CD",
+        "ok": false
+      },
+      {
+        "q": "¿Dónde se gestionan los secretos?",
+        "answer": "En el sistema de gestión de secretos.",
+        "ok": false
+      },
+      {
+        "q": "¿Qué linter se usa para Python?",
+        "answer": "Pylint",
+        "ok": false
+      },
+      {
+        "q": "¿Con qué herramienta se gestionan las feature flags?",
+        "answer": "Con herramientas como LaunchDarkly, Vercel, o FeatureFlags.io.",
+        "ok": false
+      },
+      {
+        "q": "¿Tras cuántos días al 100% debe eliminarse una feature flag?",
+        "answer": "30 días.",
+        "ok": false
+      },
+      {
+        "q": "¿Cuál es el canal de Slack para incidencias?",
+        "answer": "#incidencias",
+        "ok": false
+      },
+      {
+        "q": "¿En qué región de Azure corre el clúster AKS?",
+        "answer": "Europa Occidental",
+        "ok": false
+      }
+    ],
+    "setup_ms": 14.7
+  }
+}

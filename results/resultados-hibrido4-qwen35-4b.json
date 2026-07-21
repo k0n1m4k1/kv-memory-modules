@@ -1,0 +1,253 @@
+{
+  "model": "Qwen3.5-4B-Q4_K_M.gguf",
+  "P": 48,
+  "M": 1282,
+  "directo_naive": {
+    "mem": {
+      "score": 20,
+      "total": 20,
+      "detail": [
+        {
+          "q": "¿Cuál es la URL exacta del entorno de staging?",
+          "answer": "La URL exacta del entorno de staging es:\n\n`https://staging.acmetax.internal:8443`\n\n**Nota:** Los datos en este entorno se refrescan automáticamente cada lunes a las 03:00 CET con un snapshot anonimizado de producción.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+          "answer": "Los datos de staging se refrescan cada **lunes a las 03:00 CET**.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+          "answer": "La base de datos principal actualmente usa **PostgreSQL 16**.\n\nLa migración a la versión 17 está planificada para noviembre de 2026.",
+          "ok": true
+        },
+        {
+          "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+          "answer": "La migración a PostgreSQL 17 está planificada para **noviembre de 2026**.\n\n*Referencia: `db/migrations/README.md` y ADR-042 \"Migración a PG 17\"*.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+          "answer": "La herramienta utilizada para las migraciones de esquema es **Flyway**.\n\nLas migraciones residen en el directorio `db/migrations/` y deben cumplir con la regla de ser reversibles, incluyendo un script `undo` correspondiente para cada cambio.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+          "answer": "La variable de entorno que activa el fallback local de OCR en el servicio `doc-ingest` es:\n\n`OCR_FALLBACK=local`\n\n**Referencia:** Archivo `doc-ingest` (Python 3.12, FastAPI), configuración de OCR.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué motor de OCR se usa como fallback local?",
+          "answer": "El motor de OCR de fallback local es **Tesseract 5**.\n\nSe activa automáticamente cuando la variable de entorno `OCR_FALLBACK=local` está configurada en el servicio `doc-ingest`.",
+          "ok": true
+        },
+        {
+          "q": "¿En qué lenguaje está escrito el servicio notifier?",
+          "answer": "El servicio `notifier` está escrito en **Go 1.23**.\n\nEsta decisión se alinea con la decisión de arquitectura reciente (ADR-031) que establece que los nuevos servicios se escriben en Go salvo que requieran el ecosistema de cálculo de Java.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué framework usa el servicio bff-web?",
+          "answer": "El servicio `bff-web` utiliza **NestJS** como framework principal.\n\n*   **Versión:** NestJS 10.\n*   **Lenguaje:** TypeScript.\n*   **Generación de contratos:** El contrato con el frontend se genera automáticamente desde anotaciones usando **OpenAPI",
+          "ok": true
+        },
+        {
+          "q": "¿Cuál es el identificador de la épica activa?",
+          "answer": "El identificador de la épica activa es **MTX-4812**.\n\nSe trata del soporte del régimen de estimación objetiva (módulos) para 2027.",
+          "ok": true
+        },
+        {
+          "q": "¿Cuál es el identificador del ticket del bug intermitente de doc-ingest?",
+          "answer": "El identificador del ticket es **MTX-4907**.",
+          "ok": true
+        },
+        {
+          "q": "¿Cómo se llama la rama de trabajo de la épica activa?",
+          "answer": "La rama de trabajo de la épica activa (MTX-4812) es:\n\n`feature/MTX-4812-rule-loader`",
+          "ok": true
+        },
+        {
+          "q": "¿Qué días de la semana son las ventanas de despliegue a producción?",
+          "answer": "Las ventanas de despliegue a producción son los **martes y jueves**, entre las **10:00 y las 12:00 CET**.\n\n**TL;DR:** Martes y jueves, 10:00–12:00 CET.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué herramienta de GitOps se usa para desplegar a producción?",
+          "answer": "Se utiliza **ArgoCD** para el despliegue en producción mediante GitOps. La rama `main` actúa como la fuente de verdad para los recursos del cluster.",
+          "ok": true
+        },
+        {
+          "q": "¿Dónde se gestionan los secretos?",
+          "answer": "Los secretos se gestionan en **Azure Key Vault**.\n\nEl patrón del equipo es inyectarlos como **variables de entorno** mediante el **CSI driver** durante el despliegue en Kubernetes, evitando nunca montarlos como archivos en los contenedores.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué linter se usa para Python?",
+          "answer": "El linter de Python utilizado en el equipo es **Ruff**.\n\nSe configura globalmente en el monorepo raíz mediante el archivo `pyproject.toml`. No se deben crear configuraciones locales específicas por servicio.",
+          "ok": true
+        },
+        {
+          "q": "¿Con qué herramienta se gestionan las feature flags?",
+          "answer": "Se gestionan con **Unleash**.\n\n*   **Archivo de referencia:** No hay un archivo específico en el repositorio, pero la política de deuda técnica se documenta en la ADR-031 (junio 2026) y en la página de Confluence \"Módulos",
+          "ok": true
+        },
+        {
+          "q": "¿Tras cuántos días al 100% debe eliminarse una feature flag?",
+          "answer": "90 días.\n\nSi una feature flag permanece al 100% activada durante más de 90 días, debe eliminarse del código en el siguiente sprint.",
+          "ok": true
+        },
+        {
+          "q": "¿Cuál es el canal de Slack para incidencias?",
+          "answer": "El canal de incidencias es `#mtx-incidentes` en Slack.\n\nSolo se escala por teléfono si hay impacto en la presentación de impuestos con un plazo menor a 48 horas.",
+          "ok": true
+        },
+        {
+          "q": "¿En qué región de Azure corre el clúster AKS?",
+          "answer": "El clúster AKS corre en la región **westeurope**.",
+          "ok": true
+        }
+      ]
+    },
+    "pre": {
+      "score": 2,
+      "total": 2,
+      "detail": [
+        {
+          "q": "¿Qué día del mes es hoy?",
+          "answer": "Hoy es **19 de julio**.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué hora es ahora mismo?",
+          "answer": "La hora actual es **14:30 CET** (sábado 19 de julio de 2026).",
+          "ok": true
+        }
+      ]
+    }
+  },
+  "directo_affine": {
+    "mem": {
+      "score": 20,
+      "total": 20,
+      "detail": [
+        {
+          "q": "¿Cuál es la URL exacta del entorno de staging?",
+          "answer": "La URL exacta del entorno de staging es:\n\n`https://staging.acmetax.internal:8443`\n\n**Nota:** Los datos en este entorno se refrescan automáticamente cada lunes a las 03:00 CET con un snapshot anonimizado de producción.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué día de la semana y a qué hora se refrescan los datos de staging?",
+          "answer": "Los datos de staging se refrescan cada **lunes a las 03:00 CET**.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué versión de PostgreSQL usa la base de datos principal actualmente?",
+          "answer": "La base de datos principal actualmente usa **PostgreSQL 16**.\n\nLa migración a la versión 17 está planificada para noviembre de 2026.",
+          "ok": true
+        },
+        {
+          "q": "¿En qué mes está planificada la migración a PostgreSQL 17?",
+          "answer": "La migración a PostgreSQL 17 está planificada para **noviembre de 2026**.\n\n*Referencia: `db/migrations/README.md` y ADR-042 \"Migración a PG 17\"*.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué herramienta se usa para las migraciones de esquema?",
+          "answer": "La herramienta utilizada para las migraciones de esquema es **Flyway**.\n\nLas migraciones residen en el directorio `db/migrations/` y deben cumplir con la regla de ser reversibles, incluyendo un script `undo` correspondiente para cada cambio.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué variable de entorno activa el fallback local de OCR?",
+          "answer": "La variable de entorno que activa el fallback local de OCR en el servicio `doc-ingest` es:\n\n`OCR_FALLBACK=local`\n\n**Referencia:** Archivo `doc-ingest` (Python 3.12, FastAPI), configuración de OCR.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué motor de OCR se usa como fallback local?",
+          "answer": "El motor de OCR de fallback local es **Tesseract 5**.\n\nSe activa automáticamente cuando la variable de entorno `OCR_FALLBACK=local` está configurada en el servicio `doc-ingest`.",
+          "ok": true
+        },
+        {
+          "q": "¿En qué lenguaje está escrito el servicio notifier?",
+          "answer": "El servicio `notifier` está escrito en **Go 1.23**.\n\nEsta decisión se alinea con la decisión de arquitectura reciente (ADR-031) que establece que los nuevos servicios se escriben en Go salvo que requieran el ecosistema de cálculo de Java. Python se reserva exclusivamente para",
+          "ok": true
+        },
+        {
+          "q": "¿Qué framework usa el servicio bff-web?",
+          "answer": "El servicio `bff-web` utiliza **NestJS** como framework principal.\n\n*   **Versión:** NestJS 10.\n*   **Lenguaje:** TypeScript.\n*   **Generación de contratos:** El contrato con el frontend se genera automáticamente desde anotaciones usando **OpenAPI",
+          "ok": true
+        },
+        {
+          "q": "¿Cuál es el identificador de la épica activa?",
+          "answer": "El identificador de la épica activa es **MTX-4812**.\n\nSe trata del soporte del régimen de estimación objetiva (módulos) para 2027.",
+          "ok": true
+        },
+        {
+          "q": "¿Cuál es el identificador del ticket del bug intermitente de doc-ingest?",
+          "answer": "El identificador del ticket es **MTX-4907**.",
+          "ok": true
+        },
+        {
+          "q": "¿Cómo se llama la rama de trabajo de la épica activa?",
+          "answer": "La rama de trabajo de la épica activa (MTX-4812) es:\n\n`feature/MTX-4812-rule-loader`",
+          "ok": true
+        },
+        {
+          "q": "¿Qué días de la semana son las ventanas de despliegue a producción?",
+          "answer": "Las ventanas de despliegue a producción son los **martes y jueves**, entre las **10:00 y las 12:00 CET**.\n\n**TL;DR:** Martes y jueves, 10:00–12:00 CET.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué herramienta de GitOps se usa para desplegar a producción?",
+          "answer": "Se utiliza **ArgoCD** para el despliegue en producción mediante GitOps. La rama `main` actúa como la fuente de verdad para los recursos del cluster AKS.",
+          "ok": true
+        },
+        {
+          "q": "¿Dónde se gestionan los secretos?",
+          "answer": "Los secretos se gestionan en **Azure Key Vault**.\n\nEl patrón del equipo es inyectarlos como **variables de entorno** mediante el **CSI driver** durante el despliegue en Kubernetes, evitando nunca montarlos como archivos en los contenedores.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué linter se usa para Python?",
+          "answer": "El linter de Python utilizado en el equipo es **Ruff**.\n\nSe configura globalmente en el monorepo raíz mediante el archivo `pyproject.toml`. No se deben crear configuraciones locales específicas por servicio.",
+          "ok": true
+        },
+        {
+          "q": "¿Con qué herramienta se gestionan las feature flags?",
+          "answer": "Se gestionan con **Unleash**.\n\n*   **Archivo de referencia:** No hay un archivo específico en el repositorio, pero la política de deuda técnica se documenta en la ADR-031 (junio 2026) y en la página de Confluence \"Módulos",
+          "ok": true
+        },
+        {
+          "q": "¿Tras cuántos días al 100% debe eliminarse una feature flag?",
+          "answer": "90 días.\n\nSi una feature flag permanece al 100% activada durante más de 90 días, debe eliminarse del código en el siguiente sprint.",
+          "ok": true
+        },
+        {
+          "q": "¿Cuál es el canal de Slack para incidencias?",
+          "answer": "El canal de incidencias es `#mtx-incidentes` en Slack.\n\nSolo se escala por teléfono si hay impacto en la presentación de impuestos con un plazo menor a 48 horas.",
+          "ok": true
+        },
+        {
+          "q": "¿En qué región de Azure corre el clúster AKS?",
+          "answer": "El clúster AKS corre en la región **westeurope**.",
+          "ok": true
+        }
+      ]
+    },
+    "pre": {
+      "score": 2,
+      "total": 2,
+      "detail": [
+        {
+          "q": "¿Qué día del mes es hoy?",
+          "answer": "Hoy es el **19** de julio de 2026.",
+          "ok": true
+        },
+        {
+          "q": "¿Qué hora es ahora mismo?",
+          "answer": "La hora actual es **14:30 CET** (sábado 19 de julio de 2026).",
+          "ok": true
+        }
+      ]
+    }
+  }
+}

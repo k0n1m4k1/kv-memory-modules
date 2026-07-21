@@ -1,0 +1,35 @@
+{
+  "cond": "nospec",
+  "model": "Qwopus3.5-4B-Coder",
+  "spec": null,
+  "detalle": [
+    {
+      "q": "¿En qué puerto escucha svc-albatros? Explica brevemente qué sabes de ese servicio.",
+      "esperado": "7979",
+      "answer": "**Puerto:** 7979\n\n**Información sobre el servicio:**\n- **Equipo propietario:** Estano\n- **Lenguaje y framework:** Kotlin con Ktor\n- **Persistencia:** SQLite\n- **Versión en producción:** 4.0.14\n- **Rép",
+      "ok": true,
+      "ttft_s": 0.958,
+      "gen_tps": 33.4,
+      "n_out": 120
+    },
+    {
+      "q": "¿En qué puerto escucha svc-boreal? Explica brevemente qué sabes de ese servicio.",
+      "esperado": "7305",
+      "answer": "**Puerto:** 7305\n\n**Información sobre el servicio:**\n- **Equipo propietario:** Estano\n- **Lenguaje y framework:** Go con Gin\n- **Persistencia:** Redis\n- **Versión en producción:** 4.8.16\n- **Réplicas:",
+      "ok": true,
+      "ttft_s": 0.546,
+      "gen_tps": 48.4,
+      "n_out": 118
+    },
+    {
+      "q": "¿En qué puerto escucha svc-cierzo? Explica brevemente qué sabes de ese servicio.",
+      "esperado": "7566",
+      "answer": "**Puerto:** 7566\n\n**Detalles del servicio svc-cierzo:**\n- **Equipo propietario:** Estano\n- **Lenguaje y framework:** Java con Quarkus\n- **Persistencia:** DynamoDB\n- **Versión en producción:** 1.1.1\n- ",
+      "ok": true,
+      "ttft_s": 0.551,
+      "gen_tps": 47.5,
+      "n_out": 109
+    }
+  ],
+  "metrics_error": "Stat logging disabled"
+}

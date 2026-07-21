@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software or its findings, please cite the preprint below."
+title: "kv-memory-modules: precompiled, relocatable KV memory modules for LLM runtimes"
+abstract: >-
+  Compile Markdown agent memories into reusable KV-cache modules (.kmd) and link them
+  into a live context at arbitrary positions, without re-prefilling the text. A llama.cpp
+  implementation with a runtime-agnostic module format; evaluated across nine models
+  (2B-14B, full-attention, linear-attention hybrids, and sliding-window attention).
+type: software
+authors:
+  - given-names: "Luis Andrés"
+    family-names: "González Picazo"
+    alias: k0n1m4k1
+version: "1.0"
+date-released: "2026-07-21"
+license: MIT
+repository-code: "https://github.com/k0n1m4k1/kv-memory-modules"
+keywords:
+  - llm
+  - kv-cache
+  - llama.cpp
+  - agent-memory
+  - inference
+  - position-independent-caching
+preferred-citation:
+  type: article
+  title: "Precompiled KV Memory Modules: Relocatable, Composable Agent Memory for LLM Inference Runtimes"
+  authors:
+    - given-names: "Luis Andrés"
+      family-names: "González Picazo"
+      alias: k0n1m4k1
+  year: 2026
+  month: 7
+  notes: "Preprint on arXiv (cs.DC, cross-list cs.AI); arXiv identifier to be added once assigned."

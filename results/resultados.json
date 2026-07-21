@@ -1,0 +1,33 @@
+{
+  "compile": {
+    "prompt_n": 1380,
+    "prompt_ms": 1918.0,
+    "pp_tps": 719.5,
+    "wall_ms": 1960
+  },
+  "save": {
+    "n_saved": 1380,
+    "n_written": 203512252,
+    "save_ms": 3054.8,
+    "wall_ms": 3060,
+    "file_MB": 194.1
+  },
+  "restore": {
+    "n_restored": 1380,
+    "n_read": 203512252,
+    "restore_ms": 288.0,
+    "wall_ms": 292
+  },
+  "query_restored": {
+    "prompt_n": 46,
+    "prompt_ms": 218.5,
+    "wall_ms": 3047,
+    "answer": "1. La URL de staging es `https://staging.acmetax.internal:8443`.  \n2. Se refresca cada lunes a las 03:00 CET desde un snapshot anonimizado de producción, y hay un bug intermitente (MTX-4907) de timeouts esporádicos en `doc-ingest` los"
+  },
+  "query_baseline": {
+    "prompt_n": 1425,
+    "prompt_ms": 2196.4,
+    "wall_ms": 5029,
+    "answer": "1. La URL de staging es `https://staging.acmetax.internal:8443`.  \n2. Se refresca cada lunes a las 03:00 CET desde un snapshot anonimizado de producción, y hay un bug intermitente (MTX-4907) de timeouts esporádicos en `doc-ingest` los"
+  }
+}

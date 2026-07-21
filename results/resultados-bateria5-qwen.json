@@ -1,0 +1,32 @@
+{
+  "f16": {
+    "module_MB": 203.4,
+    "joint": 17,
+    "naive": 18
+  },
+  "f16_fa": {
+    "module_MB": 203.4,
+    "joint": 18,
+    "naive": 18
+  },
+  "q8_0": {
+    "module_MB": 108.0,
+    "joint": 18,
+    "naive": 18
+  },
+  "q5_1": {
+    "module_MB": 76.3,
+    "joint": 17,
+    "naive": 17
+  },
+  "q4_0": {
+    "module_MB": 57.2,
+    "joint": 17,
+    "naive": 18
+  },
+  "iq4_nl": {
+    "module_MB": 57.2,
+    "joint": 18,
+    "naive": 18
+  }
+}

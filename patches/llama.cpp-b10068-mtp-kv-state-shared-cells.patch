@@ -1,0 +1,253 @@
+diff --git a/src/llama-kv-cache.cpp b/src/llama-kv-cache.cpp
+index e70583e..739f5bb 100644
+--- a/src/llama-kv-cache.cpp
++++ b/src/llama-kv-cache.cpp
+@@ -183,7 +183,8 @@ llama_kv_cache::llama_kv_cache(
+                 map_layer_ids[il] = layers.size();
+ 
+                 layers.push_back(layer_share);
+-                layers.back().il = il;
++                layers.back().il     = il;
++                layers.back().shared = true;
+ 
+                 continue;
+             }
+@@ -1955,10 +1956,9 @@ ggml_cgraph * llama_kv_cache::build_graph_shift(llm_graph_result * res, llama_co
+ }
+ 
+ void llama_kv_cache::state_write(llama_io_write_i & io, llama_seq_id seq_id, llama_state_seq_flags flags) const {
+-    // TODO: refactor [TAG_KV_CACHE_SHARE_CELLS]
+-    if (other) {
+-        return;
+-    }
++    // note: when the cells are shared they are still valid here, so the scan below works
++    //       as-is - only the layers borrowed from the source cache are skipped
++    //       [TAG_KV_CACHE_SHARE_CELLS]
+ 
+     GGML_UNUSED(flags);
+ 
+@@ -2025,11 +2025,6 @@ void llama_kv_cache::state_write(llama_io_write_i & io, llama_seq_id seq_id, lla
+ }
+ 
+ void llama_kv_cache::state_read(llama_io_read_i & io, llama_seq_id seq_id, llama_state_seq_flags flags) {
+-    // TODO: refactor [TAG_KV_CACHE_SHARE_CELLS]
+-    if (other) {
+-        return;
+-    }
+-
+     GGML_UNUSED(flags);
+ 
+     GGML_ASSERT(seq_id == -1 || (seq_id >= 0 && (size_t) seq_id < seq_to_stream.size()));
+@@ -2053,14 +2048,21 @@ void llama_kv_cache::state_read(llama_io_read_i & io, llama_seq_id seq_id, llama
+         slot_info sinfo;
+ 
+         bool res = true;
+-        res = res && state_read_meta(io, strm, cell_count, sinfo, seq_id);
++        if (other) {
++            res = res && state_read_meta_shared(io, strm, cell_count, sinfo, seq_id);
++        } else {
++            res = res && state_read_meta(io, strm, cell_count, sinfo, seq_id);
++        }
+         res = res && state_read_data(io, strm, cell_count, sinfo);
+ 
+         if (!res) {
+-            if (seq_id == -1) {
+-                clear(true);
+-            } else {
+-                seq_rm(seq_id, -1, -1);
++            // shared cells belong to the source cache - do not clear them
++            if (!other) {
++                if (seq_id == -1) {
++                    clear(true);
++                } else {
++                    seq_rm(seq_id, -1, -1);
++                }
+             }
+             throw std::runtime_error("failed to restore kv cache");
+         }
+@@ -2104,7 +2106,12 @@ void llama_kv_cache::state_write_data(llama_io_write_i & io, const cell_ranges_t
+     const auto & cells = v_cells[cr.strm];
+ 
+     const uint32_t v_trans = this->v_trans ? 1 : 0;
+-    const uint32_t n_layer = layers.size();
++
++    // layers borrowed from the shared source cache are serialized by that cache
++    uint32_t n_layer = 0;
++    for (const auto & layer : layers) {
++        n_layer += layer.shared ? 0 : 1;
++    }
+ 
+     io.write(&v_trans, sizeof(v_trans));
+     io.write(&n_layer, sizeof(n_layer));
+@@ -2112,6 +2119,10 @@ void llama_kv_cache::state_write_data(llama_io_write_i & io, const cell_ranges_t
+     // Iterate and write all the keys first, each row is a cell
+     // Get whole range at a time
+     for (const auto & layer : layers) {
++        if (layer.shared) {
++            continue;
++        }
++
+         const uint32_t il = layer.il;
+ 
+         const uint32_t n_embd_k_gqa = hparams.n_embd_k_gqa(il);
+@@ -2136,6 +2147,10 @@ void llama_kv_cache::state_write_data(llama_io_write_i & io, const cell_ranges_t
+ 
+     if (!v_trans) {
+         for (const auto & layer : layers) {
++            if (layer.shared) {
++                continue;
++            }
++
+             const uint32_t il = layer.il;
+ 
+             const uint32_t n_embd_v_gqa = hparams.n_embd_v_gqa(il);
+@@ -2165,6 +2180,10 @@ void llama_kv_cache::state_write_data(llama_io_write_i & io, const cell_ranges_t
+         const uint32_t kv_size = cells.size();
+ 
+         for (const auto & layer : layers) {
++            if (layer.shared) {
++                continue;
++            }
++
+             const uint32_t il = layer.il;
+ 
+             const uint32_t n_embd_v_gqa = hparams.n_embd_v_gqa(il);
+@@ -2318,6 +2337,64 @@ bool llama_kv_cache::state_read_meta(llama_io_read_i & io, uint32_t strm, uint32
+     return true;
+ }
+ 
++bool llama_kv_cache::state_read_meta_shared(llama_io_read_i & io, uint32_t strm, uint32_t cell_count, slot_info & sinfo, llama_seq_id dest_seq_id) {
++    const auto & cells = v_cells[strm];
++
++    sinfo.s0 = strm;
++    sinfo.s1 = strm;
++    sinfo.resize(1);
++    sinfo.strm[0] = strm;
++    sinfo.idxs[0].resize(cell_count);
++
++    // single-sequence restores go through find_slot() in the source cache, so the
++    // cell indices are not known here - index the shared cells by position
++    std::unordered_map<llama_pos, uint32_t> pos_to_idx;
++    if (dest_seq_id != -1) {
++        for (uint32_t i = 0; i < cells.size(); ++i) {
++            if (!cells.is_empty(i) && cells.seq_has(i, dest_seq_id)) {
++                pos_to_idx[cells.pos_get(i)] = i;
++            }
++        }
++    }
++
++    for (uint32_t i = 0; i < cell_count; ++i) {
++        llama_pos pos;
++        uint32_t  n_seq_id;
++
++        io.read(&pos,      sizeof(pos));
++        io.read(&n_seq_id, sizeof(n_seq_id));
++
++        if (hparams.n_pos_per_embd() > 1) {
++            llama_kv_cell_ext ext;
++            io.read(&ext, sizeof(ext));
++        }
++
++        for (uint32_t j = 0; j < n_seq_id; ++j) {
++            llama_seq_id seq_id;
++            io.read(&seq_id, sizeof(seq_id));
++        }
++
++        if (dest_seq_id != -1) {
++            const auto it = pos_to_idx.find(pos);
++            if (it == pos_to_idx.end()) {
++                LLAMA_LOG_ERROR("%s: pos %d not found in the shared cells - restore the source cache first\n", __func__, pos);
++                return false;
++            }
++            sinfo.idxs[0][i] = it->second;
++        } else {
++            // whole-cache restores place the cells at [0, cell_count) in blob order,
++            // and both caches are saved from the same shared cells in the same order
++            if (i >= cells.size() || cells.is_empty(i) || cells.pos_get(i) != pos) {
++                LLAMA_LOG_ERROR("%s: shared cell %u does not match pos %d - restore the source cache first\n", __func__, i, pos);
++                return false;
++            }
++            sinfo.idxs[0][i] = i;
++        }
++    }
++
++    return true;
++}
++
+ bool llama_kv_cache::state_read_data(llama_io_read_i & io, uint32_t strm, uint32_t cell_count, const slot_info & sinfo) {
+     auto & cells = v_cells[strm];
+ 
+@@ -2327,8 +2404,13 @@ bool llama_kv_cache::state_read_data(llama_io_read_i & io, uint32_t strm, uint32
+     io.read(&v_trans, sizeof(v_trans));
+     io.read(&n_layer, sizeof(n_layer));
+ 
+-    if (n_layer != layers.size()) {
+-        LLAMA_LOG_ERROR("%s: mismatched layer count (%u instead of %u)\n", __func__, n_layer, (uint32_t) layers.size());
++    uint32_t n_layer_own = 0;
++    for (const auto & layer : layers) {
++        n_layer_own += layer.shared ? 0 : 1;
++    }
++
++    if (n_layer != n_layer_own) {
++        LLAMA_LOG_ERROR("%s: mismatched layer count (%u instead of %u)\n", __func__, n_layer, n_layer_own);
+         return false;
+     }
+ 
+@@ -2344,6 +2426,10 @@ bool llama_kv_cache::state_read_data(llama_io_read_i & io, uint32_t strm, uint32
+ 
+     // For each layer, read the keys for each cell, one row is one cell, read as one contiguous block
+     for (const auto & layer : layers) {
++        if (layer.shared) {
++            continue;
++        }
++
+         const uint32_t il = layer.il;
+ 
+         const uint32_t n_embd_k_gqa = hparams.n_embd_k_gqa(il);
+@@ -2384,6 +2470,10 @@ bool llama_kv_cache::state_read_data(llama_io_read_i & io, uint32_t strm, uint32
+ 
+     if (!this->v_trans) {
+         for (const auto & layer : layers) {
++            if (layer.shared) {
++                continue;
++            }
++
+             const uint32_t il = layer.il;
+ 
+             const uint32_t n_embd_v_gqa = hparams.n_embd_v_gqa(il);
+@@ -2427,6 +2517,10 @@ bool llama_kv_cache::state_read_data(llama_io_read_i & io, uint32_t strm, uint32
+     } else {
+         // For each layer, read the values for each cell (transposed)
+         for (const auto & layer : layers) {
++            if (layer.shared) {
++                continue;
++            }
++
+             const uint32_t il = layer.il;
+ 
+             const uint32_t n_embd_v_gqa = hparams.n_embd_v_gqa(il);
+diff --git a/src/llama-kv-cache.h b/src/llama-kv-cache.h
+index 531d99d..a60bc64 100644
+--- a/src/llama-kv-cache.h
++++ b/src/llama-kv-cache.h
+@@ -231,6 +231,9 @@ private:
+ 
+         std::vector<ggml_tensor *> k_stream;
+         std::vector<ggml_tensor *> v_stream;
++
++        // the tensors are borrowed from the shared source cache [TAG_KV_CACHE_SHARE_CELLS]
++        bool shared = false;
+     };
+ 
+     bool v_trans = true;  // the value tensor is transposed
+@@ -318,6 +321,10 @@ private:
+ 
+     bool state_read_meta(llama_io_read_i & io, uint32_t strm, uint32_t cell_count,       slot_info & sinfo, llama_seq_id dest_seq_id = -1);
+     bool state_read_data(llama_io_read_i & io, uint32_t strm, uint32_t cell_count, const slot_info & sinfo);
++
++    // variant of state_read_meta for caches with shared cells: the cells were already
++    // restored by the source cache, so locate them instead of allocating
++    bool state_read_meta_shared(llama_io_read_i & io, uint32_t strm, uint32_t cell_count, slot_info & sinfo, llama_seq_id dest_seq_id = -1);
+ };
+ 
+ class llama_kv_cache_context : public llama_memory_context_i {

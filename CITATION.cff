@@ -11,8 +11,8 @@ authors:
   - given-names: "Luis Andrés"
     family-names: "González Picazo"
     alias: k0n1m4k1
-version: "1.0"
-date-released: "2026-07-21"
+version: "1.0.1"
+date-released: "2026-07-22"
 doi: "10.5281/zenodo.21499493"
 license: MIT
 repository-code: "https://github.com/k0n1m4k1/kv-memory-modules"
@@ -20,6 +20,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.21499493"
     description: "Concept DOI — always resolves to the latest version (cite all versions)"
+  - type: doi
+    value: "10.5281/zenodo.21499668"
+    description: "Version DOI — the v1.0.1 release archive (current)"
   - type: doi
     value: "10.5281/zenodo.21499494"
     description: "Version DOI — the v1.0 release archive"

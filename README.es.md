@@ -2,6 +2,8 @@
 
 *(English version: [`README.md`](README.md))*
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21499494.svg)](https://doi.org/10.5281/zenodo.21499494)
+
 Prueba de concepto de investigación: **compila las memorias Markdown de un agente en
 módulos de KV-cache reutilizables** (`.kmd`) y enlázalos en un contexto vivo en
 milisegundos, en lugar de re-prefillear miles de tokens en cada sesión.

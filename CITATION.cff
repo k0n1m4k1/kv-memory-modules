@@ -13,8 +13,13 @@ authors:
     alias: k0n1m4k1
 version: "1.0"
 date-released: "2026-07-21"
+doi: "10.5281/zenodo.21499494"
 license: MIT
 repository-code: "https://github.com/k0n1m4k1/kv-memory-modules"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21499494"
+    description: "Zenodo archive of the v1.0 release (software, data, and paper)"
 keywords:
   - llm
   - kv-cache
@@ -31,4 +36,5 @@ preferred-citation:
       alias: k0n1m4k1
   year: 2026
   month: 7
-  notes: "Preprint on arXiv (cs.DC, cross-list cs.AI); arXiv identifier to be added once assigned."
+  doi: "10.5281/zenodo.21499494"
+  notes: "Archived on Zenodo (DOI above); an arXiv preprint (cs.DC, cross-list cs.AI) is forthcoming."

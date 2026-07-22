@@ -7,7 +7,7 @@ módulos de KV-cache reutilizables** (`.kmd`) y enlázalos en un contexto vivo e
 milisegundos, en lugar de re-prefillear miles de tokens en cada sesión.
 
 ```mermaid
-flowchart LR
+flowchart TB
   subgraph TODAY["🔴 HOY — cada sesión, cada arranque en frío"]
     direction LR
     A1["<b>APP DEL AGENTE</b><br/>Claude Code · Hermes · tu bot<br/>system prompt, AGENTS.md,<br/>skills, memorias — todo TEXTO"]

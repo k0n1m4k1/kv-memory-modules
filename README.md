@@ -7,7 +7,7 @@ modules** (`.kmd`) and link them into a live context in milliseconds instead of
 re-prefilling thousands of tokens on every session.
 
 ```mermaid
-flowchart LR
+flowchart TB
   subgraph TODAY["🔴 TODAY — every session, every cold start"]
     direction LR
     A1["<b>AGENT APP</b><br/>Claude Code · Hermes · your bot<br/>system prompt, AGENTS.md,<br/>skills, memories — all TEXT"]

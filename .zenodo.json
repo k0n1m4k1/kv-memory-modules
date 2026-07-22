@@ -1,0 +1,24 @@
+{
+  "title": "Precompiled KV Memory Modules: Relocatable, Composable Agent Memory for LLM Inference Runtimes",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "Persistent memories for LLM agents are stored today as text files (Markdown) that are re-prefilled every session, or indexed in RAG systems that re-inject text fragments. The same holds for skill, plan, and agent-definition files (SKILLS.md, PLANS.md, AGENTS.md) and the JSON tool schemas an agent loads, directly or over MCP: all of it is re-evaluated by the LLM on every new session. We propose treating each memory as a precompiled KV module: the attention state produced by evaluating the text once, serialized to disk with content-addressed identity, and re-insertable at any position of a live context via RoPE position re-rotation and sequence fusion, without re-evaluating the text. Using stock llama.cpp release binaries across nine instruction-tuned models (2B-14B), we demonstrate non-prefix insertion with no statistically detectable recall difference versus joint prefill, a setup-cost advantage of 7.0-27.6x that grows where compute is scarce, module composition, lazy loading of linked modules, extension to linear-attention hybrids, a portable module ABI, and compatibility with MTP speculative decoding. This repository contains the llama.cpp implementation, the .kmd module format, reproduction scripts, experiment data, and the full paper (Markdown + LaTeX + PDF).",
+  "creators": [
+    {
+      "name": "González Picazo, Luis Andrés"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "llm",
+    "kv-cache",
+    "llama.cpp",
+    "agent-memory",
+    "inference",
+    "position-independent-caching",
+    "prefix-caching",
+    "speculative-decoding",
+    "linear-attention"
+  ],
+  "access_right": "open"
+}

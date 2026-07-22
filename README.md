@@ -7,6 +7,11 @@ modules** (`.kmd`) and link them into a live context in milliseconds instead of
 re-prefilling thousands of tokens on every session.
 
 ```mermaid
+---
+config:
+  flowchart:
+    wrappingWidth: 1400
+---
 flowchart TB
   subgraph TODAY["🔴 TODAY — every session, every cold start"]
     direction LR
@@ -33,7 +38,7 @@ flowchart TB
     S2 -->|"O(bytes) load"| L2
   end
 
-  NOTE["<i>Why can't this be a network proxy in front of Claude / OpenAI? KV state lives in the engine's GPU memory and can NEVER cross the HTTP wire — a proxy only sees text. Closed APIs: the vendor's prefix caching (prefix-only, ephemeral) is all you get. Self-hosted llama.cpp: the linker slots in as shown — the piece still to be built is the memory MANAGER that decides what links when.</i>"]
+  NOTE["<i>Why can't this be a network proxy in front of Claude / OpenAI?  KV state lives in the engine's GPU memory and can NEVER<br/>cross the HTTP wire — a proxy only sees text.  Closed APIs: the vendor's prefix caching (prefix-only, ephemeral) is all you get.<br/>Self-hosted llama.cpp: the linker slots in as shown — the piece still to be built is the memory MANAGER that decides what links when.</i>"]
 
   TODAY ~~~ LINK ~~~ NOTE
 

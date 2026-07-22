@@ -7,6 +7,11 @@ módulos de KV-cache reutilizables** (`.kmd`) y enlázalos en un contexto vivo e
 milisegundos, en lugar de re-prefillear miles de tokens en cada sesión.
 
 ```mermaid
+---
+config:
+  flowchart:
+    wrappingWidth: 1400
+---
 flowchart TB
   subgraph TODAY["🔴 HOY — cada sesión, cada arranque en frío"]
     direction LR
@@ -33,7 +38,7 @@ flowchart TB
     S2 -->|"carga O(bytes)"| L2
   end
 
-  NOTE["<i>¿Por qué esto no puede ser un proxy de red delante de Claude / OpenAI? El estado KV vive en la memoria GPU del engine y NUNCA puede cruzar el cable HTTP — un proxy solo ve texto. APIs cerradas: el prefix caching del proveedor (solo prefijo, efímero) es todo lo que hay. llama.cpp autoalojado: el linker encaja como se muestra — la pieza que aún falta es el GESTOR de memoria que decide qué se enlaza y cuándo.</i>"]
+  NOTE["<i>¿Por qué esto no puede ser un proxy de red delante de Claude / OpenAI?  El estado KV vive en la memoria GPU del engine y NUNCA<br/>puede cruzar el cable HTTP — un proxy solo ve texto.  APIs cerradas: el prefix caching del proveedor (solo prefijo, efímero) es todo lo que hay.<br/>llama.cpp autoalojado: el linker encaja como se muestra — la pieza que aún falta es el GESTOR de memoria que decide qué se enlaza y cuándo.</i>"]
 
   TODAY ~~~ LINK ~~~ NOTE
 

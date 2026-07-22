@@ -2,11 +2,14 @@
 
 *(English version: [`README.md`](README.md))*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21499494.svg)](https://doi.org/10.5281/zenodo.21499494)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21499493.svg)](https://doi.org/10.5281/zenodo.21499493)
 
 Prueba de concepto de investigación: **compila las memorias Markdown de un agente en
 módulos de KV-cache reutilizables** (`.kmd`) y enlázalos en un contexto vivo en
 milisegundos, en lugar de re-prefillear miles de tokens en cada sesión.
+
+📄 **Lee el paper:** [PDF](paper/latex/main.pdf) · [Markdown](paper/PAPER.md) — el
+documento completo con métodos, los nueve modelos y el análisis estadístico.
 
 ```mermaid
 ---

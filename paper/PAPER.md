@@ -2,6 +2,7 @@
 
 *Luis Andrés González Picazo*
 *v1.0 — July 21, 2026*
+*Code & data: [github.com/k0n1m4k1/kv-memory-modules](https://github.com/k0n1m4k1/kv-memory-modules) · Archived on Zenodo: [DOI 10.5281/zenodo.21499493](https://doi.org/10.5281/zenodo.21499493) (all versions)*
 
 ---
 

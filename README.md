@@ -2,11 +2,14 @@
 
 *(Versión en español: [`README.es.md`](README.es.md))*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21499494.svg)](https://doi.org/10.5281/zenodo.21499494)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21499493.svg)](https://doi.org/10.5281/zenodo.21499493)
 
 Research proof-of-concept: **compile Markdown agent memories into reusable KV-cache
 modules** (`.kmd`) and link them into a live context in milliseconds instead of
 re-prefilling thousands of tokens on every session.
+
+📄 **Read the paper:** [PDF](paper/latex/main.pdf) · [Markdown](paper/PAPER.md) — the full
+write-up with methods, all nine models, and the statistical analysis.
 
 ```mermaid
 ---

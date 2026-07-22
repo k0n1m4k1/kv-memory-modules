@@ -6,6 +6,55 @@ Research proof-of-concept: **compile Markdown agent memories into reusable KV-ca
 modules** (`.kmd`) and link them into a live context in milliseconds instead of
 re-prefilling thousands of tokens on every session.
 
+```mermaid
+flowchart LR
+  subgraph TODAY["🔴 TODAY — every session, every cold start"]
+    direction LR
+    A1["<b>AGENT APP</b><br/>Claude Code · Hermes · your bot<br/>system prompt, AGENTS.md,<br/>skills, memories — all TEXT"]
+    P1["<b>llama.cpp / vLLM / hosted API</b><br/>PREFILL: every token re-read<br/>through all layers of the model"]
+    K1["<b>KV cache</b> (GPU)<br/>→ generate"]
+    C1["cost: <b>O(compute)</b><br/>15.2k-token memory:<br/>5.5 s GPU · 13.7 s partial<br/>offload · 18.9 s CPU"]
+    A1 -->|"HTTP — text only"| P1 --> K1 --> C1
+  end
+
+  subgraph LINK["🟣 WITH THE LINKER — compile once, link anywhere"]
+    direction LR
+    A2["<b>AGENT APP</b><br/>same static text<br/>(nothing changes<br/>on this side)"]
+    subgraph ENGINE["llama.cpp — UNMODIFIED release binary"]
+      direction LR
+      L2["<b>LINKER</b> (the paper)<br/>load → RoPE rebase → fuse<br/>~200 lines Python<br/>public C API, no fork"]
+      E2["engine: prefill ONLY<br/>the new tokens<br/>(question, chat tail)"]
+      L2 --- E2
+    end
+    K2["<b>KV cache</b> (GPU)<br/>→ generate"]
+    C2["cost: <b>O(bytes)</b><br/>~0.7 s flat,<br/>any regime,<br/>even cold NVMe"]
+    S2[("<b>.kmd MODULE STORE</b> (disk)<br/>compiled ONCE per (model, text)<br/>sha256-addressed · staleness-checked<br/>portable across machines and backends")]
+    A2 -->|"HTTP — text only"| ENGINE --> K2 --> C2
+    S2 -->|"O(bytes) load"| L2
+  end
+
+  NOTE["<i>Why can't this be a network proxy in front of Claude / OpenAI? KV state lives in the engine's GPU memory and can NEVER cross the HTTP wire — a proxy only sees text. Closed APIs: the vendor's prefix caching (prefix-only, ephemeral) is all you get. Self-hosted llama.cpp: the linker slots in as shown — the piece still to be built is the memory MANAGER that decides what links when.</i>"]
+
+  TODAY ~~~ LINK ~~~ NOTE
+
+  classDef app fill:#bfdbfe,stroke:#1e3a8a,color:#0b1324;
+  classDef today fill:#fecaca,stroke:#991b1b,color:#0b1324;
+  classDef kv fill:#bbf7d0,stroke:#166534,color:#0b1324;
+  classDef linker fill:#ddd6fe,stroke:#5b21b6,color:#0b1324;
+  classDef store fill:#99f6e4,stroke:#0f766e,color:#0b1324;
+  classDef note fill:#fef9c3,stroke:#a16207,color:#0b1324;
+  class A1,A2 app;
+  class P1,C1 today;
+  class K1,K2 kv;
+  class L2,E2 linker;
+  class S2 store;
+  class NOTE note;
+```
+
+*Where this sits in the runtime (static version: [`docs/diagram.jpg`](docs/diagram.jpg)).
+For the full memory-management design — dynamic loading via tool-call and Redis-style
+eviction when the context budget runs out — see [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).*
+
 This is a **llama.cpp implementation of relocatable KV modules for non-prefix
 linking**; the vLLM experiments validate prefix-state restoration and motivate an
 interoperable connector extension — they are **not** a working vLLM linker (see the

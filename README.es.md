@@ -6,6 +6,56 @@ Prueba de concepto de investigación: **compila las memorias Markdown de un agen
 módulos de KV-cache reutilizables** (`.kmd`) y enlázalos en un contexto vivo en
 milisegundos, en lugar de re-prefillear miles de tokens en cada sesión.
 
+```mermaid
+flowchart LR
+  subgraph TODAY["🔴 HOY — cada sesión, cada arranque en frío"]
+    direction LR
+    A1["<b>APP DEL AGENTE</b><br/>Claude Code · Hermes · tu bot<br/>system prompt, AGENTS.md,<br/>skills, memorias — todo TEXTO"]
+    P1["<b>llama.cpp / vLLM / API alojada</b><br/>PREFILL: cada token releído<br/>por todas las capas del modelo"]
+    K1["<b>KV cache</b> (GPU)<br/>→ genera"]
+    C1["coste: <b>O(cómputo)</b><br/>memoria de 15,2k tokens:<br/>5,5 s GPU · 13,7 s offload<br/>parcial · 18,9 s CPU"]
+    A1 -->|"HTTP — solo texto"| P1 --> K1 --> C1
+  end
+
+  subgraph LINK["🟣 CON EL LINKER — compila una vez, enlaza donde sea"]
+    direction LR
+    A2["<b>APP DEL AGENTE</b><br/>mismo texto estático<br/>(nada cambia<br/>en este lado)"]
+    subgraph ENGINE["llama.cpp — binario de release SIN MODIFICAR"]
+      direction LR
+      L2["<b>LINKER</b> (el paper)<br/>carga → rebase RoPE → fusión<br/>~200 líneas de Python<br/>API C pública, sin fork"]
+      E2["engine: prefill SOLO<br/>de los tokens nuevos<br/>(pregunta, cola del chat)"]
+      L2 --- E2
+    end
+    K2["<b>KV cache</b> (GPU)<br/>→ genera"]
+    C2["coste: <b>O(bytes)</b><br/>~0,7 s constante,<br/>cualquier régimen,<br/>incluso NVMe en frío"]
+    S2[("<b>ALMACÉN DE MÓDULOS .kmd</b> (disco)<br/>compilado UNA VEZ por (modelo, texto)<br/>direccionado por sha256 · verificación de obsolescencia<br/>portable entre máquinas y backends")]
+    A2 -->|"HTTP — solo texto"| ENGINE --> K2 --> C2
+    S2 -->|"carga O(bytes)"| L2
+  end
+
+  NOTE["<i>¿Por qué esto no puede ser un proxy de red delante de Claude / OpenAI? El estado KV vive en la memoria GPU del engine y NUNCA puede cruzar el cable HTTP — un proxy solo ve texto. APIs cerradas: el prefix caching del proveedor (solo prefijo, efímero) es todo lo que hay. llama.cpp autoalojado: el linker encaja como se muestra — la pieza que aún falta es el GESTOR de memoria que decide qué se enlaza y cuándo.</i>"]
+
+  TODAY ~~~ LINK ~~~ NOTE
+
+  classDef app fill:#bfdbfe,stroke:#1e3a8a,color:#0b1324;
+  classDef today fill:#fecaca,stroke:#991b1b,color:#0b1324;
+  classDef kv fill:#bbf7d0,stroke:#166534,color:#0b1324;
+  classDef linker fill:#ddd6fe,stroke:#5b21b6,color:#0b1324;
+  classDef store fill:#99f6e4,stroke:#0f766e,color:#0b1324;
+  classDef note fill:#fef9c3,stroke:#a16207,color:#0b1324;
+  class A1,A2 app;
+  class P1,C1 today;
+  class K1,K2 kv;
+  class L2,E2 linker;
+  class S2 store;
+  class NOTE note;
+```
+
+*Dónde encaja dentro del runtime (versión estática: [`docs/diagram.jpg`](docs/diagram.jpg)).
+Para el diseño completo de gestión de memoria —carga dinámica por tool-call y descarga por
+eviction estilo Redis cuando se agota el presupuesto de contexto— ver
+[`docs/ARCHITECTURE.es.md`](docs/ARCHITECTURE.es.md).*
+
 Esto es una **implementación en llama.cpp de módulos KV relocalizables para enlazado
 no-prefijo**; los experimentos en vLLM validan la restauración de estado en prefijo y
 motivan una extensión de conector interoperable — **no** son un linker funcional en

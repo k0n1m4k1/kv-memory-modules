@@ -111,6 +111,56 @@ These are **setup-cost** ratios (prefill vs. restore, §5.2/§5.6). Cold-start *
 (restore+query vs. full prefill) for a 1.4k-token memory on the same laptop is ×8.4 on
 CPU and ×4.3 on the Arc/Vulkan GPU (§5.1).
 
+## How this differs from other KV-reuse work
+
+Reusing a KV cache at a position other than the one it was computed at is an active
+area, and the paper's §2 places this work among it. In the taxonomy of CacheSlide —
+position-dependent (PDC), position-independent (PIC), relative-position-dependent
+(**RPDC**) — what an agent's memory needs is RPDC: the module keeps its internal order
+while its absolute position shifts. What is specific here is *how*:
+
+| System | Venue | Mechanism | Training? | Recompute? | On-disk artifact |
+|---|---|---|---|---|---|
+| Prompt Cache | MLSys '24 | per-slot precomputation from a prompt schema | no | no | no |
+| CacheBlend | EuroSys '25 | selective recomputation of high-drift tokens | no | **yes** (partial) | no |
+| KVLink | NeurIPS '25 | positional-embedding adjustment + trainable link tokens | **yes** | no | no |
+| CacheSlide | FAST '26 | chunked contextual position encoding + weighted correction attention | **yes** (learned weights) | **yes** (minimal token subset) | no |
+| KV Packet | arXiv, Apr '26 | immutable "packets" + distilled soft-token adapters | **yes** | no | no |
+| C²KV | arXiv, Jul '26 (concurrent) | sidecar extractor with learned compression tokens | **yes** | no | no |
+| **this work** | — | RoPE position re-rotation + sequence fusion via stock runtime primitives | **no** | **no** | **yes** (`.kmd`) |
+
+Three consequences that motivate the design:
+
+- **Training-free and runtime-unmodified.** No adapter, link token, or learned
+  correction is fitted; the module is relocated with primitives already exposed by
+  llama.cpp release binaries (§4). The cost is the characterized multi-module
+  attribution deficit, mitigated by recomputing ~⅓ of the inserted module — a
+  *measured* trade-off rather than a trained component.
+- **KV as a build artifact, not a serving-tier cache.** The neighbours above are
+  in-memory optimizations for datacenter serving; `.kmd` is a file with
+  content-addressed identity over `weights | tokenizer | text | ABI`, portable across
+  machines and backends, which is what makes "compile the memory once, ship the object"
+  a local-first workflow rather than a cluster feature. Concretely, *portable* means:
+  read back from **cold** non-volatile storage after page-cache eviction (§5.6), and a
+  module compiled on Windows/Vulkan/Arc **links on Linux/CUDA/RTX in 59 ms with exact
+  recall** (§5.6) — backend is explicitly *not* a compatibility axis (§6.1). Two
+  qualifications: portability is **behavioral, not bitwise** (different kernels differ in
+  low-order bits; what is invariant is recall quality), and it is bounded by four axes —
+  identical weights, tokenizer, KV-cache dtype and V layout (`v_trans = !flash_attn`, so
+  pin flash-attention rather than leaving `-fa auto`). Since llama.cpp validates only
+  architecture name and per-layer shapes, a mismatched module would load **silently** —
+  which is precisely why identity is content-addressed and staleness is checked.
+- **Linear-attention hybrids.** All of the systems above are full-attention only;
+  non-prefix linking of a recurrent (Gated DeltaNet) state as a constant-size operator
+  is demonstrated in §5.5.
+
+An honest note on what is *not* claimed as new: the underlying primitive — rotating a
+cached **K** to a new position — is a known property of RoPE and is exposed by the
+runtime, and the OS/virtual-memory framing for KV is mainstream (paged attention ships
+by default in vLLM, SGLang and TensorRT-LLM). The contribution is the combination:
+training-free relocation, a portable module format, hybrid support, and cold-start
+evidence on consumer hardware, where the setup-cost ratios above are largest.
+
 ## Operational limits (read before relying on this)
 
 - **Modules are heavy**: f16 ≈ 147 KB/token for a 4B GQA model (~36,000× the source

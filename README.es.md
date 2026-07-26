@@ -114,6 +114,60 @@ Son ratios de **coste de arranque** (prefill vs. restore, §5.2/§5.6). El **TTF
 arranque en frío (restore+consulta vs. prefill completo) para una memoria de 1,4k tokens
 en el mismo portátil es ×8,4 en CPU y ×4,3 en la GPU Arc/Vulkan (§5.1).
 
+## En qué se diferencia de otros trabajos de reutilización de KV
+
+Reutilizar una caché KV en una posición distinta de la que se calculó es un área activa,
+y el §2 del paper sitúa este trabajo dentro de ella. En la taxonomía de CacheSlide
+—dependiente de posición (PDC), independiente de posición (PIC) y **dependiente de la
+posición relativa (RPDC)**—, lo que necesita la memoria de un agente es RPDC: el módulo
+conserva su orden interno mientras su posición absoluta se desplaza. Lo específico aquí
+es el *cómo*:
+
+| Sistema | Venue | Mecanismo | ¿Entrena? | ¿Recomputa? | ¿Artefacto en disco? |
+|---|---|---|---|---|---|
+| Prompt Cache | MLSys '24 | precomputación por hueco a partir de un esquema de prompt | no | no | no |
+| CacheBlend | EuroSys '25 | recomputación selectiva de los tokens de mayor deriva | no | **sí** (parcial) | no |
+| KVLink | NeurIPS '25 | ajuste de embeddings posicionales + *link tokens* entrenables | **sí** | no | no |
+| CacheSlide | FAST '26 | codificación posicional contextual por bloques + atención de corrección ponderada | **sí** (pesos aprendidos) | **sí** (subconjunto mínimo de tokens) | no |
+| KV Packet | arXiv, abr '26 | «packets» inmutables + *soft-token adapters* destilados | **sí** | no | no |
+| C²KV | arXiv, jul '26 (concurrente) | extractor *sidecar* con tokens de compresión aprendidos | **sí** | no | no |
+| **este trabajo** | — | re-rotación RoPE de la posición + fusión de secuencias con primitivas nativas del runtime | **no** | **no** | **sí** (`.kmd`) |
+
+Tres consecuencias que motivan el diseño:
+
+- **Sin entrenamiento y sin modificar el runtime.** No se ajusta ningún adaptador, *link
+  token* ni corrección aprendida: el módulo se relocaliza con primitivas que los binarios
+  de release de llama.cpp ya exponen (§4). El precio es el déficit de atribución
+  multi-módulo caracterizado, mitigado recomputando ~⅓ del módulo insertado — un
+  compromiso **medido**, no un componente entrenado.
+- **KV como artefacto de build, no como caché de la capa de servicio.** Los vecinos de
+  arriba son optimizaciones en memoria para servicio en centro de datos; `.kmd` es un
+  fichero con identidad content-addressed sobre `pesos | tokenizador | texto | ABI`,
+  portable entre máquinas y backends, que es lo que convierte «compila la memoria una vez
+  y distribuye el objeto» en un flujo local en lugar de una función de clúster. En
+  concreto, *portable* significa: se relee desde almacenamiento no volátil **en frío**
+  tras desalojar la page cache (§5.6), y un módulo compilado en Windows/Vulkan/Arc
+  **enlaza en Linux/CUDA/RTX en 59 ms con recall exacto** (§5.6) — el backend
+  explícitamente **no** es un eje de compatibilidad (§6.1). Dos salvedades: la
+  portabilidad es **conductual, no bit a bit** (kernels distintos difieren en los bits
+  bajos; lo invariante es la calidad del recall), y está acotada por cuatro ejes —pesos,
+  tokenizador, dtype de caché KV y layout de V idénticos (`v_trans = !flash_attn`, así que
+  conviene fijar flash-attention en vez de dejar `-fa auto`)—. Como llama.cpp sólo valida
+  el nombre de la arquitectura y las formas por capa, un módulo que no encaje cargaría
+  **en silencio**: precisamente por eso la identidad es content-addressed y la obsolescencia
+  se comprueba.
+- **Híbridos de atención lineal.** Todos los sistemas anteriores son de atención completa;
+  el enlace no-prefijo de un estado recurrente (Gated DeltaNet) como operador de tamaño
+  constante se demuestra en §5.5.
+
+Nota honesta sobre lo que **no** se reclama como nuevo: la primitiva de fondo —rotar una
+**K** cacheada a una posición nueva— es una propiedad conocida de RoPE y la expone el
+propio runtime, y el marco de memoria virtual estilo SO para el KV es mayoritario (paged
+attention viene por defecto en vLLM, SGLang y TensorRT-LLM). La aportación es la
+combinación: relocalización sin entrenamiento, formato de módulo portable, soporte de
+híbridos y evidencia de arranque en frío en hardware de consumo, que es donde los ratios
+de coste de preparación de arriba son mayores.
+
 ## Límites operativos (leer antes de confiar en esto)
 
 - **Los módulos pesan**: f16 ≈ 147 KB/token para un modelo 4B con GQA (~36 000× el texto
